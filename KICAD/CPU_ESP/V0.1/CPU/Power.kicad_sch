@@ -1363,7 +1363,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "083fdc83-89fd-4672-ae87-87265234e40c")
-		(property "Reference" "#PWR07"
+		(property "Reference" "#PWR0308"
 			(at 176.53 73.66 0)
 			(effects
 				(font
@@ -1413,7 +1413,7 @@
 		(instances
 			(project ""
 				(path "/a676c576-12a0-418f-9fc1-1ecc8cb5a083/dfa41f31-372e-4922-9bef-c0e343f2f76b"
-					(reference "#PWR07")
+					(reference "#PWR0308")
 					(unit 1)
 				)
 			)
@@ -1429,7 +1429,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "08aa1d08-9456-4e07-b283-1a336b2b3600")
-		(property "Reference" "D1"
+		(property "Reference" "D301"
 			(at 106.68 77.7874 90)
 			(effects
 				(font
@@ -1492,7 +1492,7 @@
 		(instances
 			(project ""
 				(path "/a676c576-12a0-418f-9fc1-1ecc8cb5a083/dfa41f31-372e-4922-9bef-c0e343f2f76b"
-					(reference "D1")
+					(reference "D301")
 					(unit 1)
 				)
 			)
@@ -1508,7 +1508,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "106b6663-9f46-4f57-9d13-02a47fc01ba8")
-		(property "Reference" "U2"
+		(property "Reference" "U301"
 			(at 146.05 66.04 0)
 			(effects
 				(font
@@ -1563,7 +1563,7 @@
 		(instances
 			(project ""
 				(path "/a676c576-12a0-418f-9fc1-1ecc8cb5a083/dfa41f31-372e-4922-9bef-c0e343f2f76b"
-					(reference "U2")
+					(reference "U301")
 					(unit 1)
 				)
 			)
@@ -1579,7 +1579,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1f26effe-e20f-4600-b82f-ea11a73cb7b1")
-		(property "Reference" "C7"
+		(property "Reference" "C303"
 			(at 163.83 74.9362 0)
 			(effects
 				(font
@@ -1633,7 +1633,7 @@
 		(instances
 			(project ""
 				(path "/a676c576-12a0-418f-9fc1-1ecc8cb5a083/dfa41f31-372e-4922-9bef-c0e343f2f76b"
-					(reference "C7")
+					(reference "C303")
 					(unit 1)
 				)
 			)
@@ -1649,7 +1649,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2af2e33c-3e78-421f-b22a-75d406f21a79")
-		(property "Reference" "#PWR0301"
+		(property "Reference" "#PWR0303"
 			(at 115.57 87.63 0)
 			(effects
 				(font
@@ -1699,7 +1699,7 @@
 		(instances
 			(project ""
 				(path "/a676c576-12a0-418f-9fc1-1ecc8cb5a083/dfa41f31-372e-4922-9bef-c0e343f2f76b"
-					(reference "#PWR0301")
+					(reference "#PWR0303")
 					(unit 1)
 				)
 			)
@@ -1715,7 +1715,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2ba8832f-ff1e-4008-bc63-d382f14fc931")
-		(property "Reference" "#PWR0304"
+		(property "Reference" "#PWR0306"
 			(at 161.29 87.63 0)
 			(effects
 				(font
@@ -1765,7 +1765,7 @@
 		(instances
 			(project ""
 				(path "/a676c576-12a0-418f-9fc1-1ecc8cb5a083/dfa41f31-372e-4922-9bef-c0e343f2f76b"
-					(reference "#PWR0304")
+					(reference "#PWR0306")
 					(unit 1)
 				)
 			)
@@ -1781,7 +1781,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5d81d448-b0b9-43b0-8e75-3d3397df93c9")
-		(property "Reference" "#PWR0305"
+		(property "Reference" "#PWR0307"
 			(at 171.45 87.63 0)
 			(effects
 				(font
@@ -1831,7 +1831,7 @@
 		(instances
 			(project ""
 				(path "/a676c576-12a0-418f-9fc1-1ecc8cb5a083/dfa41f31-372e-4922-9bef-c0e343f2f76b"
-					(reference "#PWR0305")
+					(reference "#PWR0307")
 					(unit 1)
 				)
 			)
@@ -1847,7 +1847,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5f01ee7a-1c46-4983-a30a-0fc5509edbbc")
-		(property "Reference" "#PWR08"
+		(property "Reference" "#PWR0301"
 			(at 102.87 100.33 0)
 			(effects
 				(font
@@ -1897,7 +1897,7 @@
 		(instances
 			(project ""
 				(path "/a676c576-12a0-418f-9fc1-1ecc8cb5a083/dfa41f31-372e-4922-9bef-c0e343f2f76b"
-					(reference "#PWR08")
+					(reference "#PWR0301")
 					(unit 1)
 				)
 			)
@@ -1913,7 +1913,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "669fb1c6-e732-46a4-97d2-30017b5f8e65")
-		(property "Reference" "#PWR0302"
+		(property "Reference" "#PWR0304"
 			(at 124.46 87.63 0)
 			(effects
 				(font
@@ -1963,7 +1963,7 @@
 		(instances
 			(project ""
 				(path "/a676c576-12a0-418f-9fc1-1ecc8cb5a083/dfa41f31-372e-4922-9bef-c0e343f2f76b"
-					(reference "#PWR0302")
+					(reference "#PWR0304")
 					(unit 1)
 				)
 			)
@@ -1979,7 +1979,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6b26e9e1-3d86-40c2-9642-64c12630ae76")
-		(property "Reference" "#PWR0303"
+		(property "Reference" "#PWR0305"
 			(at 146.05 88.9 0)
 			(effects
 				(font
@@ -2029,7 +2029,7 @@
 		(instances
 			(project ""
 				(path "/a676c576-12a0-418f-9fc1-1ecc8cb5a083/dfa41f31-372e-4922-9bef-c0e343f2f76b"
-					(reference "#PWR0303")
+					(reference "#PWR0305")
 					(unit 1)
 				)
 			)
@@ -2045,7 +2045,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "78bd8b26-7f56-4e7c-8e38-c91e2c1029c7")
-		(property "Reference" "C6"
+		(property "Reference" "C304"
 			(at 173.99 74.3838 0)
 			(effects
 				(font
@@ -2063,7 +2063,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B"
 			(at 171.45 76.2 0)
 			(effects
 				(font
@@ -2090,6 +2090,15 @@
 				(hide yes)
 			)
 		)
+		(property "TITLE" ""
+			(at 171.45 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "da2c8fe6-8181-49b2-b56d-68b2de4cd3a2")
 		)
@@ -2099,7 +2108,7 @@
 		(instances
 			(project ""
 				(path "/a676c576-12a0-418f-9fc1-1ecc8cb5a083/dfa41f31-372e-4922-9bef-c0e343f2f76b"
-					(reference "C6")
+					(reference "C304")
 					(unit 1)
 				)
 			)
@@ -2115,7 +2124,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a2e77831-860f-4fc3-bbdf-1a90f9e9f0fe")
-		(property "Reference" "C8"
+		(property "Reference" "C302"
 			(at 127 74.9362 0)
 			(effects
 				(font
@@ -2169,7 +2178,7 @@
 		(instances
 			(project ""
 				(path "/a676c576-12a0-418f-9fc1-1ecc8cb5a083/dfa41f31-372e-4922-9bef-c0e343f2f76b"
-					(reference "C8")
+					(reference "C302")
 					(unit 1)
 				)
 			)
@@ -2185,7 +2194,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d6676562-8d05-4d60-8629-4afe87c873ad")
-		(property "Reference" "R2"
+		(property "Reference" "R301"
 			(at 105.41 86.3599 0)
 			(effects
 				(font
@@ -2239,7 +2248,7 @@
 		(instances
 			(project ""
 				(path "/a676c576-12a0-418f-9fc1-1ecc8cb5a083/dfa41f31-372e-4922-9bef-c0e343f2f76b"
-					(reference "R2")
+					(reference "R301")
 					(unit 1)
 				)
 			)
@@ -2255,7 +2264,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e6c589d7-6c45-41ae-abeb-2778312e7875")
-		(property "Reference" "#PWR06"
+		(property "Reference" "#PWR0302"
 			(at 110.49 74.93 0)
 			(effects
 				(font
@@ -2305,7 +2314,7 @@
 		(instances
 			(project ""
 				(path "/a676c576-12a0-418f-9fc1-1ecc8cb5a083/dfa41f31-372e-4922-9bef-c0e343f2f76b"
-					(reference "#PWR06")
+					(reference "#PWR0302")
 					(unit 1)
 				)
 			)
@@ -2321,7 +2330,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f905cf98-8dd5-497b-bf75-234eabeff51c")
-		(property "Reference" "22µ301"
+		(property "Reference" "C301"
 			(at 118.11 74.3838 0)
 			(effects
 				(font
@@ -2339,7 +2348,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3216-10_Kemet-I"
 			(at 115.57 76.2 0)
 			(effects
 				(font
@@ -2366,6 +2375,15 @@
 				(hide yes)
 			)
 		)
+		(property "TITLE" ""
+			(at 115.57 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "d0e058dd-5bea-4b25-9d55-08adefc82a3f")
 		)
@@ -2375,7 +2393,7 @@
 		(instances
 			(project ""
 				(path "/a676c576-12a0-418f-9fc1-1ecc8cb5a083/dfa41f31-372e-4922-9bef-c0e343f2f76b"
-					(reference "22µ301")
+					(reference "C301")
 					(unit 1)
 				)
 			)

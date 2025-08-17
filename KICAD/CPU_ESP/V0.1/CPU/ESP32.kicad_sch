@@ -1710,7 +1710,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "19b2de55-c968-42df-86e2-4577feb63222")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR0401"
 			(at 91.44 43.18 0)
 			(effects
 				(font
@@ -1760,7 +1760,7 @@
 		(instances
 			(project ""
 				(path "/a676c576-12a0-418f-9fc1-1ecc8cb5a083/3fae016e-6e0f-4cd9-b4b1-dc965be68ffa"
-					(reference "#PWR05")
+					(reference "#PWR0401")
 					(unit 1)
 				)
 			)
@@ -1776,7 +1776,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "245a729d-51c8-4fb5-874c-69dccb5112fa")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR0403"
 			(at 106.68 27.94 0)
 			(effects
 				(font
@@ -1826,7 +1826,7 @@
 		(instances
 			(project ""
 				(path "/a676c576-12a0-418f-9fc1-1ecc8cb5a083/3fae016e-6e0f-4cd9-b4b1-dc965be68ffa"
-					(reference "#PWR02")
+					(reference "#PWR0403")
 					(unit 1)
 				)
 			)
@@ -1842,7 +1842,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "384fe04b-6d71-4606-b560-a5800086a41d")
-		(property "Reference" "C3"
+		(property "Reference" "C401"
 			(at 93.98 53.3462 0)
 			(effects
 				(font
@@ -1851,7 +1851,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C_Small"
+		(property "Value" "100n"
 			(at 93.98 55.8862 0)
 			(effects
 				(font
@@ -1860,7 +1860,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 91.44 54.61 0)
 			(effects
 				(font
@@ -1887,6 +1887,15 @@
 				(hide yes)
 			)
 		)
+		(property "TITLE" ""
+			(at 91.44 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "0ec5365e-2fd7-418f-a11d-ac126f782f5e")
 		)
@@ -1896,7 +1905,7 @@
 		(instances
 			(project ""
 				(path "/a676c576-12a0-418f-9fc1-1ecc8cb5a083/3fae016e-6e0f-4cd9-b4b1-dc965be68ffa"
-					(reference "C3")
+					(reference "C401")
 					(unit 1)
 				)
 			)
@@ -1912,7 +1921,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "38c045c3-aad4-43bf-8dfb-8947f9c5dea2")
-		(property "Reference" "C2"
+		(property "Reference" "C402"
 			(at 109.22 27.3938 0)
 			(effects
 				(font
@@ -1921,7 +1930,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C_Polarized_Small"
+		(property "Value" "22µ/10V"
 			(at 109.22 29.9338 0)
 			(effects
 				(font
@@ -1930,7 +1939,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3216-10_Kemet-I"
 			(at 106.68 29.21 0)
 			(effects
 				(font
@@ -1957,6 +1966,15 @@
 				(hide yes)
 			)
 		)
+		(property "TITLE" ""
+			(at 106.68 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "99e9a622-823a-4b2d-a372-77f3a86b6bec")
 		)
@@ -1966,7 +1984,7 @@
 		(instances
 			(project ""
 				(path "/a676c576-12a0-418f-9fc1-1ecc8cb5a083/3fae016e-6e0f-4cd9-b4b1-dc965be68ffa"
-					(reference "C2")
+					(reference "C402")
 					(unit 1)
 				)
 			)
@@ -1982,7 +2000,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "60ddbce9-0304-465f-96d3-633647460787")
-		(property "Reference" "C4"
+		(property "Reference" "C404"
 			(at 191.77 52.0762 0)
 			(effects
 				(font
@@ -1991,7 +2009,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C_Small"
+		(property "Value" "100n"
 			(at 191.77 54.6162 0)
 			(effects
 				(font
@@ -2000,7 +2018,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 189.23 53.34 0)
 			(effects
 				(font
@@ -2027,6 +2045,15 @@
 				(hide yes)
 			)
 		)
+		(property "TITLE" ""
+			(at 189.23 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "574a0baf-f2e3-4a2f-8898-d44ed40bc9df")
 		)
@@ -2036,7 +2063,7 @@
 		(instances
 			(project ""
 				(path "/a676c576-12a0-418f-9fc1-1ecc8cb5a083/3fae016e-6e0f-4cd9-b4b1-dc965be68ffa"
-					(reference "C4")
+					(reference "C404")
 					(unit 1)
 				)
 			)
@@ -2052,7 +2079,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "75d5e399-edff-4eb3-8b42-28a2c6cc3060")
-		(property "Reference" "R1"
+		(property "Reference" "R401"
 			(at 93.98 43.1799 0)
 			(effects
 				(font
@@ -2061,7 +2088,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "10k"
 			(at 93.98 45.7199 0)
 			(effects
 				(font
@@ -2070,7 +2097,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 93.218 44.45 90)
 			(effects
 				(font
@@ -2097,6 +2124,15 @@
 				(hide yes)
 			)
 		)
+		(property "TITLE" ""
+			(at 91.44 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "5b1f9acf-0f58-4bbd-b907-8cfca0eb3ddd")
 		)
@@ -2106,7 +2142,7 @@
 		(instances
 			(project ""
 				(path "/a676c576-12a0-418f-9fc1-1ecc8cb5a083/3fae016e-6e0f-4cd9-b4b1-dc965be68ffa"
-					(reference "R1")
+					(reference "R401")
 					(unit 1)
 				)
 			)
@@ -2122,7 +2158,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9e1c1fe4-ad57-4aae-bca5-8bfbc7fb5602")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR0406"
 			(at 189.23 63.5 0)
 			(effects
 				(font
@@ -2172,7 +2208,7 @@
 		(instances
 			(project ""
 				(path "/a676c576-12a0-418f-9fc1-1ecc8cb5a083/3fae016e-6e0f-4cd9-b4b1-dc965be68ffa"
-					(reference "#PWR04")
+					(reference "#PWR0406")
 					(unit 1)
 				)
 			)
@@ -2188,7 +2224,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a979505f-72b7-4135-bc41-6a033e1ea732")
-		(property "Reference" "#PWR0401"
+		(property "Reference" "#PWR0405"
 			(at 151.13 125.73 0)
 			(effects
 				(font
@@ -2238,7 +2274,7 @@
 		(instances
 			(project ""
 				(path "/a676c576-12a0-418f-9fc1-1ecc8cb5a083/3fae016e-6e0f-4cd9-b4b1-dc965be68ffa"
-					(reference "#PWR0401")
+					(reference "#PWR0405")
 					(unit 1)
 				)
 			)
@@ -2254,7 +2290,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a9f80dd8-20af-44d0-8911-d463a15dafb1")
-		(property "Reference" "C1"
+		(property "Reference" "C403"
 			(at 121.92 27.9462 0)
 			(effects
 				(font
@@ -2263,7 +2299,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C_Small"
+		(property "Value" "100n"
 			(at 121.92 30.4862 0)
 			(effects
 				(font
@@ -2272,7 +2308,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 119.38 29.21 0)
 			(effects
 				(font
@@ -2299,6 +2335,15 @@
 				(hide yes)
 			)
 		)
+		(property "TITLE" ""
+			(at 119.38 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "ccfc1ca4-e8dd-4efa-989d-4f25fe06bb1b")
 		)
@@ -2308,7 +2353,7 @@
 		(instances
 			(project ""
 				(path "/a676c576-12a0-418f-9fc1-1ecc8cb5a083/3fae016e-6e0f-4cd9-b4b1-dc965be68ffa"
-					(reference "C1")
+					(reference "C403")
 					(unit 1)
 				)
 			)
@@ -2324,7 +2369,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ab1b04b3-881c-45b4-bf57-b71acf05d9d6")
-		(property "Reference" "U1"
+		(property "Reference" "U401"
 			(at 153.2733 43.18 0)
 			(effects
 				(font
@@ -2489,7 +2534,7 @@
 		(instances
 			(project ""
 				(path "/a676c576-12a0-418f-9fc1-1ecc8cb5a083/3fae016e-6e0f-4cd9-b4b1-dc965be68ffa"
-					(reference "U1")
+					(reference "U401")
 					(unit 1)
 				)
 			)
@@ -2505,7 +2550,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c19a1c25-2b37-456f-bd84-c783c4b2866a")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR0402"
 			(at 91.44 64.77 0)
 			(effects
 				(font
@@ -2555,7 +2600,7 @@
 		(instances
 			(project ""
 				(path "/a676c576-12a0-418f-9fc1-1ecc8cb5a083/3fae016e-6e0f-4cd9-b4b1-dc965be68ffa"
-					(reference "#PWR03")
+					(reference "#PWR0402")
 					(unit 1)
 				)
 			)
@@ -2571,7 +2616,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cabf41f2-9412-4e13-b153-7aa0f90c27e3")
-		(property "Reference" "#PWR01"
+		(property "Reference" "#PWR0404"
 			(at 106.68 40.64 0)
 			(effects
 				(font
@@ -2621,7 +2666,7 @@
 		(instances
 			(project ""
 				(path "/a676c576-12a0-418f-9fc1-1ecc8cb5a083/3fae016e-6e0f-4cd9-b4b1-dc965be68ffa"
-					(reference "#PWR01")
+					(reference "#PWR0404")
 					(unit 1)
 				)
 			)
