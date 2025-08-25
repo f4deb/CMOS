@@ -4317,6 +4317,16 @@
 	)
 	(wire
 		(pts
+			(xy 257.81 33.02) (xy 257.81 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e8b118e-e5cf-4d8b-aac9-b7de25b9bdf6")
+	)
+	(wire
+		(pts
 			(xy 210.82 115.57) (xy 222.25 115.57)
 		)
 		(stroke
@@ -4796,7 +4806,7 @@
 		(uuid "ffe807b6-a8d5-4b94-9589-73c9372b79ed")
 	)
 	(label "SDA-5V"
-		(at 68.58 44.45 0)
+		(at 69.85 44.45 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4846,7 +4856,7 @@
 		(uuid "e8e5d165-9742-49ce-ae69-b31bd8364d99")
 	)
 	(label "SCL-5V"
-		(at 68.58 41.91 0)
+		(at 69.85 41.91 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4942,6 +4952,17 @@
 			(justify left)
 		)
 		(uuid "32013879-c180-4d24-8fd7-46edc9ead721")
+	)
+	(hierarchical_label "SCL-5V"
+		(shape input)
+		(at 273.05 39.37 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "36c61036-3e45-4d58-b8cd-d2ac7cfec346")
 	)
 	(hierarchical_label "SCL"
 		(shape input)
@@ -5097,6 +5118,17 @@
 		)
 		(uuid "8a4421b5-6411-4d41-a3ba-5a6c4cffffde")
 	)
+	(hierarchical_label "SDA-5V"
+		(shape input)
+		(at 273.05 41.91 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8d806b01-4a57-463d-9d8f-2d9cfcae6c31")
+	)
 	(hierarchical_label "D7"
 		(shape input)
 		(at 222.25 125.73 0)
@@ -5245,7 +5277,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 153.162 78.74 90)
 			(effects
 				(font
@@ -5264,6 +5296,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 154.94 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "TITLE" ""
 			(at 154.94 78.74 0)
 			(effects
 				(font
@@ -5314,7 +5355,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 60.452 104.14 90)
 			(effects
 				(font
@@ -5333,6 +5374,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 62.23 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "TITLE" ""
 			(at 62.23 104.14 0)
 			(effects
 				(font
@@ -5585,7 +5635,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 146.812 78.74 90)
 			(effects
 				(font
@@ -5604,6 +5654,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 148.59 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "TITLE" ""
 			(at 148.59 78.74 0)
 			(effects
 				(font
@@ -5654,7 +5713,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 31.242 149.86 90)
 			(effects
 				(font
@@ -5673,6 +5732,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 33.02 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "TITLE" ""
 			(at 33.02 149.86 0)
 			(effects
 				(font
@@ -5723,7 +5791,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 140.462 78.74 90)
 			(effects
 				(font
@@ -5742,6 +5810,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 142.24 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "TITLE" ""
 			(at 142.24 78.74 0)
 			(effects
 				(font
@@ -6057,7 +6134,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_1206_3216Metric"
 			(at 21.59 29.21 0)
 			(effects
 				(font
@@ -6076,6 +6153,15 @@
 			)
 		)
 		(property "Description" "Schottky diode"
+			(at 21.59 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "TITLE" ""
 			(at 21.59 29.21 0)
 			(effects
 				(font
@@ -6126,7 +6212,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 153.162 138.43 90)
 			(effects
 				(font
@@ -6145,6 +6231,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 154.94 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "TITLE" ""
 			(at 154.94 138.43 0)
 			(effects
 				(font
@@ -6283,7 +6378,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 26.162 149.86 90)
 			(effects
 				(font
@@ -6302,6 +6397,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 27.94 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "TITLE" ""
 			(at 27.94 149.86 0)
 			(effects
 				(font
@@ -6818,7 +6922,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 68.072 149.86 90)
 			(effects
 				(font
@@ -6837,6 +6941,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 69.85 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "TITLE" ""
 			(at 69.85 149.86 0)
 			(effects
 				(font
@@ -7478,7 +7591,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 140.462 138.43 90)
 			(effects
 				(font
@@ -7497,6 +7610,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 142.24 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "TITLE" ""
 			(at 142.24 138.43 0)
 			(effects
 				(font
@@ -7943,7 +8065,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 140.462 62.23 90)
 			(effects
 				(font
@@ -7962,6 +8084,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 142.24 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "TITLE" ""
 			(at 142.24 62.23 0)
 			(effects
 				(font
@@ -8012,7 +8143,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 146.812 154.94 90)
 			(effects
 				(font
@@ -8031,6 +8162,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 148.59 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "TITLE" ""
 			(at 148.59 154.94 0)
 			(effects
 				(font
@@ -8147,7 +8287,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 153.162 62.23 90)
 			(effects
 				(font
@@ -8166,6 +8306,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 154.94 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "TITLE" ""
 			(at 154.94 62.23 0)
 			(effects
 				(font
@@ -8348,7 +8497,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 146.812 138.43 90)
 			(effects
 				(font
@@ -8367,6 +8516,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 148.59 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "TITLE" ""
 			(at 148.59 138.43 0)
 			(effects
 				(font
@@ -8619,7 +8777,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 140.462 154.94 90)
 			(effects
 				(font
@@ -8638,6 +8796,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 142.24 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "TITLE" ""
 			(at 142.24 154.94 0)
 			(effects
 				(font
@@ -8754,7 +8921,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 19.812 39.37 90)
 			(effects
 				(font
@@ -8773,6 +8940,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 21.59 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "TITLE" ""
 			(at 21.59 39.37 0)
 			(effects
 				(font
@@ -8823,7 +8999,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 62.992 149.86 90)
 			(effects
 				(font
@@ -8842,6 +9018,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 64.77 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "TITLE" ""
 			(at 64.77 149.86 0)
 			(effects
 				(font
@@ -8873,7 +9058,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "e60dd765-b374-48f7-bfe3-c29d8c9d4bbd")
 		(property "Reference" "U201"
 			(at 58.0233 34.29 0)
@@ -8885,7 +9069,7 @@
 			)
 		)
 		(property "Value" "PCF8563T"
-			(at 58.0233 36.83 0)
+			(at 68.1833 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9104,7 +9288,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 153.162 154.94 90)
 			(effects
 				(font
@@ -9123,6 +9307,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 154.94 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "TITLE" ""
 			(at 154.94 154.94 0)
 			(effects
 				(font
@@ -9173,7 +9366,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 146.812 62.23 90)
 			(effects
 				(font
@@ -9192,6 +9385,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 148.59 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "TITLE" ""
 			(at 148.59 62.23 0)
 			(effects
 				(font
@@ -9426,6 +9628,72 @@
 			(project "CPU"
 				(path "/a676c576-12a0-418f-9fc1-1ecc8cb5a083/ebcf0d9a-523d-4f37-81f9-63d54b289420"
 					(reference "#PWR0223")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5VD")
+		(at 257.81 33.02 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f8e2ca4b-d5dc-4ec5-a0a1-ae13473ac80a")
+		(property "Reference" "#PWR0230"
+			(at 257.81 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5VD"
+			(at 257.81 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 257.81 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 257.81 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5VD\""
+			(at 257.81 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2db23676-105b-44c8-8f4b-5da733a98ae6")
+		)
+		(instances
+			(project ""
+				(path "/a676c576-12a0-418f-9fc1-1ecc8cb5a083/ebcf0d9a-523d-4f37-81f9-63d54b289420"
+					(reference "#PWR0230")
 					(unit 1)
 				)
 			)

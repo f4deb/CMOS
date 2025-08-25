@@ -964,7 +964,7 @@
 	)
 	(wire
 		(pts
-			(xy 196.85 40.64) (xy 201.93 40.64)
+			(xy 196.85 34.29) (xy 201.93 34.29)
 		)
 		(stroke
 			(width 0)
@@ -974,7 +974,7 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 48.26) (xy 201.93 48.26)
+			(xy 194.31 41.91) (xy 201.93 41.91)
 		)
 		(stroke
 			(width 0)
@@ -984,7 +984,7 @@
 	)
 	(wire
 		(pts
-			(xy 196.85 43.18) (xy 201.93 43.18)
+			(xy 196.85 36.83) (xy 201.93 36.83)
 		)
 		(stroke
 			(width 0)
@@ -994,7 +994,7 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 45.72) (xy 201.93 45.72)
+			(xy 194.31 39.37) (xy 201.93 39.37)
 		)
 		(stroke
 			(width 0)
@@ -1004,7 +1004,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 48.26) (xy 168.91 48.26)
+			(xy 158.75 41.91) (xy 168.91 41.91)
 		)
 		(stroke
 			(width 0)
@@ -1014,7 +1014,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 45.72) (xy 168.91 45.72)
+			(xy 158.75 39.37) (xy 168.91 39.37)
 		)
 		(stroke
 			(width 0)
@@ -1023,7 +1023,7 @@
 		(uuid "f3e61753-79bc-4046-98e3-d80550bcb803")
 	)
 	(label "SCL-5V"
-		(at 161.29 45.72 0)
+		(at 161.29 39.37 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1033,7 +1033,7 @@
 		(uuid "332c9dd1-12ef-4aa8-ab26-c7c1ab1c220c")
 	)
 	(label "SCL-5V"
-		(at 194.31 45.72 0)
+		(at 194.31 39.37 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1043,7 +1043,7 @@
 		(uuid "7805e361-413d-49e9-b664-5695ff0cba3b")
 	)
 	(label "SDA-5V"
-		(at 161.29 48.26 0)
+		(at 161.29 41.91 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1053,7 +1053,7 @@
 		(uuid "bb515623-1043-4f70-a890-19399566c89c")
 	)
 	(label "SDA-5V"
-		(at 194.31 48.26 0)
+		(at 194.31 41.91 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1064,7 +1064,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x04")
-		(at 207.01 43.18 0)
+		(at 207.01 36.83 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1073,7 +1073,7 @@
 		(fields_autoplaced yes)
 		(uuid "1b52485b-7b0a-43f3-ba1c-ce80ad54339f")
 		(property "Reference" "J102"
-			(at 209.55 43.1799 0)
+			(at 209.55 36.8299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1082,7 +1082,7 @@
 			)
 		)
 		(property "Value" "Conn_01x04"
-			(at 209.55 45.7199 0)
+			(at 209.55 39.3699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1091,7 +1091,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 207.01 43.18 0)
+			(at 207.01 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1100,7 +1100,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 207.01 43.18 0)
+			(at 207.01 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1109,7 +1109,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 207.01 43.18 0)
+			(at 207.01 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1140,7 +1140,7 @@
 	)
 	(symbol
 		(lib_id "power:+5VD")
-		(at 196.85 43.18 90)
+		(at 196.85 36.83 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1149,7 +1149,7 @@
 		(fields_autoplaced yes)
 		(uuid "38b84378-878c-4800-b46d-5a8a5ee4616f")
 		(property "Reference" "#PWR0102"
-			(at 200.66 43.18 0)
+			(at 200.66 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1158,7 +1158,7 @@
 			)
 		)
 		(property "Value" "+5VD"
-			(at 193.04 43.1799 90)
+			(at 193.04 36.8299 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1167,7 +1167,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 196.85 43.18 0)
+			(at 196.85 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1176,7 +1176,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 196.85 43.18 0)
+			(at 196.85 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1185,7 +1185,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5VD\""
-			(at 196.85 43.18 0)
+			(at 196.85 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1454,7 +1454,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 196.85 40.64 270)
+		(at 196.85 34.29 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1463,7 +1463,7 @@
 		(fields_autoplaced yes)
 		(uuid "c95b3986-a42a-4f72-97a8-89ab8e0a1820")
 		(property "Reference" "#PWR0101"
-			(at 190.5 40.64 0)
+			(at 190.5 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1472,7 +1472,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 193.04 40.6399 90)
+			(at 193.04 34.2899 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1481,7 +1481,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 196.85 40.64 0)
+			(at 196.85 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1490,7 +1490,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 196.85 40.64 0)
+			(at 196.85 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1499,7 +1499,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 196.85 40.64 0)
+			(at 196.85 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1647,7 +1647,7 @@
 	)
 	(sheet
 		(at 130.81 35.56)
-		(size 27.94 43.18)
+		(size 27.94 52.07)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1671,7 +1671,7 @@
 			)
 		)
 		(property "Sheetfile" "I2C.kicad_sch"
-			(at 130.81 79.3246 0)
+			(at 130.81 88.2146 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1680,7 +1680,7 @@
 			)
 		)
 		(pin "RST" input
-			(at 130.81 40.64 180)
+			(at 130.81 60.96 180)
 			(uuid "9b274bd9-3586-4812-b765-c96f70affb55")
 			(effects
 				(font
@@ -1690,7 +1690,7 @@
 			)
 		)
 		(pin "SCL-5V" input
-			(at 158.75 45.72 0)
+			(at 158.75 39.37 0)
 			(uuid "470ff7c1-928a-4ca6-bf8c-c00bc362cc56")
 			(effects
 				(font
@@ -1700,7 +1700,7 @@
 			)
 		)
 		(pin "SCL0" input
-			(at 130.81 45.72 180)
+			(at 130.81 46.99 180)
 			(uuid "bbc8c76f-c89b-496a-9113-75dc5ddad6e8")
 			(effects
 				(font
@@ -1710,7 +1710,7 @@
 			)
 		)
 		(pin "SDA-5V" input
-			(at 158.75 48.26 0)
+			(at 158.75 41.91 0)
 			(uuid "f5044db8-56dd-4296-80fe-14eb93cc0c2d")
 			(effects
 				(font
@@ -1720,13 +1720,253 @@
 			)
 		)
 		(pin "SDA0" input
-			(at 130.81 48.26 180)
+			(at 130.81 49.53 180)
 			(uuid "039e111f-0af1-42a3-ac56-4ffe5012da75")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(pin "D0" input
+			(at 158.75 66.04 0)
+			(uuid "99dd375c-5667-4dc9-9ba0-16b30dd009fe")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "D1" input
+			(at 158.75 68.58 0)
+			(uuid "dc6eb1ce-d303-45ee-bb41-87b18290a0ca")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "D2" input
+			(at 158.75 71.12 0)
+			(uuid "17875a08-4ea6-4bd8-88a4-bdce4e2bb6d9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "D3" input
+			(at 158.75 73.66 0)
+			(uuid "805411cf-5ceb-449a-8f87-2640c01487d6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "D4" input
+			(at 158.75 76.2 0)
+			(uuid "91ec79f6-4424-40af-bf29-a5b4388619f6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "D5" input
+			(at 158.75 78.74 0)
+			(uuid "30d75ab3-9a0c-4f1b-8ce7-4c19457780d9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "D6" input
+			(at 158.75 81.28 0)
+			(uuid "a6acbfa3-f43b-4cfb-9175-96e255ef261c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "D7" input
+			(at 158.75 83.82 0)
+			(uuid "53ad8b75-121b-4997-90cd-50f97b6c5e4e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "IO0" input
+			(at 130.81 66.04 180)
+			(uuid "92efa4a8-b972-450f-b5f1-91ef3e10a0d8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "IO1" input
+			(at 130.81 68.58 180)
+			(uuid "40504bc8-be42-4887-9e2f-a538733f5d5d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "IO2" input
+			(at 130.81 71.12 180)
+			(uuid "b19aff72-2e68-45c6-992b-4958b1b17a2f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "IO3" input
+			(at 130.81 73.66 180)
+			(uuid "2d2ef3aa-ddb7-4e32-a63d-72548277a603")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "IO4" input
+			(at 130.81 76.2 180)
+			(uuid "e89c7735-2cec-49c7-9463-54b447954231")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "IO5" input
+			(at 130.81 78.74 180)
+			(uuid "2e6cb04f-d620-4ea2-acbf-97b736de1578")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "IO6" input
+			(at 130.81 81.28 180)
+			(uuid "3a6a6cdb-fe01-4294-b8f6-18a9a77222a2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "IO7" input
+			(at 130.81 83.82 180)
+			(uuid "c317f351-cd87-49f3-9150-355d3f94cf8e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SCL" input
+			(at 130.81 39.37 180)
+			(uuid "8131fbb7-8537-4b09-820d-e6a71ac10c9e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SCL1" input
+			(at 130.81 53.34 180)
+			(uuid "6fd11977-4e9d-432d-a64d-491da61c2489")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SCL2" input
+			(at 158.75 46.99 0)
+			(uuid "17119884-3d7a-46be-b4f4-1f2f2d85c561")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SCL3" input
+			(at 158.75 53.34 0)
+			(uuid "141a1e79-fb2a-444a-a224-367dff2a56d7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SDA" input
+			(at 130.81 41.91 180)
+			(uuid "17c84cb2-0175-4057-afd4-c2764a88e14b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SDA1" input
+			(at 130.81 55.88 180)
+			(uuid "ef90a4a9-6570-4d6b-8405-f364821f62e1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SDA2" input
+			(at 158.75 49.53 0)
+			(uuid "35edea57-2de9-4363-8bea-0056a9e27f88")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SDA3" input
+			(at 158.75 55.88 0)
+			(uuid "5dfe3a78-4acd-4514-b6d3-426edabd06a5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
