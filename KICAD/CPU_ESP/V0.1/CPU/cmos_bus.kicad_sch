@@ -2908,7 +2908,7 @@
 		)
 		(uuid "2db27a5e-694b-4586-a023-c8651d5395bb")
 	)
-	(hierarchical_label "RST"
+	(hierarchical_label "RESET"
 		(shape input)
 		(at 151.13 113.03 180)
 		(effects
