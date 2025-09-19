@@ -4,6 +4,12 @@
 	(generator_version "9.0")
 	(uuid "88985e5e-deff-4302-aa49-b1679f85d8f9")
 	(paper "A4")
+	(title_block
+		(title "BUS CMOS")
+		(date "2025-09-17")
+		(rev "V1.0")
+		(company "CMOS-74A")
+	)
 	(lib_symbols
 		(symbol "Connector_Generic:Conn_02x20_Odd_Even"
 			(pin_names

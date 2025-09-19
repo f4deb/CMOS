@@ -578,7 +578,7 @@
       "default_text_size": 50.0,
       "field_names": [
         {
-          "name": "TITLE",
+          "name": "UART",
           "url": false,
           "visible": false
         }

@@ -4,6 +4,12 @@
 	(generator_version "9.0")
 	(uuid "da581ce2-711a-49c6-8583-1ae7ad22a16f")
 	(paper "A4")
+	(title_block
+		(title "POWER SUPPLY")
+		(date "2025-09-17")
+		(rev "V1.0")
+		(company "CMOS-74A")
+	)
 	(lib_symbols
 		(symbol "Device:C_Polarized_Small"
 			(pin_numbers
