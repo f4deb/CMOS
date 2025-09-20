@@ -3916,6 +3916,16 @@
 	)
 	(wire
 		(pts
+			(xy 237.49 93.98) (xy 242.57 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c1cf96a3-038c-4e87-92bc-4617fd8d4857")
+	)
+	(wire
+		(pts
 			(xy 118.11 54.61) (xy 128.27 54.61)
 		)
 		(stroke
@@ -4063,16 +4073,6 @@
 			(type default)
 		)
 		(uuid "e57ccaf2-1d5f-4572-8b9c-f9a550e38f42")
-	)
-	(wire
-		(pts
-			(xy 237.49 93.98) (xy 242.57 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e851ee30-e537-4ddd-af6f-75a5fad1385c")
 	)
 	(wire
 		(pts
@@ -4235,6 +4235,28 @@
 		)
 		(uuid "054585a5-01c9-4de8-9f96-eee0a65f5629")
 	)
+	(hierarchical_label "RX1"
+		(shape input)
+		(at 242.57 76.2 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0bde89f9-dca2-48c2-8a61-89c7ea4d6215")
+	)
+	(hierarchical_label "TX1"
+		(shape input)
+		(at 242.57 78.74 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "122dab4c-1556-4c34-b4d0-c43b1f003974")
+	)
 	(hierarchical_label "CANH"
 		(shape input)
 		(at 73.66 50.8 180)
@@ -4245,6 +4267,17 @@
 			(justify right)
 		)
 		(uuid "16c5b7e2-fb1d-43e4-97b1-5ad82b423324")
+	)
+	(hierarchical_label "PWM0"
+		(shape input)
+		(at 242.57 101.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "23cf91e2-93d9-429b-b670-9be209cc6cf8")
 	)
 	(hierarchical_label "CANL"
 		(shape input)
@@ -4290,7 +4323,7 @@
 		)
 		(uuid "4c351b56-af3c-4fed-a7e9-2e100acc0583")
 	)
-	(hierarchical_label "RX0"
+	(hierarchical_label "RXD0"
 		(shape input)
 		(at 242.57 58.42 0)
 		(effects
@@ -4301,7 +4334,29 @@
 		)
 		(uuid "5beaef95-5f1e-4017-b5b1-e792a5d6aac7")
 	)
-	(hierarchical_label "TX0"
+	(hierarchical_label "SDI"
+		(shape input)
+		(at 201.93 83.82 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6278fdcc-3f92-4db6-9500-51be04bcd80f")
+	)
+	(hierarchical_label "PWM1"
+		(shape input)
+		(at 242.57 104.14 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "672a200c-9b3a-4aee-a848-cc9bbb6dbe10")
+	)
+	(hierarchical_label "TXD0"
 		(shape input)
 		(at 242.57 53.34 0)
 		(effects
@@ -4311,6 +4366,28 @@
 			(justify left)
 		)
 		(uuid "6acbe7b0-79a0-4ad7-9fc3-cee8aa3d67f4")
+	)
+	(hierarchical_label "SCS"
+		(shape input)
+		(at 201.93 93.98 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6ebae750-696e-4e69-bc3a-5834330129ae")
+	)
+	(hierarchical_label "SDA1"
+		(shape input)
+		(at 242.57 81.28 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "74f8ec31-6542-49a9-9846-b59881f5fd1c")
 	)
 	(hierarchical_label "RXD0"
 		(shape input)
@@ -4322,6 +4399,39 @@
 			(justify left)
 		)
 		(uuid "7636ee1b-cbba-4ea6-b365-e04f20a93e95")
+	)
+	(hierarchical_label "SCL1"
+		(shape input)
+		(at 242.57 83.82 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "79f92141-7228-4290-ad04-3b6f9b6dc166")
+	)
+	(hierarchical_label "RX2"
+		(shape input)
+		(at 242.57 106.68 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7f530b97-cf48-49c1-8215-396210462f69")
+	)
+	(hierarchical_label "PWM2"
+		(shape input)
+		(at 242.57 93.98 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "91687b8a-d6e1-49a2-b16b-437f37887c29")
 	)
 	(hierarchical_label "SDA"
 		(shape input)
@@ -4356,6 +4466,39 @@
 		)
 		(uuid "a5bdedad-2e00-44b2-93a3-befa14d089e5")
 	)
+	(hierarchical_label "PWM4"
+		(shape input)
+		(at 242.57 99.06 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ae1677a6-63d6-403e-b072-9c22dc9bfe5a")
+	)
+	(hierarchical_label "PWM3"
+		(shape input)
+		(at 242.57 96.52 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c0b298ae-6d51-4e3b-b8fd-45833f390ad4")
+	)
+	(hierarchical_label "TX2"
+		(shape input)
+		(at 242.57 109.22 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "cecb25e6-1c48-46f6-94a6-08310ea441c9")
+	)
 	(hierarchical_label "VCCUSB"
 		(shape input)
 		(at 39.37 139.7 180)
@@ -4377,6 +4520,28 @@
 			(justify left)
 		)
 		(uuid "e6a6bc6c-606b-4471-b919-5faf4c87c41c")
+	)
+	(hierarchical_label "SCK"
+		(shape input)
+		(at 201.93 91.44 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ec4fb58b-9dc7-4add-9f31-a87ea1c35412")
+	)
+	(hierarchical_label "SDO"
+		(shape input)
+		(at 201.93 81.28 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "fee4f3c0-55bd-4d4b-af78-da444821b2bd")
 	)
 	(symbol
 		(lib_id "power:GND")
