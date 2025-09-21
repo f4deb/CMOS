@@ -3637,7 +3637,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_Tactile_SKHH_Angled"
+		(property "Footprint" "Button_Switch_SMD:SW_SPST_CK_RS282G05A3"
 			(at 125.73 106.68 0)
 			(effects
 				(font
@@ -3665,6 +3665,15 @@
 			)
 		)
 		(property "TITLE" ""
+			(at 125.73 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "UART" ""
 			(at 125.73 106.68 0)
 			(effects
 				(font
