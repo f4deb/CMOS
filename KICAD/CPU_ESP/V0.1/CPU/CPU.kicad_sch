@@ -1475,6 +1475,16 @@
 	)
 	(wire
 		(pts
+			(xy 210.82 69.85) (xy 220.98 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a90b4ae-fc96-471d-88ef-70055cd6990b")
+	)
+	(wire
+		(pts
 			(xy 55.88 173.99) (xy 66.04 173.99)
 		)
 		(stroke
@@ -2383,6 +2393,16 @@
 		)
 		(uuid "f5514bc1-4b30-47aa-984e-ac41372bc90b")
 	)
+	(wire
+		(pts
+			(xy 210.82 72.39) (xy 220.98 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb474190-477d-4a23-9018-5fa47bcd0e45")
+	)
 	(label "SCL"
 		(at 191.77 111.76 180)
 		(effects
@@ -2973,6 +2993,16 @@
 		)
 		(uuid "79a4eee6-b77f-4036-a206-636e2f6dc78b")
 	)
+	(label "SCL-5V"
+		(at 213.36 69.85 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7b86b9fa-bd2f-4948-811c-39db07cf3739")
+	)
 	(label "RESET"
 		(at 146.05 44.45 0)
 		(effects
@@ -3382,6 +3412,16 @@
 			(justify left bottom)
 		)
 		(uuid "db12c074-7737-4048-a7e7-0a12f6dbf3ab")
+	)
+	(label "SDA-5V"
+		(at 213.36 72.39 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "dc6325da-a8c7-47df-abb4-3c8098b3ed04")
 	)
 	(label "SCL1"
 		(at 191.77 102.87 180)
@@ -4508,6 +4548,68 @@
 			(project "CPU"
 				(path "/a676c576-12a0-418f-9fc1-1ecc8cb5a083"
 					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 220.98 66.04)
+		(size 13.97 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "da2cedd6-811a-461f-b684-ce79a421759c")
+		(property "Sheetname" "SEVEN SEGMENTS"
+			(at 220.98 65.3284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "sevensegments.kicad_sch"
+			(at 220.98 92.0246 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "SCL-5V" input
+			(at 220.98 69.85 180)
+			(uuid "ac133e92-47c4-4ed1-8ca8-d48964e89e37")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SDA-5V" input
+			(at 220.98 72.39 180)
+			(uuid "b4e52ed6-637d-48a1-9696-548a06c32e4b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "CPU"
+				(path "/a676c576-12a0-418f-9fc1-1ecc8cb5a083"
+					(page "6")
 				)
 			)
 		)

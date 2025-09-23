@@ -5281,7 +5281,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 110.49 140.208 90)
 			(effects
 				(font
@@ -5300,6 +5300,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 110.49 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "UART" ""
 			(at 110.49 138.43 0)
 			(effects
 				(font
@@ -5951,7 +5960,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 110.49 145.288 90)
 			(effects
 				(font
@@ -5970,6 +5979,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 110.49 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "UART" ""
 			(at 110.49 143.51 0)
 			(effects
 				(font
@@ -6102,7 +6120,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 132.08 160.02 0)
 			(effects
 				(font
@@ -6130,6 +6148,15 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 132.08 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "UART" ""
 			(at 132.08 160.02 0)
 			(effects
 				(font
@@ -6814,6 +6841,15 @@
 			)
 		)
 		(property "TITLE" ""
+			(at 110.49 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "UART" ""
 			(at 110.49 148.59 0)
 			(effects
 				(font
@@ -7740,7 +7776,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 120.65 160.02 0)
 			(effects
 				(font
@@ -7768,6 +7804,15 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 120.65 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "UART" ""
 			(at 120.65 160.02 0)
 			(effects
 				(font
@@ -7960,7 +8005,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_1008_2520Metric"
 			(at 29.21 156.21 0)
 			(effects
 				(font
@@ -7979,6 +8024,15 @@
 			)
 		)
 		(property "Description" "Inductor, small symbol"
+			(at 29.21 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "UART" ""
 			(at 29.21 156.21 0)
 			(effects
 				(font
@@ -8027,7 +8081,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 110.49 142.748 90)
 			(effects
 				(font
@@ -8046,6 +8100,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 110.49 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "UART" ""
 			(at 110.49 140.97 0)
 			(effects
 				(font

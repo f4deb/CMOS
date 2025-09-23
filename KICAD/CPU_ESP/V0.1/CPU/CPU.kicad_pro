@@ -652,6 +652,10 @@
     [
       "e0edd836-6dd9-4021-881c-9988957e888f",
       "CMOS_BUS"
+    ],
+    [
+      "da2cedd6-811a-461f-b684-ce79a421759c",
+      "SEVEN SEGMENTS"
     ]
   ],
   "text_variables": {}
