@@ -2700,7 +2700,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:SO-24_5.3x15mm_P1.27mm"
+		(property "Footprint" "Package_SO:SOP-24_7.5x15.4mm_P1.27mm"
 			(at 90.805 92.075 0)
 			(effects
 				(font
@@ -2724,6 +2724,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "UART" ""
+			(at 137.16 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
