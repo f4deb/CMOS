@@ -980,12 +980,20 @@
 		(uuid "e6f7a5d7-2dd3-4afa-a061-fa391486eaf7")
 	)
 	(no_connect
+		(at 102.87 167.64)
+		(uuid "0a204e4e-5939-4bbf-9082-5c69e196063a")
+	)
+	(no_connect
 		(at 102.87 180.34)
 		(uuid "405bc275-68ff-4c39-b9e0-74fd33e3da0b")
 	)
 	(no_connect
 		(at 55.88 135.89)
 		(uuid "62ba5f85-43d2-4d2a-854f-b08e685d4e00")
+	)
+	(no_connect
+		(at 102.87 165.1)
+		(uuid "a895aed2-a3b5-4ab9-b88d-f44e8b820d7e")
 	)
 	(no_connect
 		(at 242.57 54.61)
@@ -1162,6 +1170,16 @@
 			(type default)
 		)
 		(uuid "215339e0-0962-4b1d-8c3a-9ababb4e09d4")
+	)
+	(wire
+		(pts
+			(xy 182.88 73.66) (xy 193.04 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2232695e-94b6-4c23-b529-cb2a9869e5c7")
 	)
 	(wire
 		(pts
@@ -1532,6 +1550,16 @@
 			(type default)
 		)
 		(uuid "68bcb5ba-8912-405b-85ed-9ab44c94d622")
+	)
+	(wire
+		(pts
+			(xy 182.88 71.12) (xy 193.04 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6bd7476c-bf14-41a8-8d43-2136ae8f6d3d")
 	)
 	(wire
 		(pts
@@ -2563,16 +2591,6 @@
 		)
 		(uuid "37f14a5d-1786-4f84-a756-e6efa10281b1")
 	)
-	(label "TX0"
-		(at 97.79 167.64 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "383499a4-c63d-48bb-b841-79cb70da7dd0")
-	)
 	(label "SCL2-E"
 		(at 191.77 30.48 180)
 		(effects
@@ -2993,6 +3011,16 @@
 		)
 		(uuid "9be0cf04-4e8f-4c21-8910-420d85f9cf7a")
 	)
+	(label "SCL1"
+		(at 187.96 71.12 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9cf40d76-bef8-4552-8449-302178569225")
+	)
 	(label "RS"
 		(at 101.6 138.43 180)
 		(effects
@@ -3062,6 +3090,16 @@
 			(justify right bottom)
 		)
 		(uuid "adfd7425-2cd8-4a04-ad73-8fd7b737bfae")
+	)
+	(label "SDA1"
+		(at 187.96 73.66 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ae62edf6-da70-44d7-9fc4-1a74201a2c16")
 	)
 	(label "TX1"
 		(at 148.59 133.35 0)
@@ -3392,16 +3430,6 @@
 			(justify right bottom)
 		)
 		(uuid "f1178980-c31a-48b2-b1a2-fcc1537b2ca0")
-	)
-	(label "RX0"
-		(at 97.79 165.1 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "f8bde588-4f97-4276-8812-e6da520cae75")
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x04")
@@ -5060,7 +5088,7 @@
 	)
 	(sheet
 		(at 154.94 19.05)
-		(size 27.94 52.578)
+		(size 27.94 64.008)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -5084,7 +5112,7 @@
 			)
 		)
 		(property "Sheetfile" "I2C.kicad_sch"
-			(at 154.94 72.2126 0)
+			(at 154.94 83.6426 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5383,13 +5411,23 @@
 			)
 		)
 		(pin "SCL1" input
-			(at 154.94 71.628 270)
+			(at 182.88 71.12 0)
 			(uuid "b38981bf-5227-4c35-88a1-7aecad367ce3")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
+			)
+		)
+		(pin "SDA1" input
+			(at 182.88 73.66 0)
+			(uuid "34d1a4f1-b20a-4f3a-aa7f-5fecde260c99")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
