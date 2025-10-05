@@ -1207,7 +1207,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Interface_Expansion:MCP23017_SO"
+		(symbol "Interface_Expansion:MCP23017_SS"
 			(pin_names
 				(offset 1.016)
 			)
@@ -1222,7 +1222,7 @@
 					)
 				)
 			)
-			(property "Value" "MCP23017_SO"
+			(property "Value" "MCP23017_SS"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1230,7 +1230,7 @@
 					)
 				)
 			)
-			(property "Footprint" "Package_SO:SOIC-28W_7.5x17.9mm_P1.27mm"
+			(property "Footprint" "Package_SO:SSOP-28_5.3x10.2mm_P0.65mm"
 				(at 5.08 -25.4 0)
 				(effects
 					(font
@@ -1250,7 +1250,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "16-bit I/O expander, I2C, interrupts, w pull-ups, GPA/B7 output only (https://microchip.my.site.com/s/article/GPA7---GPB7-Cannot-Be-Used-as-Inputs-In-MCP23017),  SOIC-28"
+			(property "Description" "16-bit I/O expander, I2C, interrupts, w pull-ups, SSOP-28"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1268,7 +1268,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "SOIC*7.5x17.9mm*P1.27mm*"
+			(property "ki_fp_filters" "SSOP*5.3x10.2mm*P0.65mm*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1277,7 +1277,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "MCP23017_SO_0_1"
+			(symbol "MCP23017_SS_0_1"
 				(rectangle
 					(start -12.7 22.86)
 					(end 12.7 -22.86)
@@ -1290,7 +1290,7 @@
 					)
 				)
 			)
-			(symbol "MCP23017_SO_1_1"
+			(symbol "MCP23017_SS_1_1"
 				(pin bidirectional line
 					(at -17.78 20.32 0)
 					(length 5.08)
@@ -8619,6 +8619,156 @@
 		)
 	)
 	(symbol
+		(lib_id "Interface_Expansion:MCP23017_SS")
+		(at 193.04 128.27 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ae074415-a20d-41b2-8b8a-e59c6a8fa256")
+		(property "Reference" "U205"
+			(at 195.1833 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MCP23017_SS"
+			(at 195.1833 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:SSOP-28_5.3x10.2mm_P0.65mm"
+			(at 198.12 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ww1.microchip.com/downloads/aemDocuments/documents/APID/ProductDocuments/DataSheets/MCP23017-Data-Sheet-DS20001952.pdf"
+			(at 198.12 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "16-bit I/O expander, I2C, interrupts, w pull-ups, SSOP-28"
+			(at 193.04 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "2d983bbd-7102-474e-84e8-e08cac737848")
+		)
+		(pin "25"
+			(uuid "f1df38bb-90dd-4f71-a164-65032106b978")
+		)
+		(pin "3"
+			(uuid "a0a5e562-1614-48bd-9857-6b839af28202")
+		)
+		(pin "27"
+			(uuid "d9c2dfde-a6d0-49b1-b95e-1b4158ccc3e0")
+		)
+		(pin "16"
+			(uuid "53dd1157-af93-4e0c-9907-c46592269d02")
+		)
+		(pin "22"
+			(uuid "d86df1be-a196-4e6b-8ddc-4616fea76616")
+		)
+		(pin "21"
+			(uuid "09ebc7a7-8987-487c-9b8b-f239f4685873")
+		)
+		(pin "15"
+			(uuid "1212df50-2376-4b3a-be96-fabae4634daa")
+		)
+		(pin "24"
+			(uuid "1d9e695b-01fc-4db8-a481-b6b60a6d0944")
+		)
+		(pin "28"
+			(uuid "124d5ec3-e48e-4c2f-99be-96add3a15837")
+		)
+		(pin "14"
+			(uuid "0b912001-0a80-4609-b2aa-68dfb8d48363")
+		)
+		(pin "23"
+			(uuid "ce5f9c40-772e-4e28-92fd-859633cf78a0")
+		)
+		(pin "11"
+			(uuid "31148586-3890-4800-a2ff-4892fb4aa073")
+		)
+		(pin "26"
+			(uuid "6cd4f4bd-a126-42d4-a083-c3e9920ebf00")
+		)
+		(pin "6"
+			(uuid "09dfd731-33aa-48cb-b08d-3ebf9ec914b0")
+		)
+		(pin "5"
+			(uuid "a45c6cb0-6e7a-4816-a48e-d52f43435c7b")
+		)
+		(pin "4"
+			(uuid "88b0dae1-5d4f-438f-80e1-e7a2ae37cdef")
+		)
+		(pin "1"
+			(uuid "fc8a2d9f-7ea3-4a90-94c9-29051c7c9fcc")
+		)
+		(pin "19"
+			(uuid "63e32a56-40e5-4eec-a5f6-73d69b9959da")
+		)
+		(pin "17"
+			(uuid "33447dca-4d8b-4321-ba4c-637c319707e3")
+		)
+		(pin "18"
+			(uuid "198c2cb6-8052-4884-84dd-5993b1f02ca7")
+		)
+		(pin "20"
+			(uuid "9637c81c-7740-4322-8c67-eac695c8d6fe")
+		)
+		(pin "12"
+			(uuid "7f75d248-0278-440e-aa97-d0206b5da58e")
+		)
+		(pin "9"
+			(uuid "15a89091-4ea3-4800-b9e6-3e1989ef592e")
+		)
+		(pin "13"
+			(uuid "f18b4e2e-8b77-45a7-8e99-b06f7016de36")
+		)
+		(pin "7"
+			(uuid "b919c732-2f6a-4b55-aa6b-ceda03ac3bbc")
+		)
+		(pin "8"
+			(uuid "fa43955c-cf2d-423a-a5d5-38a49b9180d1")
+		)
+		(pin "10"
+			(uuid "9ab8a4c0-ffdb-4375-bb1b-db225ca66b8b")
+		)
+		(instances
+			(project ""
+				(path "/a676c576-12a0-418f-9fc1-1ecc8cb5a083/ebcf0d9a-523d-4f37-81f9-63d54b289420"
+					(reference "U205")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3.3V")
 		(at 166.37 25.4 0)
 		(unit 1)
@@ -9731,156 +9881,6 @@
 			(project "CPU"
 				(path "/a676c576-12a0-418f-9fc1-1ecc8cb5a083/ebcf0d9a-523d-4f37-81f9-63d54b289420"
 					(reference "R213")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Interface_Expansion:MCP23017_SO")
-		(at 193.04 128.27 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ef53b232-2c9a-447b-98bd-503e5ba47b44")
-		(property "Reference" "U205"
-			(at 195.1833 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MCP23017_SO"
-			(at 195.1833 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-28W_7.5x17.9mm_P1.27mm"
-			(at 198.12 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://ww1.microchip.com/downloads/aemDocuments/documents/APID/ProductDocuments/DataSheets/MCP23017-Data-Sheet-DS20001952.pdf"
-			(at 198.12 156.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "16-bit I/O expander, I2C, interrupts, w pull-ups, GPA/B7 output only (https://microchip.my.site.com/s/article/GPA7---GPB7-Cannot-Be-Used-as-Inputs-In-MCP23017),  SOIC-28"
-			(at 193.04 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "26"
-			(uuid "f044ab70-6592-412a-8a4a-619b663dc814")
-		)
-		(pin "13"
-			(uuid "7fff015b-f91a-479b-b31d-4c58d0c351df")
-		)
-		(pin "24"
-			(uuid "8718f1a2-26c3-4406-914a-e5c53cf4a958")
-		)
-		(pin "15"
-			(uuid "b8ee3cc8-c3f4-42f8-86c9-a9f8df6338bb")
-		)
-		(pin "8"
-			(uuid "da6498da-6f82-4090-952a-daa6276c60fb")
-		)
-		(pin "18"
-			(uuid "430224ec-b5d6-49a5-8080-0d7418471f1b")
-		)
-		(pin "23"
-			(uuid "fe507f6c-b930-4695-a7af-a967725fa972")
-		)
-		(pin "14"
-			(uuid "9567ba33-dc07-4290-8b96-6f0740fcb821")
-		)
-		(pin "20"
-			(uuid "ebc12445-bc04-462f-9e00-9da668d62cd8")
-		)
-		(pin "7"
-			(uuid "36b28821-b20a-47f3-bc99-2d209ffc6455")
-		)
-		(pin "19"
-			(uuid "517a3a9a-2d6e-4b46-bfe3-75407cb75257")
-		)
-		(pin "12"
-			(uuid "d51e62f9-e696-4dff-b59a-548305f372f4")
-		)
-		(pin "25"
-			(uuid "8be116e0-0cb5-4077-b112-d118216ca0d4")
-		)
-		(pin "5"
-			(uuid "4a170bff-31f8-4e08-9ec9-c3faac3ae804")
-		)
-		(pin "1"
-			(uuid "56a04c4d-a7fd-4d90-a445-238e1f9d1c1b")
-		)
-		(pin "3"
-			(uuid "7000eb46-3f1f-497e-9ac1-f7d5661cc024")
-		)
-		(pin "4"
-			(uuid "24cc0d28-3b6d-47ed-b1d6-7d4bc44ac70f")
-		)
-		(pin "17"
-			(uuid "fac49026-c726-4eee-b5db-b88cafb23595")
-		)
-		(pin "28"
-			(uuid "a8e9a722-a97a-4a64-bb3c-3e087777d035")
-		)
-		(pin "11"
-			(uuid "108a8365-725b-4a28-8f35-445d101167d0")
-		)
-		(pin "2"
-			(uuid "28a07be9-ac53-465e-8e3b-37ce3509b517")
-		)
-		(pin "21"
-			(uuid "67aa51ae-bc1e-4da5-907a-47e52f7a8b30")
-		)
-		(pin "22"
-			(uuid "44936d9a-11b8-4f50-956b-ef55c7c39d43")
-		)
-		(pin "10"
-			(uuid "9efa5d8c-c4e3-4327-9642-bb10c6080cf1")
-		)
-		(pin "16"
-			(uuid "a9a047e4-6b16-4f01-b0f8-23dd37eeb549")
-		)
-		(pin "6"
-			(uuid "e559f12e-cd93-44ee-adc1-e1f80b8c03a8")
-		)
-		(pin "27"
-			(uuid "26f06284-f66e-454f-b1a3-e778f4dce6e8")
-		)
-		(pin "9"
-			(uuid "2d1697ad-463a-4f68-91e9-f7e4282ba147")
-		)
-		(instances
-			(project "CPU"
-				(path "/a676c576-12a0-418f-9fc1-1ecc8cb5a083/ebcf0d9a-523d-4f37-81f9-63d54b289420"
-					(reference "U205")
 					(unit 1)
 				)
 			)

@@ -1323,16 +1323,6 @@
 	)
 	(wire
 		(pts
-			(xy 144.8539 44.4107) (xy 155.0139 44.4107)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3d8730a2-ed5a-437f-8328-9ae2cc450603")
-	)
-	(wire
-		(pts
 			(xy 144.78 59.69) (xy 154.94 59.69)
 		)
 		(stroke
@@ -1810,6 +1800,16 @@
 			(type default)
 		)
 		(uuid "978dffa5-42bf-48d3-bf22-b3afab04e43d")
+	)
+	(wire
+		(pts
+			(xy 144.78 44.45) (xy 154.94 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98798b84-1f96-44a9-939e-9a837cc60ae9")
 	)
 	(wire
 		(pts
@@ -2881,16 +2881,6 @@
 		)
 		(uuid "7b86b9fa-bd2f-4948-811c-39db07cf3739")
 	)
-	(label "RESET"
-		(at 146.05 44.45 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "7bcc66e8-4813-4500-bd89-7d39c5219233")
-	)
 	(label "IO0"
 		(at 146.05 49.53 0)
 		(effects
@@ -3060,6 +3050,26 @@
 			(justify left bottom)
 		)
 		(uuid "a48ea505-e410-4624-adba-84b5e4e7c98e")
+	)
+	(label "RESET"
+		(at 146.05 109.22 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a58a9d18-6b31-479d-ba08-e5fc4b5df715")
+	)
+	(label "RESET"
+		(at 146.05 44.45 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a630edea-4438-4a6f-9caf-da3e2212a9a9")
 	)
 	(label "SCK"
 		(at 101.6 152.4 180)
@@ -3459,7 +3469,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Harwin:Harwin_M20-89004xx_1x04_P2.54mm_Horizontal"
+		(property "Footprint" "Connector_JST:JST_GH_SM04B-GHS-TB_1x04-1MP_P1.25mm_Horizontal"
 			(at 240.03 29.21 0)
 			(effects
 				(font
@@ -3487,6 +3497,15 @@
 			)
 		)
 		(property "TITLE" ""
+			(at 240.03 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "UART" ""
 			(at 240.03 29.21 0)
 			(effects
 				(font
