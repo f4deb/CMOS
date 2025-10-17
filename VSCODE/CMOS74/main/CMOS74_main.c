@@ -24,13 +24,16 @@
 #include "argtable3/argtable3.h"
 #include "driver/i2c_master.h"
 
-/* #include "led_strip.h"
+#include "../components/blueLed/include/blueLed.h"
+#include "../components/charUtils/include/charUtils.h"
+#include "../components/interface/include/interface.h"
+#include "../components/led_strip/include/led_strip.h"
+#include "../components/uartCommand/include/uartCommand.h"
+
+/*
 
 #include "../components/uartCommand/include/uartCommand.h"
-#include "../components/blueLed/include/blueLed.h"
 #include "../components/clock/include/clock.h"
-#include "../components/interface/include/interface.h"
-#include "../components/charUtils/include/charUtils.h"
 #include "../components/Oled/include/Oled.h"
 #include "../components/I2c/include/I2c.h"
 #include "../components/8IoButtonBoard/include/8IoButtonBoard.h"
@@ -88,6 +91,6 @@ void app_main(void){
     
     //   Blink Task
     while (1) {
-        //blinkBlueLed(getTimeBlink(), getRatioBlink());    
+        blinkBlueLed(getTimeBlink(), getRatioBlink());    
     }
 }

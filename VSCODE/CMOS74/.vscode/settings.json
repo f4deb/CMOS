@@ -4,6 +4,8 @@
   "idf.toolsPath": "/home/f4deb/Documents/F4DEB-ESP32/",
   "idf.pythonInstallPath": "/usr/bin/python3",
   "files.associations": {
-    "gpio.h": "c"
+    "gpio.h": "c",
+    "uartcommand.h": "c",
+    "interface.h": "c"
   }
 }
