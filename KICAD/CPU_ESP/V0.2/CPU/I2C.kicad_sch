@@ -5847,7 +5847,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10n"
+		(property "Value" "10p"
 			(at 41.91 59.6899 0)
 			(effects
 				(font
@@ -6718,7 +6718,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_1206_3216Metric"
+		(property "Footprint" "Diode_SMD:D_2010_5025Metric_Pad1.52x2.65mm_HandSolder"
 			(at 21.59 29.21 0)
 			(effects
 				(font
@@ -6746,6 +6746,15 @@
 			)
 		)
 		(property "TITLE" ""
+			(at 21.59 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "UART" ""
 			(at 21.59 29.21 0)
 			(effects
 				(font
@@ -6875,7 +6884,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+		(property "Footprint" "Package_SO:MSOP-8_3x3mm_P0.65mm"
 			(at 30.226 105.41 0)
 			(effects
 				(font
@@ -6903,6 +6912,15 @@
 			)
 		)
 		(property "TITLE" ""
+			(at 33.02 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "UART" ""
 			(at 33.02 105.41 0)
 			(effects
 				(font

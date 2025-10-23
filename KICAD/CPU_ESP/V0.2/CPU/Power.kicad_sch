@@ -1126,7 +1126,7 @@
 		(uuid "05dea6ea-9b65-4eeb-a48c-f33f839e8857")
 	)
 	(junction
-		(at 124.46 72.39)
+		(at 132.08 72.39)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "404f03f7-2806-4765-9364-677db02a448e")
@@ -1144,6 +1144,12 @@
 		(uuid "90f18f3f-f968-4017-a812-be1581349bdb")
 	)
 	(junction
+		(at 124.46 72.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "98052c51-8cde-4343-92de-e817215114fc")
+	)
+	(junction
 		(at 110.49 72.39)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1158,6 +1164,16 @@
 			(type default)
 		)
 		(uuid "00c0c036-7608-4c36-a40a-1b3f6212e72f")
+	)
+	(wire
+		(pts
+			(xy 124.46 72.39) (xy 124.46 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f0858cf-bd94-482b-97ff-2a37388a10ea")
 	)
 	(wire
 		(pts
@@ -1211,7 +1227,7 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 72.39) (xy 124.46 72.39)
+			(xy 138.43 72.39) (xy 132.08 72.39)
 		)
 		(stroke
 			(width 0)
@@ -1251,7 +1267,7 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 78.74) (xy 124.46 81.28)
+			(xy 132.08 78.74) (xy 132.08 81.28)
 		)
 		(stroke
 			(width 0)
@@ -1271,7 +1287,17 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 72.39) (xy 124.46 73.66)
+			(xy 124.46 78.74) (xy 124.46 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8f9543a3-3af8-4251-a2be-da464644898e")
+	)
+	(wire
+		(pts
+			(xy 132.08 72.39) (xy 132.08 73.66)
 		)
 		(stroke
 			(width 0)
@@ -1311,6 +1337,16 @@
 	)
 	(wire
 		(pts
+			(xy 124.46 72.39) (xy 132.08 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae1de3d6-26ae-4f86-98f0-928f8466438f")
+	)
+	(wire
+		(pts
 			(xy 102.87 91.44) (xy 102.87 93.98)
 		)
 		(stroke
@@ -1321,7 +1357,7 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 72.39) (xy 115.57 72.39)
+			(xy 115.57 72.39) (xy 124.46 72.39)
 		)
 		(stroke
 			(width 0)
@@ -1779,6 +1815,72 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 124.46 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5bb3f7bb-9df9-442f-80cc-b429ee3addd5")
+		(property "Reference" "#PWR01"
+			(at 124.46 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 124.46 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 124.46 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 124.46 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 124.46 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e9253d6d-783f-4caf-a757-5b8a0620c829")
+		)
+		(instances
+			(project "CPU"
+				(path "/a676c576-12a0-418f-9fc1-1ecc8cb5a083/dfa41f31-372e-4922-9bef-c0e343f2f76b"
+					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 171.45 81.28 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1911,7 +2013,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 124.46 81.28 0)
+		(at 132.08 81.28 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1920,7 +2022,7 @@
 		(fields_autoplaced yes)
 		(uuid "669fb1c6-e732-46a4-97d2-30017b5f8e65")
 		(property "Reference" "#PWR0304"
-			(at 124.46 87.63 0)
+			(at 132.08 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1929,7 +2031,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 124.46 86.36 0)
+			(at 132.08 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1937,7 +2039,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 124.46 81.28 0)
+			(at 132.08 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1946,7 +2048,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 124.46 81.28 0)
+			(at 132.08 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1955,7 +2057,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 124.46 81.28 0)
+			(at 132.08 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2060,7 +2162,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22µ"
+		(property "Value" "10µ/10V"
 			(at 173.99 76.9238 0)
 			(effects
 				(font
@@ -2069,7 +2171,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B"
+		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3216-12_Kemet-S_HandSolder"
 			(at 171.45 76.2 0)
 			(effects
 				(font
@@ -2105,6 +2207,15 @@
 				(hide yes)
 			)
 		)
+		(property "UART" ""
+			(at 171.45 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "da2c8fe6-8181-49b2-b56d-68b2de4cd3a2")
 		)
@@ -2122,7 +2233,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 124.46 76.2 0)
+		(at 132.08 76.2 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2131,7 +2242,7 @@
 		(fields_autoplaced yes)
 		(uuid "a2e77831-860f-4fc3-bbdf-1a90f9e9f0fe")
 		(property "Reference" "C302"
-			(at 127 74.9362 0)
+			(at 134.62 74.9362 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2140,7 +2251,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 127 77.4762 0)
+			(at 134.62 77.4762 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2149,7 +2260,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 124.46 76.2 0)
+			(at 132.08 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2158,7 +2269,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 124.46 76.2 0)
+			(at 132.08 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2167,7 +2278,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 124.46 76.2 0)
+			(at 132.08 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2328,16 +2439,102 @@
 	)
 	(symbol
 		(lib_id "Device:C_Polarized_Small")
+		(at 124.46 76.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f7b2f946-d959-4471-b545-8e51d1374897")
+		(property "Reference" "C305"
+			(at 121.92 70.612 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10µ/10V"
+			(at 120.65 73.914 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3216-12_Kemet-S_HandSolder"
+			(at 124.46 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 124.46 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Polarized capacitor, small symbol"
+			(at 124.46 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "TITLE" ""
+			(at 124.46 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "UART" ""
+			(at 124.46 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a4e4fd3a-b42e-4e95-9a61-7fa49cec2ec2")
+		)
+		(pin "1"
+			(uuid "3209d6f3-be85-4d2a-b967-d23d7ec03ae3")
+		)
+		(instances
+			(project "CPU"
+				(path "/a676c576-12a0-418f-9fc1-1ecc8cb5a083/dfa41f31-372e-4922-9bef-c0e343f2f76b"
+					(reference "C305")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized_Small")
 		(at 115.57 76.2 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "f905cf98-8dd5-497b-bf75-234eabeff51c")
 		(property "Reference" "C301"
-			(at 118.11 74.3838 0)
+			(at 113.03 70.358 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2345,8 +2542,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22µ"
-			(at 118.11 76.9238 0)
+		(property "Value" "10µ/10V"
+			(at 111.252 74.168 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2354,7 +2551,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3216-10_Kemet-I"
+		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3216-12_Kemet-S_HandSolder"
 			(at 115.57 76.2 0)
 			(effects
 				(font
@@ -2382,6 +2579,15 @@
 			)
 		)
 		(property "TITLE" ""
+			(at 115.57 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "UART" ""
 			(at 115.57 76.2 0)
 			(effects
 				(font
