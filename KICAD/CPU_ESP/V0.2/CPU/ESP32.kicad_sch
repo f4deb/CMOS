@@ -7,7 +7,7 @@
 	(title_block
 		(title "UART")
 		(date "2025-09-17")
-		(rev "V1.0")
+		(rev "V0.2")
 		(company "CMOS-74A")
 	)
 	(lib_symbols
@@ -2629,6 +2629,416 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Transistor_BJT:BC807"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "Q"
+				(at 5.08 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "BC807"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+				(at 5.08 -1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC808-D.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description" "0.8A Ic, 45V Vce, PNP Transistor, SOT-23"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "PNP Transistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOT?23*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "BC807_0_1"
+				(polyline
+					(pts
+						(xy -2.54 0) (xy 0.635 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 1.905) (xy 0.635 -1.905)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 0.635) (xy 2.54 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 -0.635) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.27 0)
+					(radius 2.8194)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.286 -1.778) (xy 1.778 -2.286) (xy 1.27 -1.27) (xy 2.286 -1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "BC807_1_1"
+				(pin input line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(name "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "E"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Transistor_BJT:BC817"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "Q"
+				(at 5.08 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "BC817"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+				(at 5.08 -1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC818-D.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description" "0.8A Ic, 45V Vce, NPN Transistor, SOT-23"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "NPN Transistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOT?23*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "BC817_0_1"
+				(polyline
+					(pts
+						(xy -2.54 0) (xy 0.635 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 1.905) (xy 0.635 -1.905)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.27 0)
+					(radius 2.8194)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "BC817_1_1"
+				(polyline
+					(pts
+						(xy 0.635 0.635) (xy 2.54 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 -0.635) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.778) (xy 1.778 -1.27) (xy 2.286 -2.286) (xy 1.27 -1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(pin input line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(name "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "E"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:+3.3V"
 			(power)
 			(pin_numbers
@@ -2981,6 +3391,56 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "VERT"
+		(exclude_from_sim no)
+		(at 216.916 39.878 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "149c55b6-afe5-4e3d-a3fb-da27ba747e98")
+	)
+	(text "ROUGE"
+		(exclude_from_sim no)
+		(at 232.664 40.132 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "89fdd43e-2562-44bb-bccf-4cbefd7cfaae")
+	)
+	(text "IO34&IO35 READ ONLY"
+		(exclude_from_sim no)
+		(at 196.596 116.332 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "9dcdcc90-0cd5-4bd5-984e-18f8995b36c7")
+	)
+	(text "VERT"
+		(exclude_from_sim no)
+		(at 243.332 40.386 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "e0b22c60-f44e-47b9-99ba-f534315b5365")
+	)
+	(text "ROUGE"
+		(exclude_from_sim no)
+		(at 259.08 40.386 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "f1901ff4-995e-4a96-9563-5f2171e4903e")
+	)
 	(junction
 		(at 33.02 156.21)
 		(diameter 0)
@@ -3004,6 +3464,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2796abde-bf99-45a2-bbde-21909a2332fb")
+	)
+	(junction
+		(at 153.67 140.97)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4aa479fe-eb44-4020-9ba2-c07edbe0960f")
 	)
 	(junction
 		(at 132.08 154.94)
@@ -3089,6 +3555,12 @@
 		(color 0 0 0 0)
 		(uuid "da070113-11a8-4c4d-b0df-38692bfa0ac6")
 	)
+	(junction
+		(at 154.94 154.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ec79e0ce-2506-4f1c-9515-fb8142e8d878")
+	)
 	(no_connect
 		(at 101.6 173.99)
 		(uuid "075a31e9-26f5-4701-a9c9-7411bc6f9409")
@@ -3104,10 +3576,6 @@
 	(no_connect
 		(at 101.6 156.21)
 		(uuid "5b625d5a-b4e9-4c70-83ed-d81a1fa857af")
-	)
-	(no_connect
-		(at 114.3 148.59)
-		(uuid "7f32162a-6ccd-4826-9e9b-65e4130d466a")
 	)
 	(no_connect
 		(at 60.96 161.29)
@@ -3148,6 +3616,16 @@
 			(type default)
 		)
 		(uuid "03cdd218-8cf7-429e-ad7e-fc514f864221")
+	)
+	(wire
+		(pts
+			(xy 172.72 161.29) (xy 181.61 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "063827ea-da3e-4abf-bf6d-67a4dfd3e0fd")
 	)
 	(wire
 		(pts
@@ -3208,6 +3686,16 @@
 			(type default)
 		)
 		(uuid "1154efda-49f3-4a0e-81a2-3fbe8cf24f20")
+	)
+	(wire
+		(pts
+			(xy 247.65 62.23) (xy 247.65 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "11f9ecd4-5406-46e1-9db3-2eb9a5399800")
 	)
 	(wire
 		(pts
@@ -3361,6 +3849,16 @@
 	)
 	(wire
 		(pts
+			(xy 172.72 149.86) (xy 172.72 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29b188a7-cd99-4b3f-b99c-a041b9a38322")
+	)
+	(wire
+		(pts
 			(xy 190.5 59.69) (xy 226.06 59.69)
 		)
 		(stroke
@@ -3368,6 +3866,16 @@
 			(type default)
 		)
 		(uuid "2c7db095-f4b9-4d51-a220-fa544e456d41")
+	)
+	(wire
+		(pts
+			(xy 114.3 148.59) (xy 123.19 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ff94435-b42d-4ddc-a0fc-6bd2bdbad77f")
 	)
 	(wire
 		(pts
@@ -3398,6 +3906,26 @@
 			(type default)
 		)
 		(uuid "37b684e8-b95b-4f5c-b040-a289cb112559")
+	)
+	(wire
+		(pts
+			(xy 163.83 140.97) (xy 165.1 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "394395a9-064f-4627-b52f-865bdded6d1c")
+	)
+	(wire
+		(pts
+			(xy 153.67 140.97) (xy 156.21 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ac4bec6-d7ac-4f5b-a685-f9ded1f8f832")
 	)
 	(wire
 		(pts
@@ -3448,6 +3976,16 @@
 			(type default)
 		)
 		(uuid "43b4f78a-aa5a-45d1-9949-9a2a6820e949")
+	)
+	(wire
+		(pts
+			(xy 172.72 147.32) (xy 154.94 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46cbf02c-5195-4368-a665-e378f687d27f")
 	)
 	(wire
 		(pts
@@ -3571,6 +4109,16 @@
 	)
 	(wire
 		(pts
+			(xy 154.94 154.94) (xy 156.21 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "570d42a9-595b-4328-8c2f-1c687b34556e")
+	)
+	(wire
+		(pts
 			(xy 76.2 184.15) (xy 58.42 184.15)
 		)
 		(stroke
@@ -3658,6 +4206,36 @@
 			(type default)
 		)
 		(uuid "67224ede-824c-4105-8bd2-560732e61145")
+	)
+	(wire
+		(pts
+			(xy 172.72 148.59) (xy 153.67 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67429a8b-3a21-42b3-ad34-be0bb63772e3")
+	)
+	(wire
+		(pts
+			(xy 172.72 146.05) (xy 172.72 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6895059b-e85d-42e7-a43c-2cfdffddce1c")
+	)
+	(wire
+		(pts
+			(xy 172.72 135.89) (xy 172.72 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c3d980e-54a2-4f79-8a15-21e75384e22e")
 	)
 	(wire
 		(pts
@@ -3801,6 +4379,26 @@
 	)
 	(wire
 		(pts
+			(xy 163.83 154.94) (xy 165.1 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a54b2bc-0977-4630-9cef-53159f5ab894")
+	)
+	(wire
+		(pts
+			(xy 149.86 140.97) (xy 153.67 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8cdf461d-0281-466a-906b-09ac9236ab92")
+	)
+	(wire
+		(pts
 			(xy 154.94 85.09) (xy 160.02 85.09)
 		)
 		(stroke
@@ -3818,16 +4416,6 @@
 			(type default)
 		)
 		(uuid "8dbf01d4-b08f-4a29-b021-e2afe7b3c173")
-	)
-	(wire
-		(pts
-			(xy 190.5 107.95) (xy 247.65 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8ed7701e-079a-4ca4-90ea-d3e1cb072cb0")
 	)
 	(wire
 		(pts
@@ -3868,6 +4456,16 @@
 			(type default)
 		)
 		(uuid "9362d6ce-5587-485c-b799-221fef2c474c")
+	)
+	(wire
+		(pts
+			(xy 172.72 160.02) (xy 172.72 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "93a35ff2-335c-4e1e-8bb9-a40e3872a3ed")
 	)
 	(wire
 		(pts
@@ -4011,16 +4609,6 @@
 	)
 	(wire
 		(pts
-			(xy 247.65 52.07) (xy 247.65 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ab5e1c0b-156e-4523-990f-5b7462c37385")
-	)
-	(wire
-		(pts
 			(xy 43.18 49.53) (xy 43.18 43.18)
 		)
 		(stroke
@@ -4051,7 +4639,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 62.23) (xy 195.58 62.23)
+			(xy 190.5 62.23) (xy 247.65 62.23)
 		)
 		(stroke
 			(width 0)
@@ -4121,6 +4709,16 @@
 	)
 	(wire
 		(pts
+			(xy 172.72 134.62) (xy 181.61 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd9d8a3b-7473-4ef3-b79a-11748ea80262")
+	)
+	(wire
+		(pts
 			(xy 190.5 92.71) (xy 195.58 92.71)
 		)
 		(stroke
@@ -4141,6 +4739,16 @@
 	)
 	(wire
 		(pts
+			(xy 154.94 147.32) (xy 154.94 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c72ada7f-fba8-4525-994f-6ca1627ceb8f")
+	)
+	(wire
+		(pts
 			(xy 43.18 165.1) (xy 43.18 166.37)
 		)
 		(stroke
@@ -4148,6 +4756,16 @@
 			(type default)
 		)
 		(uuid "ca9bdf7c-b3bc-4596-bec7-c5583fd641e2")
+	)
+	(wire
+		(pts
+			(xy 153.67 148.59) (xy 153.67 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "caa120a7-005d-48e5-aa89-6685f8b40e4a")
 	)
 	(wire
 		(pts
@@ -4321,6 +4939,16 @@
 	)
 	(wire
 		(pts
+			(xy 190.5 107.95) (xy 195.58 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed683adc-fa10-4ade-96f9-e8929cfdd838")
+	)
+	(wire
+		(pts
 			(xy 220.98 41.91) (xy 220.98 44.45)
 		)
 		(stroke
@@ -4421,6 +5049,16 @@
 	)
 	(wire
 		(pts
+			(xy 149.86 154.94) (xy 154.94 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fdcf8df4-2356-420c-be78-4906bb7ac9d5")
+	)
+	(wire
+		(pts
 			(xy 223.52 24.13) (xy 223.52 26.67)
 		)
 		(stroke
@@ -4428,6 +5066,46 @@
 			(type default)
 		)
 		(uuid "ffbf7475-d1c5-438a-89f7-b956baa1544f")
+	)
+	(label "RTS"
+		(at 149.86 154.94 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "23d98e50-e102-4b09-afc1-8021d8ef1441")
+	)
+	(label "BOOT"
+		(at 196.85 49.53 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2a21d3ae-91ab-4908-9564-fa73b23ff55f")
+	)
+	(label "RTS"
+		(at 119.38 143.51 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "40e20400-7525-4915-9292-995f9d3c800d")
+	)
+	(label "DTR"
+		(at 119.38 148.59 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "69089783-eca6-4258-84fa-fc4bcce39209")
 	)
 	(label "CAN-TX"
 		(at 151.13 54.61 0)
@@ -4439,6 +5117,16 @@
 		)
 		(uuid "70cd991b-816a-454b-a249-bf02a68750ca")
 	)
+	(label "BOOT"
+		(at 177.8 161.29 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "88cb94b1-de26-404b-b63d-0b031e7865b3")
+	)
 	(label "CAN-TX"
 		(at 73.66 46.99 0)
 		(effects
@@ -4448,6 +5136,26 @@
 			(justify left bottom)
 		)
 		(uuid "a2a60c1b-929e-499d-ae1f-788a2fce13e8")
+	)
+	(label "DTR"
+		(at 149.86 140.97 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c35034fc-c008-41d9-9222-294598387755")
+	)
+	(label "RESET"
+		(at 175.26 134.62 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ce7d95b6-9106-4f9b-93f4-ce2290ab3149")
 	)
 	(label "CAN-RX"
 		(at 73.66 49.53 0)
@@ -4570,7 +5278,7 @@
 	)
 	(hierarchical_label "T2CK"
 		(shape input)
-		(at 195.58 62.23 0)
+		(at 195.58 107.95 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4603,7 +5311,7 @@
 	)
 	(hierarchical_label "RESET"
 		(shape input)
-		(at 123.19 143.51 0)
+		(at 181.61 134.62 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4853,6 +5561,82 @@
 			(justify right)
 		)
 		(uuid "fee4f3c0-55bd-4d4b-af78-da444821b2bd")
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 160.02 140.97 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "11461b72-70a8-4b86-b8e5-fccc74c23d8c")
+		(property "Reference" "R415"
+			(at 160.274 138.684 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 160.02 140.97 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 160.02 142.748 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 160.02 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 160.02 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "UART" ""
+			(at 160.02 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f5d5e399-1568-46eb-ab4b-f8e076bd631b")
+		)
+		(pin "2"
+			(uuid "a049b64b-8ee4-4825-8cd9-1a15771c91b9")
+		)
+		(instances
+			(project ""
+				(path "/a676c576-12a0-418f-9fc1-1ecc8cb5a083/3fae016e-6e0f-4cd9-b4b1-dc965be68ffa"
+					(reference "R415")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -5525,6 +6309,82 @@
 		)
 	)
 	(symbol
+		(lib_id "Transistor_BJT:BC807")
+		(at 170.18 154.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "41e668c8-c0b2-4af6-8c10-eb35cc9c0e79")
+		(property "Reference" "Q402"
+			(at 175.26 153.6699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BC807"
+			(at 175.26 156.2099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 175.26 156.845 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC808-D.pdf"
+			(at 170.18 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.8A Ic, 45V Vce, PNP Transistor, SOT-23"
+			(at 170.18 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "808b9251-ddd1-45eb-b8ab-b5a21ba2da62")
+		)
+		(pin "2"
+			(uuid "9d0dab69-1f67-4a38-bc3b-e9e2dc0418e1")
+		)
+		(pin "3"
+			(uuid "35564707-6ba2-4581-9152-a7d3759e8fe7")
+		)
+		(instances
+			(project ""
+				(path "/a676c576-12a0-418f-9fc1-1ecc8cb5a083/3fae016e-6e0f-4cd9-b4b1-dc965be68ffa"
+					(reference "Q402")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3.3V")
 		(at 132.08 153.67 0)
 		(unit 1)
@@ -5808,7 +6668,7 @@
 		(dnp no)
 		(uuid "60ddbce9-0304-465f-96d3-633647460787")
 		(property "Reference" "C404"
-			(at 201.93 47.498 0)
+			(at 212.09 44.704 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5817,7 +6677,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 201.93 45.7138 0)
+			(at 212.09 46.736 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6591,7 +7451,7 @@
 				)
 			)
 		)
-		(property "Value" "4k7"
+		(property "Value" "330"
 			(at 110.49 163.83 90)
 			(effects
 				(font
@@ -6627,6 +7487,15 @@
 			)
 		)
 		(property "TITLE" ""
+			(at 110.49 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "UART" ""
 			(at 110.49 163.83 0)
 			(effects
 				(font
@@ -6746,7 +7615,7 @@
 				)
 			)
 		)
-		(property "Value" "NC"
+		(property "Value" "0"
 			(at 110.236 148.59 90)
 			(effects
 				(font
@@ -7421,7 +8290,7 @@
 				)
 			)
 		)
-		(property "Value" "4k7"
+		(property "Value" "330"
 			(at 110.49 166.37 90)
 			(effects
 				(font
@@ -7457,6 +8326,15 @@
 			)
 		)
 		(property "TITLE" ""
+			(at 110.49 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "UART" ""
 			(at 110.49 166.37 0)
 			(effects
 				(font
@@ -7541,6 +8419,82 @@
 			(project ""
 				(path "/a676c576-12a0-418f-9fc1-1ecc8cb5a083/3fae016e-6e0f-4cd9-b4b1-dc965be68ffa"
 					(reference "#PWR0402")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 160.02 154.94 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c46e7dcc-fc35-44d7-b6b6-a1ac4b3bc3db")
+		(property "Reference" "R416"
+			(at 160.274 152.4 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 160.02 154.94 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 160.02 156.718 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 160.02 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 160.02 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "UART" ""
+			(at 160.02 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "bcca96bb-a432-4fff-9837-0ad1c4b81423")
+		)
+		(pin "1"
+			(uuid "3b15baf1-1f0d-447a-9b8d-e95813f12630")
+		)
+		(instances
+			(project ""
+				(path "/a676c576-12a0-418f-9fc1-1ecc8cb5a083/3fae016e-6e0f-4cd9-b4b1-dc965be68ffa"
+					(reference "R416")
 					(unit 1)
 				)
 			)
@@ -7838,6 +8792,82 @@
 			(project ""
 				(path "/a676c576-12a0-418f-9fc1-1ecc8cb5a083/3fae016e-6e0f-4cd9-b4b1-dc965be68ffa"
 					(reference "#PWR0410")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_BJT:BC817")
+		(at 170.18 140.97 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d4e82bf6-9fcd-4f6b-95a7-c07de82813bf")
+		(property "Reference" "Q401"
+			(at 175.26 139.6999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BC817"
+			(at 175.26 142.2399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 175.26 142.875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC818-D.pdf"
+			(at 170.18 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.8A Ic, 45V Vce, NPN Transistor, SOT-23"
+			(at 170.18 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "69057157-6ea6-4172-ae9c-03d3390b9143")
+		)
+		(pin "2"
+			(uuid "336c8edf-c1be-4c6e-9977-b70072822b66")
+		)
+		(pin "1"
+			(uuid "452fe62e-28a8-44b5-8ee1-ca5fa84301b6")
+		)
+		(instances
+			(project ""
+				(path "/a676c576-12a0-418f-9fc1-1ecc8cb5a083/3fae016e-6e0f-4cd9-b4b1-dc965be68ffa"
+					(reference "Q401")
 					(unit 1)
 				)
 			)

@@ -7,5 +7,7 @@
     "gpio.h": "c",
     "uartcommand.h": "c",
     "interface.h": "c"
-  }
+  },
+  "idf.port": "/dev/ttyUSB0",
+  "idf.flashType": "UART"
 }
