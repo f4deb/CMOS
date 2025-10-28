@@ -1,11 +1,12 @@
-#ifndef BLUE_LED_H
-#define BLUE_LED_H
+#ifndef CPU_LED_H
+#define CPU_LED_H
 
 #include <stdint.h>
 
-#define BLUE_LED_DEBUG 0
+#define CPU_LED_DEBUG 0
 
-#define BLUE_LED_GPIO CONFIG_BLUE_LED_GPIO
+#define LED1_RED_GPIO CONFIG_LED1_RED_GPIO
+#define LED1_GREEN_GPIO CONFIG_LED1_GREEN_GPIO
 
 uint32_t getTimeBlink (void);
 uint32_t getRatioBlink (void);

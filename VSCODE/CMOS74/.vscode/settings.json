@@ -6,7 +6,12 @@
   "files.associations": {
     "gpio.h": "c",
     "uartcommand.h": "c",
-    "interface.h": "c"
+    "interface.h": "c",
+    "blueled.h": "c",
+    "sdkconfig.h": "c",
+    "uart.h": "c",
+    "cpuled.h": "c",
+    "charutils.h": "c"
   },
   "idf.port": "/dev/ttyUSB0",
   "idf.flashType": "UART"

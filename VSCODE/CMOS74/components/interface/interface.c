@@ -9,8 +9,8 @@
 #include "esp_log.h"
 
 #include "../uartCommand/include/uartCommand.h"
-#include "../blueLed/include/blueLed.h"
-#include "../blueLed/include/blueLedInterface.h"
+#include "../cpuLed/include/cpuLed.h"
+#include "../cpuLed/include/cpuLedInterface.h"
 //#include "../clock/include/clockInterface.h"
 //#include "../8IoButtonBoard/include/8IoButtonBoardInterface.h"
 //#include "../Oled/include/OledInterface.h"

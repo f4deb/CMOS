@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-#include "blueLedInterface.h"
+#include "cpuLedInterface.h"
 
 #include "sdkconfig.h"
 
@@ -9,7 +9,7 @@
 
 #include "../charUtils/include/charUtils.h"
 
-#include "../blueLed/include/blueLed.h"
+#include "../cpuLed/include/cpuLed.h"
 #include "../interface/include/interface.h"
 #include "../uartCommand/include/uartCommand.h"
 #include "../../../../esp-idf/components/esp_driver_uart/include/driver/uart.h"

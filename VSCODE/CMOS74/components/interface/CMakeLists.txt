@@ -1,10 +1,10 @@
 idf_component_register(SRCS "interface.c" 
                             "../charUtils/charUtils.c"
-                            "../blueLed/blueLedInterface.c" 
+                            "../cpuLed/cpuLedInterface.c" 
                             
 INCLUDE_DIRS "include" 
             "../charUtils/include"
-			"../blueLed/include/" 
+			"../cpuLed/include/" 
             
             "$ENV{IDF_PATH}/components/nvs_flash/include"
             "$ENV{IDF_PATH}/components/esp_event/include"

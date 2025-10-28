@@ -24,7 +24,7 @@
 #include "argtable3/argtable3.h"
 #include "driver/i2c_master.h"
 
-#include "../components/blueLed/include/blueLed.h"
+#include "../components/cpuLed/include/cpuLed.h"
 #include "../components/charUtils/include/charUtils.h"
 #include "../components/interface/include/interface.h"
 #include "../components/led_strip/include/led_strip.h"
@@ -45,7 +45,7 @@ static const char *TAG_MAIN = "Main : ";
 void init(){
 
     /* Configure the peripheral according to the LED type */
-    //configure_led();
+    configure_led();
 
     //I2cBusInit();  
     //i2c_dev_pcf8574_init();
