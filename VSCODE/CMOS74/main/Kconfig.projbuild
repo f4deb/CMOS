@@ -78,7 +78,7 @@ menu "Cpu Led1 Configuration"
     config LED1_RED_GPIO
         int "Blink GPIO number"
         range ENV_GPIO_RANGE_MIN ENV_GPIO_OUT_RANGE_MAX
-        default 4
+        default 2
         help
             GPIO number (IOxx) to blink on and off the LED.
             Some GPIOs are used for other purposes (flash connections, etc.) and cannot be used to blink.

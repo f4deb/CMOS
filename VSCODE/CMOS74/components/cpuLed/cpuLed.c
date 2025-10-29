@@ -35,7 +35,7 @@ void setRatioBlink (uint32_t value){
 }
 
 void configure_led(void){
-    ESP_LOGI(TAG_CPU_LED, "Blue Led configured to blink GPIO LED!");
+    ESP_LOGI(TAG_CPU_LED, "Cpu Led configured to blink GPIO LED!");
     gpio_reset_pin(LED1_RED_GPIO);
     /* Set the GPIO as a push/pull output */
     gpio_set_direction(LED1_RED_GPIO, GPIO_MODE_OUTPUT);
