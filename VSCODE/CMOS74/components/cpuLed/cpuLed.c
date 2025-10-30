@@ -13,10 +13,39 @@
 
 
 static const char *TAG_CPU_LED = "CPU_LED";
+
+static uint8_t s_led1_red_state = 0;
+static uint8_t s_led1_green_state = 0;
+static uint8_t s_led2_red_state = 0;
+static uint8_t s_led2_green_state = 0;
 static uint8_t s_led_state = 0;
 
 uint32_t timeBlink ;
 uint32_t ratioBlink;
+
+void readStatusLed(uint8_t led){   
+    switch (led)
+        {
+        case CPU_LED1_RED: s_led_state = s_led1_red_state; break;
+        case CPU_LED1_GREEN: s_led_state = s_led1_green_state; break;
+        case CPU_LED2_RED: s_led_state = s_led1_red_state; break;
+        case CPU_LED2_GREEN: s_led_state = s_led1_green_state; break;
+        default:
+            break;
+        }
+}
+
+void writeStatusLed(uint8_t led){   
+    switch (led)
+        {
+        case CPU_LED1_RED: s_led1_red_state = s_led_state; break;
+        case CPU_LED1_GREEN: s_led1_green_state = s_led_state; break;
+        case CPU_LED2_RED: s_led1_red_state = s_led_state; break;
+        case CPU_LED2_GREEN: s_led1_green_state = s_led_state; break;
+        default:
+            break;
+        }
+}
 
 uint32_t getTimeBlink (void){
     return timeBlink;
@@ -44,8 +73,11 @@ void configure_led(void){
     setRatioBlink(CONFIG_LED1_RED_RATIO);
 }
 
-void blinkBlueLed(uint32_t time, uint32_t ratio){
-    //ESP_LOGI(TAG_CPU_LED, "Turning the LED %s!", s_led_state == true ? "ON" : "OFF");
+void blinkCpuLed(uint8_t led, uint32_t time, uint32_t ratio){
+
+    readStatusLed(led);
+
+    //ESP_LOGI(TAG_CPU_LED, "Turning the LED %s!", s_led1_red_state == true ? "ON" : "OFF");
     /* Toggle the LED state */
     s_led_state = !s_led_state;
     /* Set the GPIO level according to the state (LOW or HIGH)*/
@@ -53,18 +85,21 @@ void blinkBlueLed(uint32_t time, uint32_t ratio){
 
     if (s_led_state) vTaskDelay(pdMS_TO_TICKS(time * ratio /100));
     else vTaskDelay(pdMS_TO_TICKS(time - (time * ratio /100)));
+
+    writeStatusLed(led);
+
 }
 
 void setBlueLed(uint8_t ledStatus){
     ESP_LOGI(TAG_CPU_LED, "Turning the LED %s!", ledStatus == true ? "ON" : "OFF");
     /* Toggle the LED state */
-    s_led_state = ledStatus;
+    s_led1_red_state = ledStatus;
     /* Set the GPIO level according to the state (LOW or HIGH)*/
-    gpio_set_level(LED1_RED_GPIO, s_led_state);
+    gpio_set_level(LED1_RED_GPIO, s_led1_red_state);
 }
 
 uint8_t getBlueLed(void){
 
-    if (CPU_LED_DEBUG) ESP_LOGI(TAG_CPU_LED, "Return the LED Status %s!", s_led_state == true ? "ON" : "OFF");
-    return s_led_state;
+    if (CPU_LED_DEBUG) ESP_LOGI(TAG_CPU_LED, "Return the LED Status %s!", s_led1_red_state == true ? "ON" : "OFF");
+    return s_led1_red_state;
 }
