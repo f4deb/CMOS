@@ -20,8 +20,38 @@ static uint8_t s_led2_red_state = 0;
 static uint8_t s_led2_green_state = 0;
 static uint8_t s_led_state = 0;
 
+static CpuLedParam led1;
+static CpuLedParam led2;
+
 uint32_t timeBlink ;
 uint32_t ratioBlink;
+
+void initCpuLed (void){
+    led1.ledNumber = 1;
+
+    led1.ledRedPinNumber = LED1_RED_GPIO;
+    led1.ledRedStatus = 0;
+    led1.ledRedTimeBlink = CONFIG_LED1_RED_PERIOD;  
+    led1.ledRedRatioBlink = CONFIG_LED1_RED_RATIO;
+
+    led1.ledGreenPinNumber = LED1_GREEN_GPIO;
+    led1.ledGreenStatus = 0;
+    led1.ledGreenTimeBlink = CONFIG_LED1_GREEN_PERIOD;
+    led1.ledGreenRatioBlink = CONFIG_LED1_GREEN_RATIO;
+
+    led2.ledNumber = 2;
+
+    led2.ledRedPinNumber = LED2_RED_GPIO;
+    led2.ledRedStatus = 0;
+    led2.ledRedTimeBlink = CONFIG_LED2_RED_PERIOD;  
+    led2.ledRedRatioBlink = CONFIG_LED2_RED_RATIO;
+
+    led2.ledGreenPinNumber = LED2_GREEN_GPIO;
+    led2.ledGreenStatus = 0;
+    led2.ledGreenTimeBlink = CONFIG_LED2_GREEN_PERIOD;
+    led2.ledGreenRatioBlink = CONFIG_LED2_GREEN_RATIO;
+
+}
 
 void readStatusLed(uint8_t led){   
     switch (led)

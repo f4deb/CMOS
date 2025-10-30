@@ -15,6 +15,18 @@
 #define LED2_RED_GPIO CONFIG_LED2_RED_GPIO
 #define LED2_GREEN_GPIO CONFIG_LED2_GREEN_GPIO
 
+typedef struct {
+    uint8_t ledNumber;
+    uint8_t ledRedPinNumber;
+    uint8_t ledGreenPinNumber;
+    uint8_t ledRedStatus;
+    uint8_t ledGreenStatus;    
+    uint8_t ledRedTimeBlink;
+    uint8_t ledGreenTimeBlink;
+    uint8_t ledRedRatioBlink;
+    uint8_t ledGreenRatioBlink;
+} CpuLedParam;
+
 void readStatusLed(uint8_t led);
 void writeStatusLed(uint8_t led);  
 
