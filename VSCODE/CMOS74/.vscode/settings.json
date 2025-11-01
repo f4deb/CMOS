@@ -11,7 +11,8 @@
     "sdkconfig.h": "c",
     "uart.h": "c",
     "cpuled.h": "c",
-    "charutils.h": "c"
+    "charutils.h": "c",
+    "cstdint": "c"
   },
   "idf.port": "/dev/ttyUSB0",
   "idf.flashType": "UART"

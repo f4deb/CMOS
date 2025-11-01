@@ -91,6 +91,6 @@ void app_main(void){
     
     //   Blink Task
     while (1) {
-        blinkCpuLed(CPU_LED1_GREEN, getTimeBlink(), getRatioBlink());    
+        blinkCpuLed(0,LED_GREEN, getTimeBlink(), getRatioBlink());    
     }
 }
