@@ -133,46 +133,44 @@ CpuLed getLed1(void){
     return led1;
 }
 
+void initLed(CpuLed led, uint8_t color){
+    ESP_LOGI(TAG_CPU_LED, "Cpu Led configured to blink GPIO LED!");
+    gpio_reset_pin(getLedGpio(led, color));
+    /* Set the GPIO as a push/pull output */
+    gpio_set_direction(getLedGpio(led, color), GPIO_MODE_OUTPUT);
+
+    setTimeBlink(getLedPeriod(led,color));
+    setRatioBlink(getLedRatio(led,color));
+
+    gpio_set_level(getLedGpio(led, color), 1);
+}
+
 
 void configure_led(void){
-
     initCpuLed();
-
-    ESP_LOGI(TAG_CPU_LED, "Cpu Led configured to blink GPIO LED!");
-    gpio_reset_pin(getLedGpio(led1, LED_GREEN));
-    /* Set the GPIO as a push/pull output */
-    gpio_set_direction(getLedGpio(led1, LED_GREEN), GPIO_MODE_OUTPUT);
-
-    setTimeBlink(getLedPeriod(led1,LED_GREEN));
-    setRatioBlink(getLedRatio(led1,LED_GREEN));
+    initLed(led1,LED_GREEN);
+    initLed(led1,LED_RED);
+    initLed(led2,LED_GREEN);
+    initLed(led2,LED_RED);
 }
 
 void blinkCpuLed(CpuLed led, uint8_t color){
     uint8_t status;
-    ESP_LOGI(TAG_CPU_LED, "Turning the LED %s!", led.Green.status == true ? "ON" : "OFF");
-
+    ESP_LOGI(TAG_CPU_LED, "Turning the LED %s!", getLedStatus(led, color) == true ? "OFF" : "ON");
 
     /* Toggle the LED state */
 
-	printf("l adresse de led est : %p\n",&led);
-	printf("l adresse de led1 est : %p\n",&led1);
+	//printf("l adresse de led est : %p\n",&led);
+	//printf("l adresse de led1 est : %p\n",&led1);
 
     status = getLedStatus(led, color);
-
     setLedStatus(led, color, !status);
-
-
-
-
-
-
-
 
     /* Set the GPIO level according to the state (LOW or HIGH)*/
     gpio_set_level(getLedGpio(led, color), getLedStatus(led, color));
 
-    if (getLedStatus(led,color)) vTaskDelay(pdMS_TO_TICKS(led.Green.period * led.Green.ratio /100));
-    else vTaskDelay(pdMS_TO_TICKS(led.Green.period - (led.Green.period * led.Green.ratio /100)));
+    if (getLedStatus(led,color)) vTaskDelay(pdMS_TO_TICKS(getLedPeriod(led,color) * getLedRatio(led,color) /100));
+    else vTaskDelay(pdMS_TO_TICKS(getLedPeriod(led,color) - (getLedPeriod(led,color) * getLedRatio(led,color) /100)));
 }
 
 void setBlueLevd(uint8_t ledStatus){

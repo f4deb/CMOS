@@ -91,6 +91,7 @@ void app_main(void){
     
     //   Blink Task
     while (1) {
-        blinkCpuLed( getLed1(),  LED_GREEN);    
+        blinkCpuLed( getLed1(),  LED_GREEN);            
+        blinkCpuLed( getLed1(),  LED_RED);    
     }
 }
