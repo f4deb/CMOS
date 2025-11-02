@@ -12,7 +12,8 @@
     "uart.h": "c",
     "cpuled.h": "c",
     "charutils.h": "c",
-    "cstdint": "c"
+    "cstdint": "c",
+    "ratio": "c"
   },
   "idf.port": "/dev/ttyUSB0",
   "idf.flashType": "UART"

@@ -120,6 +120,20 @@ uint8_t getLedStatus(CpuLed led,uint8_t color){
     return result;
 }
 
+void setLedStatus (CpuLed led, uint8_t color,uint8_t status) {
+        if (color == LED_RED){
+            led1.Red.status = status;
+        }
+        else if (color == LED_GREEN){
+            led1.Green.status = status;        
+        } 
+}
+
+CpuLed getLed1(void){
+    return led1;
+}
+
+
 void configure_led(void){
 
     initCpuLed();
@@ -133,21 +147,35 @@ void configure_led(void){
     setRatioBlink(getLedRatio(led1,LED_GREEN));
 }
 
-void blinkCpuLed(uint8_t led,uint8_t color, uint32_t time, uint32_t ratio){
+void blinkCpuLed(CpuLed led, uint8_t color){
+    uint8_t status;
+    ESP_LOGI(TAG_CPU_LED, "Turning the LED %s!", led.Green.status == true ? "ON" : "OFF");
 
 
-
-    //ESP_LOGI(TAG_CPU_LED, "Turning the LED %s!", s_led1_red_state == true ? "ON" : "OFF");
     /* Toggle the LED state */
-    led1.Green.status = !led1.Green.status;
-    /* Set the GPIO level according to the state (LOW or HIGH)*/
-    gpio_set_level(getLedGpio(led1, LED_GREEN), getLedStatus(led1, LED_GREEN));
 
-    if (led1.Green.status) vTaskDelay(pdMS_TO_TICKS(time * ratio /100));
-    else vTaskDelay(pdMS_TO_TICKS(time - (time * ratio /100)));
+	printf("l adresse de led est : %p\n",&led);
+	printf("l adresse de led1 est : %p\n",&led1);
+
+    status = getLedStatus(led, color);
+
+    setLedStatus(led, color, !status);
+
+
+
+
+
+
+
+
+    /* Set the GPIO level according to the state (LOW or HIGH)*/
+    gpio_set_level(getLedGpio(led, color), getLedStatus(led, color));
+
+    if (getLedStatus(led,color)) vTaskDelay(pdMS_TO_TICKS(led.Green.period * led.Green.ratio /100));
+    else vTaskDelay(pdMS_TO_TICKS(led.Green.period - (led.Green.period * led.Green.ratio /100)));
 }
 
-void setBlueLed(uint8_t ledStatus){
+void setBlueLevd(uint8_t ledStatus){
     ESP_LOGI(TAG_CPU_LED, "Turning the LED %s!", ledStatus == true ? "ON" : "OFF");
     /* Toggle the LED state */
     s_led1_red_state = ledStatus;
