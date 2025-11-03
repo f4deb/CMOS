@@ -12,6 +12,9 @@
 #define LED2_RED_GPIO CONFIG_LED2_RED_GPIO
 #define LED2_GREEN_GPIO CONFIG_LED2_GREEN_GPIO
 
+#define LED1 0
+#define LED2 1
+
 #define LED_RED 0
 #define LED_GREEN 1
 
@@ -38,7 +41,7 @@ void setTimeBlink (uint32_t value);
 void setRatioBlink (uint32_t value);
 
 
-CpuLed getLed1(void);
+CpuLed getLed(uint8_t led);
 
 void configure_led(void);
 void blinkCpuLed(CpuLed led, uint8_t color);

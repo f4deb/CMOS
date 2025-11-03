@@ -24,10 +24,38 @@ static uint8_t s_led_state = 0;
 static CpuLed led1;
 static CpuLed led2;
 
+
 uint32_t timeBlink ;
 uint32_t ratioBlink;
 
+
+
+
+
+void initCpu2Led(CpuLed* led){
+
+
+
+    led->value = 13;
+
+    printf("la valeur  de ledd est : %d\n",led1.value);
+
+    led->value = 1;
+    led->Red.value = LED_RED;
+    led->Green.value = LED_GREEN;
+
+
+    led->Red.status = 0;
+    led->Red.pinNumber = CONFIG_LED1_RED_GPIO;
+    led->Red.period = CONFIG_LED1_RED_PERIOD;
+    led->Red.ratio = CONFIG_LED1_RED_RATIO;
+
+}
+
+
 void initCpuLed (void){
+
+    initCpu2Led(&led1);
     led1.Red.value = LED_RED;
     led1.Green.value = LED_GREEN;
     led1.value = 1;
@@ -120,17 +148,30 @@ uint8_t getLedStatus(CpuLed led,uint8_t color){
     return result;
 }
 
-void setLedStatus (CpuLed led, uint8_t color,uint8_t status) {
+void setLedStatus (CpuLed led,uint8_t color,uint8_t status) {        
+    if (led1.value == LED1){
         if (color == LED_RED){
             led1.Red.status = status;
         }
         else if (color == LED_GREEN){
             led1.Green.status = status;        
         } 
+    }
+    else if (led1.value == LED2){    
+        if (color == LED_RED){
+            led1.Red.status = status;
+        }
+        else if (color == LED_GREEN){
+            led1.Green.status = status;        
+        }
+    }    
 }
 
-CpuLed getLed1(void){
-    return led1;
+CpuLed getLed(uint8_t led){
+    CpuLed result;
+    if (led == LED1) result = led1;
+    else if (led==LED2) result = led2;
+    return result;
 }
 
 void initLed(CpuLed led, uint8_t color){
