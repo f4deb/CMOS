@@ -32,60 +32,49 @@ uint32_t ratioBlink;
 
 
 
-void initCpu2Led(CpuLed* led){
+void initCpu2Led(CpuLed* led, int reference ){
+
+    if (reference == LED1 ) { 
+        led->value = LED1;
+        led->Red.value = LED_RED;
+        led->Green.value = LED_GREEN;
 
 
+        led->Red.status = 0;
+        led->Red.pinNumber = CONFIG_LED1_RED_GPIO;
+        led->Red.period = CONFIG_LED1_RED_PERIOD;
+        led->Red.ratio = CONFIG_LED1_RED_RATIO;
 
-    led->value = 13;
+        led->Green.status=0;
+        led->Green.pinNumber = CONFIG_LED1_GREEN_GPIO;
+        led->Green.period = CONFIG_LED1_GREEN_PERIOD;
+        led->Green.ratio = CONFIG_LED1_GREEN_RATIO;
+    }
+    else if (reference == LED2 )
+    {
+        led->value = LED2;
+        led->Red.value = LED_RED;
+        led->Green.value = LED_GREEN;
 
-    printf("la valeur  de ledd est : %d\n",led1.value);
 
-    led->value = 1;
-    led->Red.value = LED_RED;
-    led->Green.value = LED_GREEN;
+        led->Red.status = 0;
+        led->Red.pinNumber = CONFIG_LED2_RED_GPIO;
+        led->Red.period = CONFIG_LED2_RED_PERIOD;
+        led->Red.ratio = CONFIG_LED2_RED_RATIO;
 
-
-    led->Red.status = 0;
-    led->Red.pinNumber = CONFIG_LED1_RED_GPIO;
-    led->Red.period = CONFIG_LED1_RED_PERIOD;
-    led->Red.ratio = CONFIG_LED1_RED_RATIO;
-
+        led->Green.status=0;
+        led->Green.pinNumber = CONFIG_LED2_GREEN_GPIO;
+        led->Green.period = CONFIG_LED2_GREEN_PERIOD;
+        led->Green.ratio = CONFIG_LED2_GREEN_RATIO;
+    }
+    
 }
 
 
 void initCpuLed (void){
 
-    initCpu2Led(&led1);
-    led1.Red.value = LED_RED;
-    led1.Green.value = LED_GREEN;
-    led1.value = 1;
-
-    led1.Red.status = 0;
-    led1.Red.pinNumber = CONFIG_LED1_RED_GPIO;
-    led1.Red.period = CONFIG_LED1_RED_PERIOD;
-    led1.Red.ratio = CONFIG_LED1_RED_RATIO;
-
-    led1.Green.status = 0;
-    led1.Green.pinNumber = CONFIG_LED1_GREEN_GPIO;
-    led1.Green.period = CONFIG_LED1_GREEN_PERIOD;
-    led1.Green.ratio = CONFIG_LED1_GREEN_RATIO;
-
-    
-    
-    led2.Red.value = LED_RED;
-    led2.Green.value = LED_GREEN;
-    led2.value = 1;
-
-    led2.Red.status = 0;
-    led2.Red.pinNumber = CONFIG_LED1_RED_GPIO;
-    led2.Red.period = CONFIG_LED1_RED_PERIOD;
-    led2.Red.ratio = CONFIG_LED1_RED_RATIO;
-
-    led2.Green.status = 0;
-    led2.Green.pinNumber = CONFIG_LED1_GREEN_GPIO;
-    led2.Green.period = CONFIG_LED1_GREEN_PERIOD;
-    led2.Green.ratio = CONFIG_LED1_GREEN_RATIO;
-
+    initCpu2Led(&led1, LED1);
+    initCpu2Led(&led2, LED2);
 }
 
 uint32_t getTimeBlink (void){
