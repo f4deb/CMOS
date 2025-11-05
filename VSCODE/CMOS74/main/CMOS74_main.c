@@ -54,13 +54,13 @@ void init(){
 
 
     //UART COMMAND Task
-    /*xTaskCreate(command_uart_task, 
+    xTaskCreate(command_uart_task, 
                 "uart_command_task", 
                 COMMAND_TASK_STACK_SIZE, 
                 NULL,
                 1, 
                 NULL);
-
+/*
     // CLOCK Task
     xTaskCreate(clock_task,
                 "clock_task",
@@ -76,14 +76,14 @@ void init(){
                 NULL, 
                 3, 
                 NULL);               
-              
+
     // INTERFACE TASK
     xTaskCreate(interface_task,
                 "interface_task",
                 INTERFACE_TASK_STACK_SIZE,
                 NULL,
                 2,
-                NULL);*/
+                NULL);    */
 }
 
 void app_main(void){
@@ -91,6 +91,9 @@ void app_main(void){
     
     //   Blink Task
     while (1) {
-        blinkCpuLed(CPU_LED1_GREEN, getTimeBlink(), getRatioBlink());    
+        blinkCpuLed( getLed(LED1),  LED_GREEN);            
+        //blinkCpuLed( getLed(LED1),  LED_RED);           
+        //blinkCpuLed( getLed(LED2),  LED_GREEN);            
+        //blinkCpuLed( getLed(LED2),  LED_RED);    
     }
 }
