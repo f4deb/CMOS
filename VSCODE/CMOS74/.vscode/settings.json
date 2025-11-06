@@ -23,8 +23,11 @@
     "functional": "c",
     "tuple": "c",
     "type_traits": "c",
-    "utility": "c"
+    "utility": "c",
+    "cpuledinterface.h": "c",
+    "string.h": "c",
+    "stdint.h": "c"
   },
-  "idf.port": "/dev/ttyUSB1",
+  "idf.port": "/dev/ttyUSB2",
   "idf.flashType": "UART"
 }

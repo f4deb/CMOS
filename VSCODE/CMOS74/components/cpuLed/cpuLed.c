@@ -8,9 +8,7 @@
 
 #include "../charUtils/include/charUtils.h"
 
-
 #include "../../../../esp-idf/components/esp_driver_gpio/include/driver/gpio.h"
-
 
 static const char *TAG_CPU_LED = "CPU_LED";
 
@@ -20,17 +18,11 @@ static uint8_t s_led2_red_state = 0;
 static uint8_t s_led2_green_state = 0;
 static uint8_t s_led_state = 0;
 
-
 static CpuLed led1;
 static CpuLed led2;
 
-
 uint32_t timeBlink ;
 uint32_t ratioBlink;
-
-
-
-
 
 void initCpu2Led(CpuLed* led, int reference ){
 
@@ -38,7 +30,6 @@ void initCpu2Led(CpuLed* led, int reference ){
         led->value = LED1;
         led->Red.value = LED_RED;
         led->Green.value = LED_GREEN;
-
 
         led->Red.status = 0;
         led->Red.pinNumber = CONFIG_LED1_RED_GPIO;
@@ -56,7 +47,6 @@ void initCpu2Led(CpuLed* led, int reference ){
         led->Red.value = LED_RED;
         led->Green.value = LED_GREEN;
 
-
         led->Red.status = 0;
         led->Red.pinNumber = CONFIG_LED2_RED_GPIO;
         led->Red.period = CONFIG_LED2_RED_PERIOD;
@@ -66,13 +56,10 @@ void initCpu2Led(CpuLed* led, int reference ){
         led->Green.pinNumber = CONFIG_LED2_GREEN_GPIO;
         led->Green.period = CONFIG_LED2_GREEN_PERIOD;
         led->Green.ratio = CONFIG_LED2_GREEN_RATIO;
-    }
-    
+    }    
 }
 
-
 void initCpuLed (void){
-
     initCpu2Led(&led1, LED1);
     initCpu2Led(&led2, LED2);
 }
@@ -164,7 +151,7 @@ CpuLed getLed(uint8_t led){
 }
 
 void initLed(CpuLed led, uint8_t color){
-    ESP_LOGI(TAG_CPU_LED, "Cpu Led configured to blink GPIO LED!");
+    if (CPU_LED_DEBUG) ESP_LOGI(TAG_CPU_LED, "Cpu Led configured to blink GPIO LED!");
     gpio_reset_pin(getLedGpio(led, color));
     /* Set the GPIO as a push/pull output */
     gpio_set_direction(getLedGpio(led, color), GPIO_MODE_OUTPUT);
@@ -174,7 +161,6 @@ void initLed(CpuLed led, uint8_t color){
 
     gpio_set_level(getLedGpio(led, color), 1);
 }
-
 
 void configure_led(void){
     initCpuLed();
@@ -186,7 +172,8 @@ void configure_led(void){
 
 void blinkCpuLed(CpuLed led, uint8_t color){
     uint8_t status;
-    ESP_LOGI(TAG_CPU_LED, "Turning the LED %s!", getLedStatus(led, color) == true ? "OFF" : "ON");
+
+    if (CPU_LED_DEBUG) ESP_LOGI(TAG_CPU_LED, "Turning the LED %s!", getLedStatus(led, color) == true ? "OFF" : "ON");
 
     /* Toggle the LED state */
 
@@ -204,7 +191,7 @@ void blinkCpuLed(CpuLed led, uint8_t color){
 }
 
 void setBlueLevd(uint8_t ledStatus){
-    ESP_LOGI(TAG_CPU_LED, "Turning the LED %s!", ledStatus == true ? "ON" : "OFF");
+    if (CPU_LED_DEBUG) ESP_LOGI(TAG_CPU_LED, "Turning the LED %s!", ledStatus == true ? "ON" : "OFF");
     /* Toggle the LED state */
     s_led1_red_state = ledStatus;
     /* Set the GPIO level according to the state (LOW or HIGH)*/
