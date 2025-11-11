@@ -31,19 +31,20 @@ typedef struct cpuLed
     LedColor Red,Green;
 }CpuLed;
 
-uint32_t getLedPeriod(CpuLed led,uint8_t color);
+static CpuLed led1;
+static CpuLed led2;
 
 uint32_t getTimeBlink (void);
 uint32_t getRatioBlink (void);
 void setTimeBlink (uint32_t value);
 void setRatioBlink (uint32_t value);
 
-
-CpuLed getLed(uint8_t led);
+CpuLed* getLed1(void);
+CpuLed* getLed2(void);
 
 void configure_led(void);
-void blinkCpuLed(CpuLed led, uint8_t color);
-void setBlueLed(uint8_t ledStatus);
+void blinkCpuLed(CpuLed* led, uint8_t color);
+void setCpuLed(uint8_t ledStatus);
 uint8_t getBlueLed(void);
 
 #endif

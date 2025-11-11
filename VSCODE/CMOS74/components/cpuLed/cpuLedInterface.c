@@ -14,7 +14,7 @@
 #include "../uartCommand/include/uartCommand.h"
 #include "../../../../esp-idf/components/esp_driver_uart/include/driver/uart.h"
 
-#define TAG "Blue Led Interface"
+#define TAG "CPU Led Interface"
 
 void blueLedInterface(char rxBuffer[50]){
 
@@ -37,7 +37,7 @@ void blueLedInterface(char rxBuffer[50]){
         if (BLUE_LED_INTERFACE_DEBUG) ESP_LOGE(TAG, "%s ", str);
     }
     else if ((strcmp(SET_BLUE_LED_HEADER,str)) == 0) {
-        setBlueLed(readHex(stringToString(str,rxBuffer,2)));
+        setCpuLed(readHex(stringToString(str,rxBuffer,2)));
         if (BLUE_LED_INTERFACE_DEBUG) ESP_LOGE(TAG, "%s ", str);
     }
     else if ((strcmp(GET_BLUE_LED_HEADER,str)) == 0) {
