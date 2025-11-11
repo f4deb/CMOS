@@ -130,14 +130,6 @@ void setLedStatus (CpuLed* led,uint8_t color,uint8_t status) {
     }    
 }
 
-CpuLed* getLed1(void){
-    return &led1;
-}
-
-CpuLed* getLed2(void){
-    return &led2;
-}
-
 void initLed(CpuLed* led, uint8_t color){
     if (CPU_LED_DEBUG) ESP_LOGI(TAG_CPU_LED, "Cpu Led configured to blink GPIO LED!");
     gpio_reset_pin(getLedGpio(led, color));
@@ -169,14 +161,54 @@ void blinkCpuLed(CpuLed* led, uint8_t color){
 	//printf("l adresse de led1 est : %p\n",&led1);
 
     status = getLedStatus(led, color);
-    setLedStatus(led, color, !status);
 
-    /* Set the GPIO level according to the state (LOW or HIGH)*/
-    gpio_set_level(getLedGpio(led, color), getLedStatus(led, color));
+    int ratio = getLedRatio(led, color); 
+    
 
-    if (getLedStatus(led,color)) vTaskDelay(pdMS_TO_TICKS(getLedPeriod(led,color) * getLedRatio(led,color) /100));
-    else vTaskDelay(pdMS_TO_TICKS(getLedPeriod(led,color) - (getLedPeriod(led,color) * getLedRatio(led,color) /100)));
+    
+
+    if ((ratio == 0) || (ratio == 100)){
+            if (ratio == 0) { status = 0;}
+            else status = 1;
+            setLedStatus(led, color, status);
+                    gpio_set_level(getLedGpio(led, color), getLedStatus(led, color));
+
+
+    }
+    else if (ratio>0){
+
+        setLedStatus(led, color, !status);
+
+        /* Set the GPIO level according to the state (LOW or HIGH)*/
+        gpio_set_level(getLedGpio(led, color), getLedStatus(led, color));
+
+
+        if (getLedStatus(led,color)) vTaskDelay(pdMS_TO_TICKS(getLedPeriod(led,color) * getLedRatio(led,color) /100));
+        else vTaskDelay(pdMS_TO_TICKS(getLedPeriod(led,color) - (getLedPeriod(led,color) * getLedRatio(led,color) /100)));
+    }
+
 }
+
+CpuLed* getLed1(void){
+    return &led1;
+}
+
+CpuLed* getLed2(void){
+    return &led2;
+}
+
+/**********************
+ * Interface
+ **********************/
+
+ void printCpuLed(void){
+    blinkCpuLed( getLed1(),  LED_GREEN);            
+    blinkCpuLed( getLed1(),  LED_RED);           
+    blinkCpuLed( getLed2(),  LED_GREEN);            
+    blinkCpuLed( getLed2(),  LED_RED);    
+ }
+
+
 
 void setBlueLed(uint8_t ledStatus){
     if (CPU_LED_DEBUG) ESP_LOGI(TAG_CPU_LED, "Turning the LED %s!", ledStatus == true ? "ON" : "OFF");

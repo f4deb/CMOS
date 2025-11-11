@@ -47,4 +47,9 @@ void blinkCpuLed(CpuLed* led, uint8_t color);
 void setCpuLed(uint8_t ledStatus);
 uint8_t getBlueLed(void);
 
+
+
+ void printCpuLed(void);
+
+
 #endif
