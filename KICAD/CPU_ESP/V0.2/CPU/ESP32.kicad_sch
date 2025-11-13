@@ -7,7 +7,7 @@
 	(title_block
 		(title "UART")
 		(date "2025-09-17")
-		(rev "V0.2")
+		(rev "V0.3")
 		(company "CMOS-74A")
 	)
 	(lib_symbols
@@ -6033,6 +6033,78 @@
 		(color 0 0 0 0)
 		(uuid "fbfdcba4-aeda-445a-b2be-722c14f5d4e4")
 	)
+	(no_connect
+		(at 113.03 147.32)
+		(uuid "09c085bb-5131-44a9-8e40-69b3ec288b85")
+	)
+	(no_connect
+		(at 113.03 111.76)
+		(uuid "0deb4111-8216-428c-a3f7-e9c2f2d1c7fa")
+	)
+	(no_connect
+		(at 113.03 119.38)
+		(uuid "2ff0a7e9-c2e6-4079-a547-2d05928e751e")
+	)
+	(no_connect
+		(at 113.03 167.64)
+		(uuid "379b3692-5929-487e-bc05-dcea2ec5e9f7")
+	)
+	(no_connect
+		(at 113.03 139.7)
+		(uuid "480f8c1b-1b3e-4c09-86ab-ab94ecae4e86")
+	)
+	(no_connect
+		(at 113.03 162.56)
+		(uuid "48ecf67f-cb79-4558-b106-88ba1ce0ec97")
+	)
+	(no_connect
+		(at 113.03 165.1)
+		(uuid "911b39a0-6a07-45c4-bc4e-9407e5d4b71a")
+	)
+	(no_connect
+		(at 113.03 170.18)
+		(uuid "92726f32-4790-4d32-987c-5b3191bcb5b7")
+	)
+	(no_connect
+		(at 113.03 116.84)
+		(uuid "95c8ca0c-5375-48ee-a078-7a57ec54239e")
+	)
+	(no_connect
+		(at 113.03 134.62)
+		(uuid "a4427c2d-912a-4468-8400-d1fada13fc28")
+	)
+	(no_connect
+		(at 113.03 144.78)
+		(uuid "c4dcc9a9-fbda-4151-a9b8-226abb2fdfa3")
+	)
+	(no_connect
+		(at 113.03 137.16)
+		(uuid "c6ae76e3-31ff-476d-b400-6bc2a3314fba")
+	)
+	(no_connect
+		(at 113.03 160.02)
+		(uuid "c78ee0d6-8c5d-49c2-b313-c4ec1333c17a")
+	)
+	(no_connect
+		(at 113.03 157.48)
+		(uuid "e4a49352-f3dc-487b-83a0-ea289ba1e302")
+	)
+	(no_connect
+		(at 113.03 114.3)
+		(uuid "ebed4ce8-f6cd-484a-a14f-f907edf41c2b")
+	)
+	(no_connect
+		(at 113.03 124.46)
+		(uuid "f224484c-d2d5-4982-bb58-97adbce7e512")
+	)
+	(no_connect
+		(at 113.03 121.92)
+		(uuid "f5077fcd-3f25-43d6-b003-d028186bd4fe")
+	)
+	(no_connect
+		(at 113.03 142.24)
+		(uuid "f8e90d68-e42d-4cc9-bdf0-ff8c493e2c69")
+	)
 	(wire
 		(pts
 			(xy 170.18 27.94) (xy 170.18 26.67)
@@ -8533,6 +8605,16 @@
 		)
 		(uuid "08a54dfc-0803-4968-8bf6-c239a5df19c0")
 	)
+	(label "RX0"
+		(at 207.01 53.34 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "190d7448-b989-4a7c-a381-05df7877c1da")
+	)
 	(label "CTS"
 		(at 118.11 91.44 180)
 		(effects
@@ -8572,6 +8654,16 @@
 			(justify left bottom)
 		)
 		(uuid "2573bc0f-8ab1-4c4f-b2f0-3e7791da2f4a")
+	)
+	(label "TX0"
+		(at 180.34 125.73 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "2605463d-444e-44cd-be94-4618d54424b6")
 	)
 	(label "BOOT"
 		(at 208.28 45.72 0)
@@ -8703,6 +8795,16 @@
 		)
 		(uuid "7ca23b26-f46f-4540-8265-99dab37a6884")
 	)
+	(label "TX0"
+		(at 207.01 48.26 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "88aaf8b6-61a4-4b21-838e-0b10b6245307")
+	)
 	(label "BOOT"
 		(at 270.51 107.95 0)
 		(effects
@@ -8772,6 +8874,16 @@
 			(justify right bottom)
 		)
 		(uuid "b631a04b-df27-42b0-9e34-07b2919a522b")
+	)
+	(label "RX0"
+		(at 180.34 135.89 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b71f38a5-0ec2-41e5-85f4-722100c3b2a9")
 	)
 	(label "DTR"
 		(at 242.57 87.63 0)
@@ -8965,28 +9077,6 @@
 		)
 		(uuid "4c351b56-af3c-4fed-a7e9-2e100acc0583")
 	)
-	(hierarchical_label "RX0"
-		(shape input)
-		(at 207.01 53.34 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "5beaef95-5f1e-4017-b5b1-e792a5d6aac7")
-	)
-	(hierarchical_label "TX0"
-		(shape input)
-		(at 180.34 125.73 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "5fdf1676-8466-47c6-a8dc-564d57a0e330")
-	)
 	(hierarchical_label "SDI"
 		(shape input)
 		(at 166.37 78.74 180)
@@ -9019,17 +9109,6 @@
 			(justify left)
 		)
 		(uuid "68bb89f9-ee4c-4280-b3f5-c5e06fdbb283")
-	)
-	(hierarchical_label "TX0"
-		(shape input)
-		(at 207.01 48.26 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "6acbe7b0-79a0-4ad7-9fc3-cee8aa3d67f4")
 	)
 	(hierarchical_label "SCS"
 		(shape input)
@@ -9185,17 +9264,6 @@
 		)
 		(uuid "b67c5851-37ae-4c53-8b62-a8f1c49e52f6")
 	)
-	(hierarchical_label "RX0"
-		(shape input)
-		(at 180.34 135.89 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "ba38395d-bb62-4992-88e0-b502978fbf28")
-	)
 	(hierarchical_label "PWM3"
 		(shape input)
 		(at 207.01 91.44 0)
@@ -9334,7 +9402,7 @@
 		(instances
 			(project "ESP32"
 				(path "/338e9d9d-0067-4f3a-b6ad-ec89003c41f6"
-					(reference "#PWR?")
+					(reference "#PWR0114")
 					(unit 1)
 				)
 			)
@@ -9406,7 +9474,7 @@
 		(instances
 			(project "ESP32"
 				(path "/338e9d9d-0067-4f3a-b6ad-ec89003c41f6"
-					(reference "#PWR?")
+					(reference "#PWR0121")
 					(unit 1)
 				)
 			)
@@ -9488,7 +9556,7 @@
 		(instances
 			(project "ESP32"
 				(path "/338e9d9d-0067-4f3a-b6ad-ec89003c41f6"
-					(reference "R?")
+					(reference "R111")
 					(unit 1)
 				)
 			)
@@ -9560,7 +9628,7 @@
 		(instances
 			(project "ESP32"
 				(path "/338e9d9d-0067-4f3a-b6ad-ec89003c41f6"
-					(reference "#PWR?")
+					(reference "#PWR0103")
 					(unit 1)
 				)
 			)
@@ -9632,7 +9700,7 @@
 		(instances
 			(project "ESP32"
 				(path "/338e9d9d-0067-4f3a-b6ad-ec89003c41f6"
-					(reference "#PWR?")
+					(reference "#PWR0105")
 					(unit 1)
 				)
 			)
@@ -9663,7 +9731,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C_Small"
+		(property "Value" "100n"
 			(at 45.72 66.0462 0)
 			(effects
 				(font
@@ -9672,7 +9740,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 43.18 64.77 0)
 			(effects
 				(font
@@ -9699,6 +9767,15 @@
 				(hide yes)
 			)
 		)
+		(property "UART" ""
+			(at 43.18 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "432ba3af-ae4e-4c88-a73c-284490f35f74")
 		)
@@ -9708,7 +9785,7 @@
 		(instances
 			(project "ESP32"
 				(path "/338e9d9d-0067-4f3a-b6ad-ec89003c41f6"
-					(reference "C?")
+					(reference "C103")
 					(unit 1)
 				)
 			)
@@ -9792,7 +9869,7 @@
 		(instances
 			(project "ESP32"
 				(path "/338e9d9d-0067-4f3a-b6ad-ec89003c41f6"
-					(reference "R?")
+					(reference "R109")
 					(unit 1)
 				)
 			)
@@ -9864,7 +9941,7 @@
 		(instances
 			(project "ESP32"
 				(path "/338e9d9d-0067-4f3a-b6ad-ec89003c41f6"
-					(reference "#PWR?")
+					(reference "#PWR0122")
 					(unit 1)
 				)
 			)
@@ -9948,7 +10025,7 @@
 		(instances
 			(project "ESP32"
 				(path "/338e9d9d-0067-4f3a-b6ad-ec89003c41f6"
-					(reference "C?")
+					(reference "C106")
 					(unit 1)
 				)
 			)
@@ -10032,7 +10109,7 @@
 		(instances
 			(project "ESP32"
 				(path "/338e9d9d-0067-4f3a-b6ad-ec89003c41f6"
-					(reference "R?")
+					(reference "R105")
 					(unit 1)
 				)
 			)
@@ -10117,7 +10194,7 @@
 		(instances
 			(project "ESP32"
 				(path "/338e9d9d-0067-4f3a-b6ad-ec89003c41f6"
-					(reference "C?")
+					(reference "C107")
 					(unit 1)
 				)
 			)
@@ -10155,7 +10232,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_2220_5750Metric"
 			(at 55.88 60.96 0)
 			(effects
 				(font
@@ -10182,6 +10259,15 @@
 				(hide yes)
 			)
 		)
+		(property "UART" ""
+			(at 55.88 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "72b0678c-033d-4fe5-9a8f-7d1c3e3352b2")
 		)
@@ -10191,7 +10277,7 @@
 		(instances
 			(project "ESP32"
 				(path "/338e9d9d-0067-4f3a-b6ad-ec89003c41f6"
-					(reference "L?")
+					(reference "L101")
 					(unit 1)
 				)
 			)
@@ -10275,7 +10361,7 @@
 		(instances
 			(project "ESP32"
 				(path "/338e9d9d-0067-4f3a-b6ad-ec89003c41f6"
-					(reference "C?")
+					(reference "C108")
 					(unit 1)
 				)
 			)
@@ -10347,7 +10433,7 @@
 		(instances
 			(project "ESP32"
 				(path "/338e9d9d-0067-4f3a-b6ad-ec89003c41f6"
-					(reference "#PWR?")
+					(reference "#PWR0120")
 					(unit 1)
 				)
 			)
@@ -10435,7 +10521,7 @@
 		(instances
 			(project "ESP32"
 				(path "/338e9d9d-0067-4f3a-b6ad-ec89003c41f6"
-					(reference "D?")
+					(reference "D102")
 					(unit 1)
 				)
 			)
@@ -10517,7 +10603,7 @@
 		(instances
 			(project "ESP32"
 				(path "/338e9d9d-0067-4f3a-b6ad-ec89003c41f6"
-					(reference "Q?")
+					(reference "Q102")
 					(unit 1)
 				)
 			)
@@ -10555,7 +10641,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 156.21 177.8 0)
 			(effects
 				(font
@@ -10627,8 +10713,8 @@
 		(instances
 			(project "ESP32"
 				(path "/338e9d9d-0067-4f3a-b6ad-ec89003c41f6"
-					(reference "U?")
-					(unit 1)
+					(reference "U105")
+					(unit 3)
 				)
 			)
 			(project ""
@@ -10699,7 +10785,7 @@
 		(instances
 			(project "ESP32"
 				(path "/338e9d9d-0067-4f3a-b6ad-ec89003c41f6"
-					(reference "#PWR?")
+					(reference "#PWR0119")
 					(unit 1)
 				)
 			)
@@ -10771,7 +10857,7 @@
 		(instances
 			(project "ESP32"
 				(path "/338e9d9d-0067-4f3a-b6ad-ec89003c41f6"
-					(reference "#PWR?")
+					(reference "#PWR0109")
 					(unit 1)
 				)
 			)
@@ -10855,7 +10941,7 @@
 		(instances
 			(project "ESP32"
 				(path "/338e9d9d-0067-4f3a-b6ad-ec89003c41f6"
-					(reference "R?")
+					(reference "R102")
 					(unit 1)
 				)
 			)
@@ -10892,7 +10978,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Crystal:Crystal_HC49-U_Vertical"
 			(at 31.75 172.72 0)
 			(effects
 				(font
@@ -10943,7 +11029,7 @@
 		(instances
 			(project "ESP32"
 				(path "/338e9d9d-0067-4f3a-b6ad-ec89003c41f6"
-					(reference "Y?")
+					(reference "Y101")
 					(unit 1)
 				)
 			)
@@ -11027,7 +11113,7 @@
 		(instances
 			(project "ESP32"
 				(path "/338e9d9d-0067-4f3a-b6ad-ec89003c41f6"
-					(reference "R?")
+					(reference "R101")
 					(unit 1)
 				)
 			)
@@ -11067,7 +11153,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_QFP:TQFP-64_10x10mm_P0.5mm"
 			(at 82.55 132.08 0)
 			(effects
 				(font
@@ -11289,7 +11375,7 @@
 		(instances
 			(project "ESP32"
 				(path "/338e9d9d-0067-4f3a-b6ad-ec89003c41f6"
-					(reference "U?")
+					(reference "U104")
 					(unit 1)
 				)
 			)
@@ -11371,7 +11457,7 @@
 		(instances
 			(project "ESP32"
 				(path "/338e9d9d-0067-4f3a-b6ad-ec89003c41f6"
-					(reference "R?")
+					(reference "R107")
 					(unit 1)
 				)
 			)
@@ -11443,7 +11529,7 @@
 		(instances
 			(project "ESP32"
 				(path "/338e9d9d-0067-4f3a-b6ad-ec89003c41f6"
-					(reference "#PWR?")
+					(reference "#PWR0125")
 					(unit 1)
 				)
 			)
@@ -11516,7 +11602,7 @@
 		(instances
 			(project "ESP32"
 				(path "/338e9d9d-0067-4f3a-b6ad-ec89003c41f6"
-					(reference "#PWR?")
+					(reference "#PWR0118")
 					(unit 1)
 				)
 			)
@@ -11600,7 +11686,7 @@
 		(instances
 			(project "ESP32"
 				(path "/338e9d9d-0067-4f3a-b6ad-ec89003c41f6"
-					(reference "C?")
+					(reference "C110")
 					(unit 1)
 				)
 			)
@@ -11688,7 +11774,7 @@
 		(instances
 			(project "ESP32"
 				(path "/338e9d9d-0067-4f3a-b6ad-ec89003c41f6"
-					(reference "D?")
+					(reference "D101")
 					(unit 1)
 				)
 			)
@@ -11772,7 +11858,7 @@
 		(instances
 			(project "ESP32"
 				(path "/338e9d9d-0067-4f3a-b6ad-ec89003c41f6"
-					(reference "R?")
+					(reference "R110")
 					(unit 1)
 				)
 			)
@@ -11809,7 +11895,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_2220_5750Metric"
 			(at 62.23 63.5 0)
 			(effects
 				(font
@@ -11854,7 +11940,7 @@
 		(instances
 			(project "ESP32"
 				(path "/338e9d9d-0067-4f3a-b6ad-ec89003c41f6"
-					(reference "L?")
+					(reference "L102")
 					(unit 1)
 				)
 			)
@@ -11922,6 +12008,15 @@
 				(hide yes)
 			)
 		)
+		(property "UART" ""
+			(at 78.74 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "bdd694ee-ae6a-4c8a-91dd-36222578c25e")
 		)
@@ -11949,7 +12044,7 @@
 		(instances
 			(project "ESP32"
 				(path "/338e9d9d-0067-4f3a-b6ad-ec89003c41f6"
-					(reference "U?")
+					(reference "U103")
 					(unit 1)
 				)
 			)
@@ -12021,7 +12116,7 @@
 		(instances
 			(project "ESP32"
 				(path "/338e9d9d-0067-4f3a-b6ad-ec89003c41f6"
-					(reference "#PWR?")
+					(reference "#PWR0106")
 					(unit 1)
 				)
 			)
@@ -12106,7 +12201,7 @@
 		(instances
 			(project "ESP32"
 				(path "/338e9d9d-0067-4f3a-b6ad-ec89003c41f6"
-					(reference "R?")
+					(reference "R108")
 					(unit 1)
 				)
 			)
@@ -12176,6 +12271,12 @@
 			(uuid "00c496cc-06b3-4fcd-972c-199d9c6be6d6")
 		)
 		(instances
+			(project "ESP32"
+				(path "/338e9d9d-0067-4f3a-b6ad-ec89003c41f6"
+					(reference "#PWR0108")
+					(unit 1)
+				)
+			)
 			(project ""
 				(path "/a676c576-12a0-418f-9fc1-1ecc8cb5a083/3fae016e-6e0f-4cd9-b4b1-dc965be68ffa"
 					(reference "#PWR0426")
@@ -12254,7 +12355,7 @@
 		(instances
 			(project "ESP32"
 				(path "/338e9d9d-0067-4f3a-b6ad-ec89003c41f6"
-					(reference "R?")
+					(reference "R106")
 					(unit 1)
 				)
 			)
@@ -12292,7 +12393,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 133.35 175.26 0)
 			(effects
 				(font
@@ -12364,7 +12465,7 @@
 		(instances
 			(project "ESP32"
 				(path "/338e9d9d-0067-4f3a-b6ad-ec89003c41f6"
-					(reference "U?")
+					(reference "U105")
 					(unit 1)
 				)
 			)
@@ -12386,7 +12487,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "98027b70-d38c-48f3-bf4b-6dae13d5ff27")
-		(property "Reference" "U?"
+		(property "Reference" "U406"
 			(at 162.1633 118.11 0)
 			(effects
 				(font
@@ -12404,7 +12505,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:TSSOP-20_4.4x5mm_P0.5mm"
 			(at 160.02 138.43 0)
 			(effects
 				(font
@@ -12423,6 +12524,15 @@
 			)
 		)
 		(property "Description" "8-bit Buffer/Line Driver 3-state"
+			(at 160.02 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "UART" ""
 			(at 160.02 138.43 0)
 			(effects
 				(font
@@ -12500,7 +12610,7 @@
 			)
 			(project "CPU"
 				(path "/a676c576-12a0-418f-9fc1-1ecc8cb5a083/3fae016e-6e0f-4cd9-b4b1-dc965be68ffa"
-					(reference "U?")
+					(reference "U406")
 					(unit 1)
 				)
 			)
@@ -12566,7 +12676,7 @@
 		(instances
 			(project "ESP32"
 				(path "/338e9d9d-0067-4f3a-b6ad-ec89003c41f6"
-					(reference "#PWR?")
+					(reference "#PWR0123")
 					(unit 1)
 				)
 			)
@@ -12638,7 +12748,7 @@
 		(instances
 			(project "ESP32"
 				(path "/338e9d9d-0067-4f3a-b6ad-ec89003c41f6"
-					(reference "#PWR?")
+					(reference "#PWR0127")
 					(unit 1)
 				)
 			)
@@ -12710,7 +12820,7 @@
 		(instances
 			(project "ESP32"
 				(path "/338e9d9d-0067-4f3a-b6ad-ec89003c41f6"
-					(reference "#PWR?")
+					(reference "#PWR0116")
 					(unit 1)
 				)
 			)
@@ -12783,7 +12893,7 @@
 		(instances
 			(project "ESP32"
 				(path "/338e9d9d-0067-4f3a-b6ad-ec89003c41f6"
-					(reference "#PWR?")
+					(reference "#PWR0115")
 					(unit 1)
 				)
 			)
@@ -12820,7 +12930,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 45.72 118.618 90)
 			(effects
 				(font
@@ -12856,7 +12966,7 @@
 		(instances
 			(project "ESP32"
 				(path "/338e9d9d-0067-4f3a-b6ad-ec89003c41f6"
-					(reference "R?")
+					(reference "R103")
 					(unit 1)
 				)
 			)
@@ -12928,7 +13038,7 @@
 		(instances
 			(project "ESP32"
 				(path "/338e9d9d-0067-4f3a-b6ad-ec89003c41f6"
-					(reference "#PWR?")
+					(reference "#PWR0113")
 					(unit 1)
 				)
 			)
@@ -13000,7 +13110,7 @@
 		(instances
 			(project "ESP32"
 				(path "/338e9d9d-0067-4f3a-b6ad-ec89003c41f6"
-					(reference "#PWR?")
+					(reference "#PWR0124")
 					(unit 1)
 				)
 			)
@@ -13085,7 +13195,7 @@
 		(instances
 			(project "ESP32"
 				(path "/338e9d9d-0067-4f3a-b6ad-ec89003c41f6"
-					(reference "C?")
+					(reference "C109")
 					(unit 1)
 				)
 			)
@@ -13272,7 +13382,7 @@
 		(instances
 			(project "ESP32"
 				(path "/338e9d9d-0067-4f3a-b6ad-ec89003c41f6"
-					(reference "U?")
+					(reference "U108")
 					(unit 1)
 				)
 			)
@@ -13344,7 +13454,7 @@
 		(instances
 			(project "ESP32"
 				(path "/338e9d9d-0067-4f3a-b6ad-ec89003c41f6"
-					(reference "#PWR?")
+					(reference "#PWR0101")
 					(unit 1)
 				)
 			)
@@ -13416,7 +13526,7 @@
 		(instances
 			(project "ESP32"
 				(path "/338e9d9d-0067-4f3a-b6ad-ec89003c41f6"
-					(reference "#PWR?")
+					(reference "#PWR0110")
 					(unit 1)
 				)
 			)
@@ -13456,7 +13566,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-8_5.3x5.3mm_P1.27mm"
 			(at 30.48 154.94 0)
 			(effects
 				(font
@@ -13510,7 +13620,7 @@
 		(instances
 			(project "ESP32"
 				(path "/338e9d9d-0067-4f3a-b6ad-ec89003c41f6"
-					(reference "U?")
+					(reference "U102")
 					(unit 1)
 				)
 			)
@@ -13582,7 +13692,7 @@
 		(instances
 			(project "ESP32"
 				(path "/338e9d9d-0067-4f3a-b6ad-ec89003c41f6"
-					(reference "#PWR?")
+					(reference "#PWR0102")
 					(unit 1)
 				)
 			)
@@ -13664,7 +13774,7 @@
 		(instances
 			(project "ESP32"
 				(path "/338e9d9d-0067-4f3a-b6ad-ec89003c41f6"
-					(reference "R?")
+					(reference "R112")
 					(unit 1)
 				)
 			)
@@ -13749,7 +13859,7 @@
 		(instances
 			(project "ESP32"
 				(path "/338e9d9d-0067-4f3a-b6ad-ec89003c41f6"
-					(reference "C?")
+					(reference "C104")
 					(unit 1)
 				)
 			)
@@ -13821,7 +13931,7 @@
 		(instances
 			(project "ESP32"
 				(path "/338e9d9d-0067-4f3a-b6ad-ec89003c41f6"
-					(reference "#PWR?")
+					(reference "#PWR0112")
 					(unit 1)
 				)
 			)
@@ -13893,7 +14003,7 @@
 		(instances
 			(project "ESP32"
 				(path "/338e9d9d-0067-4f3a-b6ad-ec89003c41f6"
-					(reference "#PWR?")
+					(reference "#PWR0104")
 					(unit 1)
 				)
 			)
@@ -13931,7 +14041,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 133.35 187.96 0)
 			(effects
 				(font
@@ -14003,8 +14113,8 @@
 		(instances
 			(project "ESP32"
 				(path "/338e9d9d-0067-4f3a-b6ad-ec89003c41f6"
-					(reference "U?")
-					(unit 1)
+					(reference "U105")
+					(unit 2)
 				)
 			)
 			(project ""
@@ -14076,7 +14186,7 @@
 		(instances
 			(project "ESP32"
 				(path "/338e9d9d-0067-4f3a-b6ad-ec89003c41f6"
-					(reference "#PWR?")
+					(reference "#PWR0117")
 					(unit 1)
 				)
 			)
@@ -14113,7 +14223,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 45.72 123.698 90)
 			(effects
 				(font
@@ -14149,7 +14259,7 @@
 		(instances
 			(project "ESP32"
 				(path "/338e9d9d-0067-4f3a-b6ad-ec89003c41f6"
-					(reference "R?")
+					(reference "R104")
 					(unit 1)
 				)
 			)
@@ -14231,7 +14341,7 @@
 		(instances
 			(project "ESP32"
 				(path "/338e9d9d-0067-4f3a-b6ad-ec89003c41f6"
-					(reference "Q?")
+					(reference "Q101")
 					(unit 1)
 				)
 			)
@@ -14304,7 +14414,7 @@
 		(instances
 			(project "ESP32"
 				(path "/338e9d9d-0067-4f3a-b6ad-ec89003c41f6"
-					(reference "#PWR?")
+					(reference "#PWR0111")
 					(unit 1)
 				)
 			)
@@ -14388,7 +14498,7 @@
 		(instances
 			(project "ESP32"
 				(path "/338e9d9d-0067-4f3a-b6ad-ec89003c41f6"
-					(reference "R?")
+					(reference "R113")
 					(unit 1)
 				)
 			)
@@ -14472,7 +14582,7 @@
 		(instances
 			(project "ESP32"
 				(path "/338e9d9d-0067-4f3a-b6ad-ec89003c41f6"
-					(reference "R?")
+					(reference "R114")
 					(unit 1)
 				)
 			)
@@ -14544,7 +14654,7 @@
 		(instances
 			(project "ESP32"
 				(path "/338e9d9d-0067-4f3a-b6ad-ec89003c41f6"
-					(reference "#PWR?")
+					(reference "#PWR0126")
 					(unit 1)
 				)
 			)
@@ -14629,7 +14739,7 @@
 		(instances
 			(project "ESP32"
 				(path "/338e9d9d-0067-4f3a-b6ad-ec89003c41f6"
-					(reference "C?")
+					(reference "C101")
 					(unit 1)
 				)
 			)
@@ -14714,7 +14824,7 @@
 		(instances
 			(project "ESP32"
 				(path "/338e9d9d-0067-4f3a-b6ad-ec89003c41f6"
-					(reference "C?")
+					(reference "C102")
 					(unit 1)
 				)
 			)
@@ -14798,7 +14908,7 @@
 		(instances
 			(project "ESP32"
 				(path "/338e9d9d-0067-4f3a-b6ad-ec89003c41f6"
-					(reference "C?")
+					(reference "C105")
 					(unit 1)
 				)
 			)
@@ -14868,6 +14978,12 @@
 			(uuid "7a8f0628-e6e8-485e-9439-321b79df7290")
 		)
 		(instances
+			(project "ESP32"
+				(path "/338e9d9d-0067-4f3a-b6ad-ec89003c41f6"
+					(reference "#PWR0107")
+					(unit 1)
+				)
+			)
 			(project ""
 				(path "/a676c576-12a0-418f-9fc1-1ecc8cb5a083/3fae016e-6e0f-4cd9-b4b1-dc965be68ffa"
 					(reference "#PWR0427")
