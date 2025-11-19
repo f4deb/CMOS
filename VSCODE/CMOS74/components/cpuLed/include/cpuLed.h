@@ -34,22 +34,24 @@ typedef struct cpuLed
 static CpuLed led1;
 static CpuLed led2;
 
-uint32_t getTimeBlink (void);
-uint32_t getRatioBlink (void);
-void setTimeBlink (uint32_t value);
-void setRatioBlink (uint32_t value);
-
 CpuLed* getLed1(void);
 CpuLed* getLed2(void);
 
+
+uint32_t getTimeBlink (CpuLed* led,uint8_t color);
+uint32_t getRatioBlink (CpuLed* led,uint8_t color);
+
+void setTime (uint32_t value);
+void setTimeBlink (CpuLed* led,uint8_t color,uint32_t value);
+
+void setRatio (uint32_t value);
+void setRatioBlink (CpuLed* led,uint8_t color,uint32_t value);
+
 void configure_led(void);
 void blinkCpuLed(CpuLed* led, uint8_t color);
+
+void printCpuLed(void);
 void setCpuLed(uint8_t ledStatus);
-uint8_t getBlueLed(void);
-
-
-
- void printCpuLed(void);
-
+uint8_t getCpuLed(void);
 
 #endif

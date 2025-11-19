@@ -11,7 +11,7 @@
 
 
 
-static const char *TAG_UART2 = "UART TEST";
+static const char *TAG = "UART TEST";
 
 static char *NAME_UART_COMMAND = "UART";
 static char *TYPE_UART_COMMAND  = "2";
@@ -52,7 +52,6 @@ void command_uart_task(void *arg){
     uint8_t *data = (uint8_t *) malloc(BUF_SIZE);
 
     for(;;) {
-
         // Read data from the UART
         int len = uart_read_bytes(COMMAND_UART_PORT_NUM, data, (BUF_SIZE - 1), 20 / portTICK_PERIOD_MS);
         // Write data back to the UART
@@ -65,7 +64,7 @@ void command_uart_task(void *arg){
             xQueueSend(queue, (void*)txBuffer, (TickType_t)0);
         }
         if (queue == 0) {
-            ESP_LOGE(TAG_UART2, "Échec de la création de la queue\n");
+            ESP_LOGE(TAG, "Échec de la création de la queue\n");
         }
     }
 }

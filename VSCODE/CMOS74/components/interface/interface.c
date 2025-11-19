@@ -17,13 +17,16 @@
 //#include "../I2c/include/i2CInterface.h"
 //#include "../sensor/include/sensorInterface.h"
 
-#define TAG "UART2"
+#define TAG "Debug Interface"
 
 void interface_task(void *arg){
     char rxBuffer[BUF_SIZE];
     char str[INTERFACE_HEADER_SIZE];
 
     for(;;) {
+
+                    ESP_LOGI(TAG, "debug interface");
+
         if (xQueueReceive(getQueueUart2(), &(rxBuffer), (TickType_t)5)) {
             ESP_LOGI(TAG, "%s ", rxBuffer);
             stringToString(str,rxBuffer,INTERFACE_HEADER_SIZE);
@@ -35,8 +38,10 @@ void interface_task(void *arg){
 
 
                 // blueLed
-                if ((strcmp(BLUE_LED_INTERFACE_HEADER,str)) == 0) {
-                    blueLedInterface(rxBuffer+5);
+                if ((strcmp(CPU_LED_INTERFACE_HEADER,str)) == 0) {
+                            ESP_LOGE(TAG, "Bad command");
+
+                    cpuLedInterface(rxBuffer+5);
                 }
                 // Clock
                 /* else if ((strcmp(CLOCK_INTERFACE_HEADER,str)) == 0) {
@@ -60,7 +65,7 @@ void interface_task(void *arg){
                 }   */            
             }
             else {
-                setRatioBlink(50);
+                setRatio(90);
             }
             
         }   

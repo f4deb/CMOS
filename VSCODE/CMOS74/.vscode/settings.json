@@ -27,7 +27,8 @@
     "cpuledinterface.h": "c",
     "string.h": "c",
     "stdint.h": "c",
-    "led_strip.h": "c"
+    "led_strip.h": "c",
+    "regex": "c"
   },
   "idf.port": "/dev/ttyUSB2",
   "idf.flashType": "UART"

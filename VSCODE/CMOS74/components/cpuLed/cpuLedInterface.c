@@ -16,39 +16,38 @@
 
 #define TAG "CPU Led Interface"
 
-void blueLedInterface(char rxBuffer[50]){
-
-    char str[BLUE_LED_INTERFACE_COMMAND_SIZE];
+void cpuLedInterface(char rxBuffer[50]){
+    char str[CPU_LED_INTERFACE_COMMAND_SIZE];
     char status[20];
-    if (BLUE_LED_INTERFACE_DEBUG) ESP_LOGE(TAG, "%s ", rxBuffer);
+    if (CPU_LED_INTERFACE_DEBUG) ESP_LOGE(TAG, "%s ", rxBuffer);
 
-    stringToString(str,rxBuffer, BLUE_LED_INTERFACE_COMMAND_SIZE);
+    stringToString(str,rxBuffer, CPU_LED_INTERFACE_COMMAND_SIZE);
 
-    if (BLUE_LED_INTERFACE_DEBUG) ESP_LOGE(TAG, "%s ", str);
+    if (CPU_LED_INTERFACE_DEBUG) ESP_LOGE(TAG, "%s ", str);
  
     rxBuffer++;        
     
     if ((strcmp(SET_RATIO_BLINK_HEADER,str)) == 0) {
-        setRatioBlink(readHex(stringToString(str,rxBuffer,2)));
-        if (BLUE_LED_INTERFACE_DEBUG) ESP_LOGE(TAG, "%s ", str);
+        setRatio(readHex(stringToString(str,rxBuffer,2)));
+        if (CPU_LED_INTERFACE_DEBUG) ESP_LOGE(TAG, "%s ", str);
     }
     else if ((strcmp(SET_TIME_BLINK_HEADER,str)) == 0) {
-        setTimeBlink(readHex(stringToString(str,rxBuffer,4)));
-        if (BLUE_LED_INTERFACE_DEBUG) ESP_LOGE(TAG, "%s ", str);
+        //setTimeBlink(readHex(stringToString(str,rxBuffer,4)));
+        if (CPU_LED_INTERFACE_DEBUG) ESP_LOGE(TAG, "%s ", str);
     }
-    else if ((strcmp(SET_BLUE_LED_HEADER,str)) == 0) {
+    else if ((strcmp(SET_CPU_LED_HEADER,str)) == 0) {
         setCpuLed(readHex(stringToString(str,rxBuffer,2)));
-        if (BLUE_LED_INTERFACE_DEBUG) ESP_LOGE(TAG, "%s ", str);
+        if (CPU_LED_INTERFACE_DEBUG) ESP_LOGE(TAG, "%s ", str);
     }
-    else if ((strcmp(GET_BLUE_LED_HEADER,str)) == 0) {
+    else if ((strcmp(GET_CPU_LED_HEADER,str)) == 0) {
         bool s_led_state;
-        if (getBlueLed()){
+        if (getCpuLed()){
             s_led_state = true;
         }
         else {
             s_led_state = false;
         }
-        if (BLUE_LED_INTERFACE_DEBUG) ESP_LOGE(TAG, "LED Status : %s", s_led_state == true ? "ON" : "OFF");
+        if (CPU_LED_INTERFACE_DEBUG) ESP_LOGE(TAG, "LED Status : %s", s_led_state == true ? "ON" : "OFF");
 
         sprintf (status,"%02d", s_led_state );        
             

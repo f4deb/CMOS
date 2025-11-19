@@ -40,7 +40,7 @@
 
 */
 
-static const char *TAG_MAIN = "Main : ";
+static const char *TAG= "Main : ";
 
 void init(){
 
@@ -75,7 +75,7 @@ void init(){
                 IO_BUTTUN_BOARD_TASK_SIZE,
                 NULL, 
                 3, 
-                NULL);               
+                NULL);     */          
 
     // INTERFACE TASK
     xTaskCreate(interface_task,
@@ -83,7 +83,7 @@ void init(){
                 INTERFACE_TASK_STACK_SIZE,
                 NULL,
                 2,
-                NULL);    */
+                NULL);    
 }
 
 void app_main(void){
@@ -92,6 +92,5 @@ void app_main(void){
     //   Blink Task
     while (1) {
         printCpuLed();
-
     }
 }
