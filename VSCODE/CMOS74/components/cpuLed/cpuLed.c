@@ -92,13 +92,16 @@ void setRatio (uint32_t value){
 
 }
 
-void setRatioBlink (CpuLed* led,uint8_t color,uint32_t value){
+void setRatioBlink (CpuLed* led,uint8_t color,uint8_t value){
             if (color == LED_RED){
             led->Red.ratio = value;
         }
         else if (color == LED_GREEN){
             led->Green.ratio = value;        
         } 
+
+                    led->Red.ratio = 90;
+
 }
 
 
@@ -233,9 +236,10 @@ void setCpuLed(uint8_t ledStatus){
     //gpio_set_level(LED1_GREEN_GPIO, s_led1_red_state);
 }
 
-uint8_t getCpuLed(void){
+uint8_t getCpuLed(CpuLed* led, uint8_t color){
         ESP_LOGE(TAG, "test command");
+        uint8_t result = getLedStatus(led, color);
 
     //if (CPU_LED_DEBUG) ESP_LOGI(TAG_CPU_LED, "Return the LED Status %s!", s_led1_red_state == true ? "ON" : "OFF");
-    return 23;
+    return result;
 }

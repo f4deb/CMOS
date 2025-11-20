@@ -45,13 +45,14 @@ void setTime (uint32_t value);
 void setTimeBlink (CpuLed* led,uint8_t color,uint32_t value);
 
 void setRatio (uint32_t value);
-void setRatioBlink (CpuLed* led,uint8_t color,uint32_t value);
+void setRatioBlink (CpuLed* led,uint8_t color,uint8_t value);
 
 void configure_led(void);
 void blinkCpuLed(CpuLed* led, uint8_t color);
 
 void printCpuLed(void);
 void setCpuLed(uint8_t ledStatus);
-uint8_t getCpuLed(void);
+uint8_t getCpuLed(CpuLed* led, uint8_t color);
+
 
 #endif

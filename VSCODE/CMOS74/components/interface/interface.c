@@ -39,9 +39,7 @@ void interface_task(void *arg){
 
                 // blueLed
                 if ((strcmp(CPU_LED_INTERFACE_HEADER,str)) == 0) {
-                            ESP_LOGE(TAG, "Bad command");
-
-                    cpuLedInterface(rxBuffer+5);
+                    cpuLedInterface(rxBuffer+(5));
                 }
                 // Clock
                 /* else if ((strcmp(CLOCK_INTERFACE_HEADER,str)) == 0) {
