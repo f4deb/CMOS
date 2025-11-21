@@ -93,16 +93,17 @@ void setRatio (uint32_t value){
 }
 
 void setRatioBlink (CpuLed* led,uint8_t color,uint8_t value){
-            if (color == LED_RED){
+        if (color == LED_RED){
             led->Red.ratio = value;
         }
         else if (color == LED_GREEN){
             led->Green.ratio = value;        
         } 
 
-                    led->Red.ratio = 90;
+    if (CPU_LED_DEBUG) ESP_LOGE(TAG, "LED RATIO %02d", value);
 
-}
+
+    }
 
 
 uint8_t getLedGpio (CpuLed* led,uint8_t color){
@@ -189,14 +190,14 @@ void blinkCpuLed(CpuLed* led, uint8_t color){
 
     int ratio = getLedRatio(led, color); 
     
-    if ((ratio == 0) || (ratio == 100)){
+    if ((ratio == 0) || (ratio == 99)){
             if (ratio == 0) { status = 0;}
             else status = 1;
             setLedStatus(led, color, status);
-                    gpio_set_level(getLedGpio(led, color), getLedStatus(led, color));
-
+            gpio_set_level(getLedGpio(led, color), getLedStatus(led, color));
+            vTaskDelay(1);
     }
-    else if (ratio>0){
+    else if ((ratio>0 )&&(ratio<99)){
 
         setLedStatus(led, color, !status);
 

@@ -37,45 +37,33 @@ void cpuLedInterface(char rxBuffer[50]){
     
     if ((strcmp(SET_RATIO_BLINK_HEADER,str)) == 0) {
 
-
         // Lecture 3 paramètres
         ledNumber = readHex(stringToString(str,rxBuffer,2));
-            rxBuffer++;        
-    rxBuffer++;        
+        rxBuffer++;        
+        rxBuffer++;        
 
         ledColor = readHex(stringToString(str,rxBuffer,2));
-    rxBuffer++;        
-    rxBuffer++;        
+        rxBuffer++;        
+        rxBuffer++;        
 
-
-        value8 = readHex(stringToString(str,rxBuffer,2));
+        value8 = readDec(stringToString(str,rxBuffer,2));
       
-
-
-
         // traitement
         if (ledNumber == LED1){
             setRatioBlink(getLed1(),ledColor,value8);
         }
         else if (ledNumber == LED2){
-            setRatioBlink(getLed1(),ledColor,value8);
+            setRatioBlink(getLed2(),ledColor,value8);
         }
         else {
             if (CPU_LED_INTERFACE_DEBUG) ESP_LOGE(TAG, "Invalid Led number");
             s_led_state= 0x99;
-
         }        
-
-
 
         // Write data back to the UART
         uart_write_bytes(COMMAND_UART_PORT_NUM, status, strlen(status));
         status [0] = LF;
         status [1] = '\0';
-
-
-
-
     }
     else if ((strcmp(SET_TIME_BLINK_HEADER,str)) == 0) {
         //setTimeBlink(readHex(stringToString(str,rxBuffer,4)));

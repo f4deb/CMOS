@@ -82,7 +82,7 @@ void init(){
                 "interface_task",
                 INTERFACE_TASK_STACK_SIZE,
                 NULL,
-                2,
+                3,
                 NULL);    
 }
 
