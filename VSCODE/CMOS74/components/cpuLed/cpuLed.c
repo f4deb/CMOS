@@ -77,7 +77,7 @@ void setTime (uint32_t value){
 }
 
 
-void setTimeBlink (CpuLed* led,uint8_t color,uint32_t value){
+void setPeriodBlink (CpuLed* led,uint8_t color,uint32_t value){
         if (color == LED_RED){
             led->Red.period = value;
         }
@@ -86,25 +86,16 @@ void setTimeBlink (CpuLed* led,uint8_t color,uint32_t value){
         } 
 }
 
-
-
-void setRatio (uint32_t value){
-
-}
-
 void setRatioBlink (CpuLed* led,uint8_t color,uint8_t value){
-        if (color == LED_RED){
-            led->Red.ratio = value;
-        }
-        else if (color == LED_GREEN){
-            led->Green.ratio = value;        
-        } 
+    if (color == LED_RED){
+        led->Red.ratio = value;
+    }
+    else if (color == LED_GREEN){
+        led->Green.ratio = value;        
+    } 
 
     if (CPU_LED_DEBUG) ESP_LOGE(TAG, "LED RATIO %02d", value);
-
-
-    }
-
+}
 
 uint8_t getLedGpio (CpuLed* led,uint8_t color){
     uint8_t result = 0;

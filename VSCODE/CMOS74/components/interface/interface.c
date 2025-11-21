@@ -37,7 +37,7 @@ void interface_task(void *arg){
                 ESP_LOGI(TAG, "%s ", str);
 
 
-                // blueLed
+                // CPU Led Interface
                 if ((strcmp(CPU_LED_INTERFACE_HEADER,str)) == 0) {
                     cpuLedInterface(rxBuffer+(5));
                 }
@@ -63,7 +63,6 @@ void interface_task(void *arg){
                 }   */            
             }
             else {
-                setRatio(90);
             }
             
         }   

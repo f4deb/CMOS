@@ -64,10 +64,39 @@ void cpuLedInterface(char rxBuffer[50]){
         uart_write_bytes(COMMAND_UART_PORT_NUM, status, strlen(status));
         status [0] = LF;
         status [1] = '\0';
+        uart_write_bytes(COMMAND_UART_PORT_NUM, status, strlen(status));
+
     }
     else if ((strcmp(SET_TIME_BLINK_HEADER,str)) == 0) {
-        //setTimeBlink(readHex(stringToString(str,rxBuffer,4)));
-        if (CPU_LED_INTERFACE_DEBUG) ESP_LOGE(TAG, "%s ", str);
+        // Lecture 3 paramètres
+        ledNumber = readHex(stringToString(str,rxBuffer,2));
+        rxBuffer++;        
+        rxBuffer++;        
+
+        ledColor = readHex(stringToString(str,rxBuffer,2));
+        rxBuffer++;        
+        rxBuffer++;        
+
+        value32 = readDec(stringToString(str,rxBuffer,4));
+      
+        // traitement
+        if (ledNumber == LED1){
+            setPeriodBlink(getLed1(),ledColor,value32);
+        }
+        else if (ledNumber == LED2){
+            setPeriodBlink(getLed2(),ledColor,value32);
+        }
+        else {
+            if (CPU_LED_INTERFACE_DEBUG) ESP_LOGE(TAG, "Invalid Led number");
+            s_led_state= 0x99;
+        }        
+
+        // Write data back to the UART
+        uart_write_bytes(COMMAND_UART_PORT_NUM, status, strlen(status));
+        status [0] = LF;
+        status [1] = '\0';
+        uart_write_bytes(COMMAND_UART_PORT_NUM, status, strlen(status));
+
     }
     else if ((strcmp(SET_CPU_LED_HEADER,str)) == 0) {
         setCpuLed(readHex(stringToString(str,rxBuffer,2)));
