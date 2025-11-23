@@ -220,17 +220,14 @@ CpuLed* getLed2(void){
     blinkCpuLed( getLed2(),  LED_RED);    
  }
 
-void setCpuLed(uint8_t ledStatus){
+void setCpuLed(CpuLed* led,uint8_t color,uint8_t ledStatus){
     if (CPU_LED_DEBUG) ESP_LOGI(TAG, "Turning the LED %s!", ledStatus == true ? "ON" : "OFF");
-    /* Toggle the LED state */
-    //s_led1_red_state = ledStatus;
-    /* Set the GPIO level according to the state (LOW or HIGH)*/
-    //gpio_set_level(LED1_GREEN_GPIO, s_led1_red_state);
+    setLedStatus(led, color, ledStatus);
 }
 
 uint8_t getCpuLed(CpuLed* led, uint8_t color){
-        ESP_LOGE(TAG, "test command");
-        uint8_t result = getLedStatus(led, color);
+    if (CPU_LED_DEBUG) ESP_LOGE(TAG, "test command");
+    uint8_t result = getLedStatus(led, color);
 
     //if (CPU_LED_DEBUG) ESP_LOGI(TAG_CPU_LED, "Return the LED Status %s!", s_led1_red_state == true ? "ON" : "OFF");
     return result;

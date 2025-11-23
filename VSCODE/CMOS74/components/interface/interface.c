@@ -63,6 +63,7 @@ void interface_task(void *arg){
                 }   */            
             }
             else {
+                //printHelp();
             }
             
         }   

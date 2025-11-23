@@ -50,7 +50,7 @@ void configure_led(void);
 void blinkCpuLed(CpuLed* led, uint8_t color);
 
 void printCpuLed(void);
-void setCpuLed(uint8_t ledStatus);
+void setCpuLed(CpuLed* led,uint8_t color,uint8_t status);
 uint8_t getCpuLed(CpuLed* led, uint8_t color);
 
 

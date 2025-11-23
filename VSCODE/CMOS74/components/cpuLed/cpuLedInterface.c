@@ -8,6 +8,7 @@
 #include "esp_log.h"
 
 #include "../charUtils/include/charUtils.h"
+#include "../uartUtils/include/uartUtils.h"
 
 #include "../cpuLed/include/cpuLed.h"
 #include "../interface/include/interface.h"
@@ -18,7 +19,7 @@
 
 void cpuLedInterface(char rxBuffer[50]){
     char str[CPU_LED_INTERFACE_COMMAND_SIZE];
-    char status[20];
+    char status[50];
 
     uint8_t ledNumber = 0;
     uint8_t ledColor = 0;
@@ -26,17 +27,12 @@ void cpuLedInterface(char rxBuffer[50]){
     uint8_t value8 = 0;
     uint32_t value32 = 0;
 
-
     if (CPU_LED_INTERFACE_DEBUG) ESP_LOGE(TAG, "%s ", rxBuffer);
-
     stringToString(str,rxBuffer, CPU_LED_INTERFACE_COMMAND_SIZE);
-
     if (CPU_LED_INTERFACE_DEBUG) ESP_LOGE(TAG, "%s ", str);
- 
     rxBuffer++;        
-    
+   
     if ((strcmp(SET_RATIO_BLINK_HEADER,str)) == 0) {
-
         // Lecture 3 paramètres
         ledNumber = readHex(stringToString(str,rxBuffer,2));
         rxBuffer++;        
@@ -60,11 +56,7 @@ void cpuLedInterface(char rxBuffer[50]){
             s_led_state= 0x99;
         }        
 
-        // Write data back to the UART
-        uart_write_bytes(COMMAND_UART_PORT_NUM, status, strlen(status));
-        status [0] = LF;
-        status [1] = '\0';
-        uart_write_bytes(COMMAND_UART_PORT_NUM, status, strlen(status));
+        uartDataBack(status);
 
     }
     else if ((strcmp(SET_TIME_BLINK_HEADER,str)) == 0) {
@@ -91,20 +83,39 @@ void cpuLedInterface(char rxBuffer[50]){
             s_led_state= 0x99;
         }        
 
-        // Write data back to the UART
-        uart_write_bytes(COMMAND_UART_PORT_NUM, status, strlen(status));
-        status [0] = LF;
-        status [1] = '\0';
-        uart_write_bytes(COMMAND_UART_PORT_NUM, status, strlen(status));
-
+        uartDataBack(status);
     }
     else if ((strcmp(SET_CPU_LED_HEADER,str)) == 0) {
-        setCpuLed(readHex(stringToString(str,rxBuffer,2)));
-        if (CPU_LED_INTERFACE_DEBUG) ESP_LOGE(TAG, "%s ", str);
+
+ // Lecture 3 paramètres
+        ledNumber = readHex(stringToString(str,rxBuffer,2));
+        rxBuffer++;        
+        rxBuffer++;       
+        ledColor = readHex(stringToString(str,rxBuffer,2));
+        rxBuffer++;        
+        rxBuffer++;        
+
+        value8 = readDec(stringToString(str,rxBuffer,2));
+
+        if (value8 > 0){
+            value8 = 99;
+        } 
+      
+        // traitement
+        if (ledNumber == LED1){
+            setRatioBlink(getLed1(),ledColor,value8);
+        }
+        else if (ledNumber == LED2){
+            setRatioBlink(getLed2(),ledColor,value8);
+        }
+        else {
+            if (CPU_LED_INTERFACE_DEBUG) ESP_LOGE(TAG, "Invalid Led number");
+            s_led_state= 0x99;
+        }        
+
+        uartDataBack(status);
     }
     else if ((strcmp(GET_CPU_LED_HEADER,str)) == 0) {
-
-
         // Lecture 2 paramètres
         ledNumber = readHex(stringToString(str,rxBuffer,2));
         ledColor = readHex(stringToString(str,rxBuffer,2));
@@ -119,17 +130,11 @@ void cpuLedInterface(char rxBuffer[50]){
         else {
             if (CPU_LED_INTERFACE_DEBUG) ESP_LOGE(TAG, "Invalid Led number");
             s_led_state= 0x99;
-
         }        
         if (CPU_LED_INTERFACE_DEBUG) ESP_LOGE(TAG, "LED Status : %s", s_led_state == true ? "ON" : "OFF");
         sprintf (status,"%02x", s_led_state );        
             
-        // Write data back to the UART
-        uart_write_bytes(COMMAND_UART_PORT_NUM, status, strlen(status));
-        status [0] = LF;
-        status [1] = '\0';
-
-        uart_write_bytes(COMMAND_UART_PORT_NUM, status, strlen(status));
+        uartDataBack(status);
     }
     else {
         ESP_LOGE(TAG, "Bad command");

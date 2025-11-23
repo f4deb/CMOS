@@ -6,11 +6,6 @@
 
 #include "../../../../esp-idf/components/esp_driver_uart/include/driver/uart.h"
 
-
-
-
-
-
 static const char *TAG = "UART TEST";
 
 static char *NAME_UART_COMMAND = "UART";

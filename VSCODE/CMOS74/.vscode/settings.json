@@ -28,7 +28,8 @@
     "string.h": "c",
     "stdint.h": "c",
     "led_strip.h": "c",
-    "regex": "c"
+    "regex": "c",
+    "uartutils.h": "c"
   },
   "idf.port": "/dev/ttyUSB2",
   "idf.flashType": "UART"
