@@ -25,16 +25,16 @@ void interface_task(void *arg){
 
     for(;;) {
 
-                    ESP_LOGI(TAG, "debug interface");
+        if (INTERFACE_DEBUG) ESP_LOGI(TAG, "debug interface");
 
         if (xQueueReceive(getQueueUart2(), &(rxBuffer), (TickType_t)5)) {
-            ESP_LOGI(TAG, "%s ", rxBuffer);
+            if (INTERFACE_DEBUG) ESP_LOGI(TAG, "%s ", rxBuffer);
             stringToString(str,rxBuffer,INTERFACE_HEADER_SIZE);
-            ESP_LOGI(TAG, "%s ", str);
+            if (INTERFACE_DEBUG) ESP_LOGI(TAG, "%s ", str);
             if ((strcmp(INTERFACE_HEADER,str)) == 0) {
 
                 stringToString(str,rxBuffer+3,2);
-                ESP_LOGI(TAG, "%s ", str);
+                if (INTERFACE_DEBUG) ESP_LOGI(TAG, "%s ", str);
 
 
                 // CPU Led Interface
@@ -67,6 +67,6 @@ void interface_task(void *arg){
             }
             
         }   
-    vTaskDelay(pdMS_TO_TICKS(500));
+    //vTaskDelay(pdMS_TO_TICKS(1));
     }
 }
