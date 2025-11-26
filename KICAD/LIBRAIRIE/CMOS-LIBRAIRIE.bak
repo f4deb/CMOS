@@ -231,7 +231,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_QFP:LQFP-64_10x10mm_P0.5mm"
+		(property "Footprint" "Package_QFP:TQFP-48_7x7mm_P0.5mm"
 			(at 21.59 -67.31 0)
 			(effects
 				(font

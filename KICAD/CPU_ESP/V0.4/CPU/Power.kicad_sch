@@ -621,6 +621,221 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "RF_Filter:LFCN-80"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "FL"
+				(at 0 10.795 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LFCN-80"
+				(at 0 8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Filter:Filter_Mini-Circuits_FV1206"
+				(at 0 12.7 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.minicircuits.com/pdfs/LFCN-80+.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "80MHz 50 Ohm Passive Low Pass Filter, FV1206"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "Mini-Circuits low pass filter"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Filter*Mini?Circuits*FV1206*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LFCN-80_0_1"
+				(rectangle
+					(start -7.62 7.62)
+					(end 7.62 -7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(arc
+					(start -3.81 2.54)
+					(mid -1.905 3.5595)
+					(end 0 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -3.81 -1.27)
+					(mid -1.905 -0.2505)
+					(end 0 -1.27)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy 1.27 3.81)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 3.81 2.54)
+					(mid 1.905 1.5205)
+					(end 0 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 3.81 -1.27)
+					(mid 1.905 -2.2895)
+					(end 0 -1.27)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LFCN-80_1_1"
+				(pin passive line
+					(at -10.16 0 0)
+					(length 2.54)
+					(name "IN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -10.16 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -10.16 90)
+					(length 2.54)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 0 180)
+					(length 2.54)
+					(name "OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Regulator_Linear:LM1117DT-2.5"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -1008,6 +1223,155 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:Earth_Clean"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "Earth_Clean"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"Earth_Clean\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global ground gnd clean signal"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Earth_Clean_0_1"
+				(polyline
+					(pts
+						(xy -0.635 -3.175) (xy 0.635 -3.175)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.127 -3.81) (xy 0.127 -3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy 0 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -2.54 -3.81)
+					(mid 0 -1.281)
+					(end 2.54 -3.81)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy -1.27 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Earth_Clean_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers
@@ -1127,6 +1491,12 @@
 		(uuid "05dea6ea-9b65-4eeb-a48c-f33f839e8857")
 	)
 	(junction
+		(at 63.5 72.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0fb4758a-f1e4-4034-b65f-bdacced9c9dd")
+	)
+	(junction
 		(at 132.08 72.39)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1149,6 +1519,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "98052c51-8cde-4343-92de-e817215114fc")
+	)
+	(junction
+		(at 102.87 72.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d6cdaf11-5710-4935-894f-2c649ee5db5d")
+	)
+	(junction
+		(at 69.85 72.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e0eb3e44-d61b-4c41-999b-d67d85d33b80")
 	)
 	(junction
 		(at 110.49 72.39)
@@ -1185,6 +1567,16 @@
 			(type default)
 		)
 		(uuid "26b9ce53-832f-438e-81e8-d56210428fea")
+	)
+	(wire
+		(pts
+			(xy 63.5 72.39) (xy 63.5 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b6072b8-3826-4cf1-860d-e371f361906e")
 	)
 	(wire
 		(pts
@@ -1238,6 +1630,26 @@
 	)
 	(wire
 		(pts
+			(xy 63.5 78.74) (xy 63.5 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6b606d06-1ed6-4828-b9b1-d177765dc809")
+	)
+	(wire
+		(pts
+			(xy 63.5 72.39) (xy 69.85 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6dc0733a-6bc8-411c-ad9d-c7e85f87d44a")
+	)
+	(wire
+		(pts
 			(xy 161.29 72.39) (xy 161.29 73.66)
 		)
 		(stroke
@@ -1265,6 +1677,16 @@
 			(type default)
 		)
 		(uuid "7ad333f8-c109-45d1-94b0-2893b6dbb455")
+	)
+	(wire
+		(pts
+			(xy 57.15 72.39) (xy 63.5 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88724b6f-9406-47a7-9bc0-ca4f8b10764d")
 	)
 	(wire
 		(pts
@@ -1348,6 +1770,16 @@
 	)
 	(wire
 		(pts
+			(xy 69.85 72.39) (xy 78.74 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af67a965-aad3-438b-a924-9e92d9b6d553")
+	)
+	(wire
+		(pts
 			(xy 102.87 91.44) (xy 102.87 93.98)
 		)
 		(stroke
@@ -1368,6 +1800,16 @@
 	)
 	(wire
 		(pts
+			(xy 99.06 72.39) (xy 102.87 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4af0126-b911-48f8-a610-a1443594b8d6")
+	)
+	(wire
+		(pts
 			(xy 102.87 72.39) (xy 102.87 73.66)
 		)
 		(stroke
@@ -1375,6 +1817,26 @@
 			(type default)
 		)
 		(uuid "cf2fc313-5de5-452a-8748-4d524556cd78")
+	)
+	(wire
+		(pts
+			(xy 69.85 72.39) (xy 69.85 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d3b39a38-e3d2-40d5-b315-cd145d337f38")
+	)
+	(wire
+		(pts
+			(xy 69.85 78.74) (xy 69.85 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e60ad886-0bf8-4643-9193-777417b9119e")
 	)
 	(wire
 		(pts
@@ -1388,6 +1850,16 @@
 	)
 	(wire
 		(pts
+			(xy 88.9 82.55) (xy 88.9 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9c1f4de-20a8-4b78-9f3d-ebd67583d440")
+	)
+	(wire
+		(pts
 			(xy 153.67 72.39) (xy 161.29 72.39)
 		)
 		(stroke
@@ -1395,6 +1867,17 @@
 			(type default)
 		)
 		(uuid "ff46210e-d080-412d-a634-afa9d3a431f0")
+	)
+	(hierarchical_label "VBUSUSB"
+		(shape input)
+		(at 57.15 72.39 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8039b871-494e-4905-b071-6ca7f6949831")
 	)
 	(symbol
 		(lib_id "power:+3.3V")
@@ -1607,6 +2090,212 @@
 			(project ""
 				(path "/a676c576-12a0-418f-9fc1-1ecc8cb5a083/dfa41f31-372e-4922-9bef-c0e343f2f76b"
 					(reference "U301")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 88.9 83.82 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1ba2e830-c118-4d1b-8bc7-a61a2bba02a0")
+		(property "Reference" "#PWR0312"
+			(at 88.9 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 88.9 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 88.9 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 88.9 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 88.9 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "82556029-7f8d-4568-888d-ec09c0917d13")
+		)
+		(instances
+			(project ""
+				(path "/a676c576-12a0-418f-9fc1-1ecc8cb5a083/dfa41f31-372e-4922-9bef-c0e343f2f76b"
+					(reference "#PWR0312")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 63.5 80.01 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1d351afe-3634-409b-8489-77bbbd61d627")
+		(property "Reference" "#PWR0309"
+			(at 63.5 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 63.5 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 63.5 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 63.5 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 63.5 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1db9d544-2c72-40ea-9e1e-de5255778af7")
+		)
+		(instances
+			(project ""
+				(path "/a676c576-12a0-418f-9fc1-1ecc8cb5a083/dfa41f31-372e-4922-9bef-c0e343f2f76b"
+					(reference "#PWR0309")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RF_Filter:LFCN-80")
+		(at 88.9 72.39 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1ee4954a-3dd4-4b9c-b551-455f22cbc5f6")
+		(property "Reference" "FL301"
+			(at 88.9 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LFCN-80"
+			(at 88.9 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Filter:Filter_Mini-Circuits_FV1206"
+			(at 88.9 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.minicircuits.com/pdfs/LFCN-80+.pdf"
+			(at 88.9 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "80MHz 50 Ohm Passive Low Pass Filter, FV1206"
+			(at 88.9 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1f19c98d-aef8-4e77-adcd-0b60b98bdfb8")
+		)
+		(pin "1"
+			(uuid "8cbcdb7c-519f-48b0-88d7-6fcafbf17576")
+		)
+		(pin "4"
+			(uuid "60e941dc-9157-4087-99f4-a0bffb1c30ba")
+		)
+		(pin "3"
+			(uuid "c94d8324-b9e1-4281-8590-de92847eb064")
+		)
+		(instances
+			(project ""
+				(path "/a676c576-12a0-418f-9fc1-1ecc8cb5a083/dfa41f31-372e-4922-9bef-c0e343f2f76b"
+					(reference "FL301")
 					(unit 1)
 				)
 			)
@@ -2227,6 +2916,294 @@
 			(project ""
 				(path "/a676c576-12a0-418f-9fc1-1ecc8cb5a083/dfa41f31-372e-4922-9bef-c0e343f2f76b"
 					(reference "C304")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized_Small")
+		(at 69.85 76.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "79ef8f1f-125c-45e5-8ae5-130aa881265b")
+		(property "Reference" "C306"
+			(at 72.136 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10µ/10V"
+			(at 71.12 78.486 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3216-12_Kemet-S_HandSolder"
+			(at 69.85 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 69.85 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Polarized capacitor, small symbol"
+			(at 69.85 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "TITLE" ""
+			(at 69.85 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "UART" ""
+			(at 69.85 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ed0fadaf-d52c-4a4d-87ad-23ad1b30456f")
+		)
+		(pin "1"
+			(uuid "617d11f6-4177-4b20-a1c4-d80e37d20d79")
+		)
+		(instances
+			(project "CPU"
+				(path "/a676c576-12a0-418f-9fc1-1ecc8cb5a083/dfa41f31-372e-4922-9bef-c0e343f2f76b"
+					(reference "C306")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 63.5 76.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7d4d530e-930f-4c35-9bc1-b48ac88b8e0c")
+		(property "Reference" "C307"
+			(at 57.15 74.676 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 57.404 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 63.5 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 63.5 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 63.5 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "0523c6ea-6e98-44e2-b809-21330072863a")
+		)
+		(pin "1"
+			(uuid "687c6f1c-8f74-409a-a7dd-a2dbaee6be20")
+		)
+		(instances
+			(project "CPU"
+				(path "/a676c576-12a0-418f-9fc1-1ecc8cb5a083/dfa41f31-372e-4922-9bef-c0e343f2f76b"
+					(reference "C307")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:Earth_Clean")
+		(at 104.14 101.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7f5cc21f-1c27-42c6-8e4e-678a720b2567")
+		(property "Reference" "#PWR0310"
+			(at 104.14 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "Earth_Clean"
+			(at 104.14 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 104.14 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 104.14 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"Earth_Clean\""
+			(at 104.14 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0b308122-5cdc-4309-b9d3-41b88cefed80")
+		)
+		(instances
+			(project ""
+				(path "/a676c576-12a0-418f-9fc1-1ecc8cb5a083/dfa41f31-372e-4922-9bef-c0e343f2f76b"
+					(reference "#PWR0310")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 69.85 80.01 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8aa665d2-6f27-43bb-80a9-282c309c107c")
+		(property "Reference" "#PWR0311"
+			(at 69.85 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 69.85 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 69.85 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 69.85 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 69.85 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a1a1c82f-7824-490c-b8ee-5f53fc2510ac")
+		)
+		(instances
+			(project ""
+				(path "/a676c576-12a0-418f-9fc1-1ecc8cb5a083/dfa41f31-372e-4922-9bef-c0e343f2f76b"
+					(reference "#PWR0311")
 					(unit 1)
 				)
 			)
