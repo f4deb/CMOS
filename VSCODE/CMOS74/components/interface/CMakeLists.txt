@@ -1,6 +1,6 @@
 idf_component_register(SRCS "interface.c" 
                             "../charUtils/charUtils.c"
-                            "../cpuLed/cpuLedInterface.c" 
+                            "../cpuLed/cpuLedDevice.c" 
                             
 INCLUDE_DIRS "include" 
             "../charUtils/include"

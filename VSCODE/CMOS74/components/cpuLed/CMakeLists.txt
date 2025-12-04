@@ -1,4 +1,4 @@
-idf_component_register(SRCS "cpuLedInterface.c" "cpuLed.c" "../charUtils/charUtils.c" "../uartCommand/uartCommand.c"
+idf_component_register(SRCS "cpuLedDeviceInterface.c" "cpuLedDevice.c" "cpuLed.c" "../charUtils/charUtils.c" "../uartCommand/uartCommand.c"
                         INCLUDE_DIRS "include" 
                         "../charUtils/include" 
                         "../uartCommand/include"

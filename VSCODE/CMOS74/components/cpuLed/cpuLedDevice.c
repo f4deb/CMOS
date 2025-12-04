@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <string.h>
-#include "cpuLedInterface.h"
+#include "cpuLedDevice.h"
 
+#include "cpucLedDeviceInterface.h"
 #include "sdkconfig.h"
 
 #include "esp_event.h"
@@ -13,13 +14,22 @@
 #include "../cpuLed/include/cpuLed.h"
 #include "../interface/include/interface.h"
 #include "../uartCommand/include/uartCommand.h"
+
 #include "../../../../esp-idf/components/esp_driver_uart/include/driver/uart.h"
 
 #define TAG "CPU Led Interface"
 
-void cpuLedInterface(char rxBuffer[50]){
+
+
+void cpuLedDeviceInterfaceInit(void){
+
+}
+
+void cpuLedDevice(char rxBuffer[50]){
     char str[CPU_LED_INTERFACE_COMMAND_SIZE];
     char status[50];
+
+    cpuLedDeviceInterfaceInit();
 
     uint8_t ledNumber = 0;
     uint8_t ledColor = 0;
@@ -131,6 +141,14 @@ void cpuLedInterface(char rxBuffer[50]){
             if (CPU_LED_INTERFACE_DEBUG) ESP_LOGE(TAG, "Invalid Led number");
             s_led_state= 0x99;
         }        
+        if (CPU_LED_INTERFACE_DEBUG) ESP_LOGE(TAG, "LED Status : %s", s_led_state == true ? "ON" : "OFF");
+        sprintf (status,"%02x", s_led_state );        
+            
+        uartDataBack(status);
+    }
+    else if ((strcmp(HELP_CPU_LED_HEADER,str)) == 0) {
+        // traitement
+
         if (CPU_LED_INTERFACE_DEBUG) ESP_LOGE(TAG, "LED Status : %s", s_led_state == true ? "ON" : "OFF");
         sprintf (status,"%02x", s_led_state );        
             
