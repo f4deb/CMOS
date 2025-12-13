@@ -1,0 +1,6 @@
+#ifndef CMOS74_MAIN_H
+#define CMOS74_MAIN_H
+
+#define MAIN_BOARD_DEVICE_LENGTH 40
+
+#endif

@@ -2,6 +2,9 @@
 #define CPU_LED_DEVICE_INTERFACE_H
 
 
+#include "../../charUtils/include/charUtils.h"
+
+#include "../../device/include/device.h"
 #include "../../device/include/deviceInterface.h"
 
 #define CPU_LED_INTERFACE_DEBUG 0
@@ -17,9 +20,9 @@
 #define GET_CPU_LED_HEADER "r"
 #define HELP_CPU_LED_HEADER "h"
 
-/**
-* Interface for Device.
-*/
-const char* getcpucLedDeviceeName(void) ;
+void  initCpuLedDevice(void);
+
+char* cpuLedDeviceGetName(void);
+char* cpuLedDeviceGetHeader(void);
 
 #endif

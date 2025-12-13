@@ -1,31 +1,37 @@
 #include <stdio.h>
 #include <string.h>
-#include "cpuLedDevice.h"
 
-#include "cpucLedDeviceInterface.h"
+#include "cpuLedDevice.h"
+#include "cpuLed.h"
+#include "cpuLedDeviceInterface.h"
+
 #include "sdkconfig.h"
 
 #include "esp_event.h"
 #include "esp_log.h"
 
+#include "../device/include/device.h"
+
 #include "../charUtils/include/charUtils.h"
 #include "../uartUtils/include/uartUtils.h"
 
-#include "../cpuLed/include/cpuLed.h"
 #include "../interface/include/interface.h"
 #include "../uartCommand/include/uartCommand.h"
 
 #include "../../../../esp-idf/components/esp_driver_uart/include/driver/uart.h"
 
-#define TAG "CPU Led Interface"
+#define TAG "CPU Led Device"
 
-
+static Device cpuLedDevice;
 
 void cpuLedDeviceInterfaceInit(void){
-
+    cpuLedDevice.name = cpuLedDeviceGetName();
+    cpuLedDevice.header = cpuLedDeviceGetHeader();
+    cpuLedDevice.helpList ="z";
+    cpuLedDevice.transmitMode = TRANSMIT_LOCAL;
 }
 
-void cpuLedDevice(char rxBuffer[50]){
+void cpuLedDeviceHandle(char rxBuffer[50]){
     char str[CPU_LED_INTERFACE_COMMAND_SIZE];
     char status[50];
 
@@ -149,7 +155,9 @@ void cpuLedDevice(char rxBuffer[50]){
     else if ((strcmp(HELP_CPU_LED_HEADER,str)) == 0) {
         // traitement
 
-        if (CPU_LED_INTERFACE_DEBUG) ESP_LOGE(TAG, "LED Status : %s", s_led_state == true ? "ON" : "OFF");
+        char* stringHelp;
+
+        if (CPU_LED_INTERFACE_DEBUG) ESP_LOGE(TAG, "LlED Status : %s", s_led_state == true ? "ON" : "OFF");
         sprintf (status,"%02x", s_led_state );        
             
         uartDataBack(status);

@@ -3,6 +3,8 @@
 #include <stdio.h>
 #include <string.h>
 
+#include "CMOS74_main.h"
+
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 
@@ -52,6 +54,8 @@ void init(){
 
     //initClock();
 
+
+    /********* TASK ********/
 
     //UART COMMAND Task
     xTaskCreate(command_uart_task, 

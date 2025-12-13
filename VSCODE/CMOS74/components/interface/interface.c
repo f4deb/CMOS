@@ -10,8 +10,10 @@
 
 #include "../uartCommand/include/uartCommand.h"
 #include "../cpuLed/include/cpuLed.h"
+
 #include "../cpuLed/include/cpuLedDevice.h"
-#include "../cpuLed/include/cpucLedDeviceInterface.h"
+#include "../cpuLed/include/cpuLedDeviceInterface.h"
+
 //#include "../clock/include/clockInterface.h"
 //#include "../8IoButtonBoard/include/8IoButtonBoardInterface.h"
 //#include "../Oled/include/OledInterface.h"
@@ -40,7 +42,7 @@ void interface_task(void *arg){
 
                 // CPU Led Interface
                 if ((strcmp(CPU_LED_INTERFACE_HEADER,str)) == 0) {
-                    cpuLedDevice(rxBuffer+(5));
+                    cpuLedDeviceHandle(rxBuffer+(5));
                 }
                 // Clock
                 /* else if ((strcmp(CLOCK_INTERFACE_HEADER,str)) == 0) {

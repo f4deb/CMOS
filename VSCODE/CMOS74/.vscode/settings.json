@@ -24,8 +24,8 @@
     "tuple": "c",
     "type_traits": "c",
     "utility": "c",
-    "cpuledDevice.h": "c",
-    "cpuledDeviceinterface.h": "c",
+    "cpuLedDeviceInterface.h": "c",
+    "cpuLedDevice.h": "c",
     "string.h": "c",
     "stdint.h": "c",
     "led_strip.h": "c",
@@ -33,8 +33,8 @@
     "uartutils.h": "c",
     "device.h": "c",
     "deviceInterface.h": "c",
-    "cpucleddeviceinterface.h": "c"
-  },
+    "deviceList.h": "c"
+    },
   "idf.port": "/dev/ttyUSB2",
   "idf.flashType": "UART"
 }

@@ -1,12 +1,27 @@
 
 #include <stdio.h>
-#include "cpucLedDeviceInterface.h"
+#include <string.h>
+
+#include "cpuLedDeviceInterface.h"
+#include "cpuLedDevice.h"
 
 #include "sdkconfig.h"
 
 #include "esp_event.h"
 #include "esp_log.h"
 
-const char* getCpucLedDeviceeName(void) {
+#include "../../device/include/device.h"
+
+
+void  initCpuLedDevice(void){
+
+}
+
+
+char* cpuLedDeviceGetName(void) {
     return "CpuLed";
+}
+
+char* cpuLedDeviceGetHeader(void){
+    return CPU_LED_INTERFACE_HEADER;
 }

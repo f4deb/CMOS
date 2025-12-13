@@ -3,10 +3,12 @@
 
 #include "../../charUtils/include/charUtils.h"
 
+#include "../../device/include/device.h"
 #include "../../device/include/deviceInterface.h"
 
-void cpuLedDeviceInterface(void);
+#define CPU_LED_DEVICE_DEBUG 1
 
-void cpuLedDevice(char rxBuffer[50]);
+
+void cpuLedDeviceHandle(char rxBuffer[50]);
 
 #endif

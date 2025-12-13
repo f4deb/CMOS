@@ -1,10 +1,13 @@
 #include <stdio.h>
 #include "cpuLed.h"
-
+#include "cpuLedDeviceInterface.h"
 #include "sdkconfig.h"
 
 #include "esp_event.h"
 #include "esp_log.h"
+
+#include "../../device/include/device.h"
+#include "../../device/include/deviceInterface.h"
 
 #include "../charUtils/include/charUtils.h"
 
@@ -13,6 +16,7 @@
 static const char *TAG = "CPU_LED";
 
 void initCpu2Led(CpuLed* led, int reference ){
+    initCpuLedDevice();
 
     if (reference == LED1 ) { 
         led->value = LED1;
