@@ -24,7 +24,7 @@
 
 static Device cpuLedDevice;
 
-void cpuLedDeviceInterfaceInit(void){
+void cpuLedDeviceInit(void){
     cpuLedDevice.name = cpuLedDeviceGetName();
     cpuLedDevice.header = cpuLedDeviceGetHeader();
     cpuLedDevice.helpList ="z";
@@ -35,7 +35,7 @@ void cpuLedDeviceHandle(char rxBuffer[50]){
     char str[CPU_LED_INTERFACE_COMMAND_SIZE];
     char status[50];
 
-    cpuLedDeviceInterfaceInit();
+    cpuLedDeviceInit();
 
     uint8_t ledNumber = 0;
     uint8_t ledColor = 0;
@@ -155,12 +155,8 @@ void cpuLedDeviceHandle(char rxBuffer[50]){
     else if ((strcmp(HELP_CPU_LED_HEADER,str)) == 0) {
         // traitement
 
-        char* stringHelp;
+        uartString(cpuLedDevice.helpList);
 
-        if (CPU_LED_INTERFACE_DEBUG) ESP_LOGE(TAG, "LlED Status : %s", s_led_state == true ? "ON" : "OFF");
-        sprintf (status,"%02x", s_led_state );        
-            
-        uartDataBack(status);
     }
     else {
         ESP_LOGE(TAG, "Bad command");

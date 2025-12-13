@@ -15,6 +15,10 @@
 #define TAG "CPU Led Interface"
 
 
+void uartString(char* text){
+        uart_tx_chars(COMMAND_UART_PORT_NUM, text, strlen(text));
+}
+
 void uartDataBack(char status[50]){
 
         // Write data back to the UART
