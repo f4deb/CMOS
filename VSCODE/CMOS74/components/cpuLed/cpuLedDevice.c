@@ -27,8 +27,8 @@ static Device cpuLedDevice;
 void cpuLedDeviceInit(void){
     cpuLedDevice.name = cpuLedDeviceGetName();
     cpuLedDevice.header = cpuLedDeviceGetHeader();
-    cpuLedDevice.helpList ="z";
     cpuLedDevice.transmitMode = TRANSMIT_LOCAL;
+    cpuLedDevice.deviceList = cpuLedDeviceGetList();
 }
 
 void cpuLedDeviceHandle(char rxBuffer[50]){
@@ -155,7 +155,7 @@ void cpuLedDeviceHandle(char rxBuffer[50]){
     else if ((strcmp(HELP_CPU_LED_HEADER,str)) == 0) {
         // traitement
 
-        uartString(cpuLedDevice.helpList);
+        //uartString(cpuLedDevice.helpList);
 
     }
     else {

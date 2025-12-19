@@ -22,7 +22,7 @@ struct Device {
     /** The Name of the Device */
     char* name; 
     /** The help listing */
-    char* helpList;
+    DeviceList* deviceList;
 } ;
 
 #endif

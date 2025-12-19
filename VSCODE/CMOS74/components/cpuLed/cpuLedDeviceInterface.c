@@ -17,7 +17,6 @@ void  initCpuLedDevice(void){
     // for compil
 }
 
-
 char* cpuLedDeviceGetName(void) {
     return "CpuLed";
 }
