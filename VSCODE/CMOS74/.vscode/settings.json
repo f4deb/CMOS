@@ -36,5 +36,6 @@
     "deviceList.h": "c"
     },
   "idf.port": "/dev/ttyUSB2",
-  "idf.flashType": "UART"
+  "idf.flashType": "UART",
+  "idf.currentSetup": "/home/f4deb/esp/v5.4/esp-idf"
 }
