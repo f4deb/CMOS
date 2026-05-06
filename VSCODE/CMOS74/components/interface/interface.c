@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 #include "interface.h"
+#include "interfaceDescriptor.h"
+
 
 #include "sdkconfig.h"
 
@@ -17,7 +19,9 @@
 //#include "../I2c/include/i2CInterface.h"
 //#include "../sensor/include/sensorInterface.h"
 
-#define TAG "Debug Interface"
+#define TAG "Interface"
+
+const char *interfaceHeader = "jk+";
 
 void interface_task(void *arg){
     char rxBuffer[BUF_SIZE];
@@ -29,9 +33,9 @@ void interface_task(void *arg){
 
         if (xQueueReceive(getQueueUart2(), &(rxBuffer), (TickType_t)5)) {
             if (INTERFACE_DEBUG) ESP_LOGI(TAG, "%s ", rxBuffer);
-            stringToString(str,rxBuffer,INTERFACE_HEADER_SIZE);
+            stringToString(str,rxBuffer,strlen(interfaceHeader));
             if (INTERFACE_DEBUG) ESP_LOGI(TAG, "%s ", str);
-            if ((strcmp(INTERFACE_HEADER,str)) == 0) {
+            if ((strcmp(interfaceHeader,str)) == 0) {
 
                 stringToString(str,rxBuffer+3,2);
                 if (INTERFACE_DEBUG) ESP_LOGI(TAG, "%s ", str);

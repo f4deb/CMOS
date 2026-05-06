@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include "cpuLedInterface.h"
+#include "cpuLedInterfaceDescriptor.h"
 
 #include "sdkconfig.h"
 
@@ -12,14 +13,19 @@
 
 #include "../cpuLed/include/cpuLed.h"
 #include "../interface/include/interface.h"
+#include "../interface/include/interfaceDescriptor.h"
+
 #include "../uartCommand/include/uartCommand.h"
 #include "../../../../esp-idf/components/esp_driver_uart/include/driver/uart.h"
 
-#define TAG "CPU Led Interface"
+#define TAG "CPU Led Interface "
+
+
+uint8_t helCpuLedIndex = 0;
 
 void cpuLedInterface(char rxBuffer[50]){
     char str[CPU_LED_INTERFACE_COMMAND_SIZE];
-    char status[50];
+    char status[100];
 
     uint8_t ledNumber = 0;
     uint8_t ledColor = 0;
@@ -135,6 +141,12 @@ void cpuLedInterface(char rxBuffer[50]){
         sprintf (status,"%02x", s_led_state );        
             
         uartDataBack(status);
+    }
+    else if ((strcmp(HELP_CPU_LED_HEADER,str)) == 0) {
+        // Lecture 0 paramètre
+
+        // traitement      
+        cpuLedInterfaceDescriptor();
     }
     else {
         ESP_LOGE(TAG, "Bad command");

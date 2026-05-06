@@ -7,6 +7,7 @@
     "gpio.h": "c",
     "uartcommand.h": "c",
     "interface.h": "c",
+    "interfaceDescriptor.h": "c",
     "blueled.h": "c",
     "sdkconfig.h": "c",
     "uart.h": "c",
@@ -25,12 +26,13 @@
     "type_traits": "c",
     "utility": "c",
     "cpuledinterface.h": "c",
+    "cpuledinterfaceDescriptor.h": "c",
     "string.h": "c",
     "stdint.h": "c",
     "led_strip.h": "c",
     "regex": "c",
     "uartutils.h": "c"
   },
-  "idf.port": "/dev/ttyUSB2",
+  "idf.port": "/dev/ttyUSB0",
   "idf.flashType": "UART"
 }

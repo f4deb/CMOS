@@ -54,7 +54,7 @@ void command_uart_task(void *arg){
 
         if (len) {
             data[len] = '\0';
-            //ESP_LOGI(TAG_UART2, "Recv str: %s", (char *) data);
+            if (UART_COMMAND_DEBUG)ESP_LOGE(TAG, "Recv str: %s", (char *) data);
             sprintf(txBuffer, "%s",data);
             xQueueSend(queue, (void*)txBuffer, (TickType_t)0);
         }

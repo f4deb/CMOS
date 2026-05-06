@@ -27,6 +27,7 @@
 #include "../components/cpuLed/include/cpuLed.h"
 #include "../components/charUtils/include/charUtils.h"
 #include "../components/interface/include/interface.h"
+#include "../components/interface/include/interfaceDescriptor.h"
 #include "../components/led_strip/include/led_strip.h"
 #include "../components/uartCommand/include/uartCommand.h"
 
