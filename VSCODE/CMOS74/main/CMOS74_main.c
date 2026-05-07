@@ -50,10 +50,8 @@ void init(){
 
     //I2cBusInit();  
     //i2c_dev_pcf8574_init();
-
+//printDeviceLine();
     //initClock();
-
-
     //UART COMMAND Task
     xTaskCreate(command_uart_task, 
                 "uart_command_task", 

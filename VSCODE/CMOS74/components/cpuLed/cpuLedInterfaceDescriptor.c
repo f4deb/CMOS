@@ -24,12 +24,13 @@ char status[100];
 
 
 void cpuLedInterfaceDescriptor(void){
+    char *str1 = "";
     sprintf(status,"\r" );      
     uartDataBack(status);
 
     
     sprintf(status,"|" );
-    char *str1 ="-";
+    str1 ="-";
     for (int i = 0;i < 50 ; i++){
         strncat (status,str1,strlen(str1)+1);
     }
