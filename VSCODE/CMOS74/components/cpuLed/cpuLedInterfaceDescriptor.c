@@ -20,7 +20,7 @@
 
 #define TAG "CPU Led Interface Descrtiptor "
 
-char status[100];
+char status[100] = "TOTO";
 
 
 void cpuLedInterfaceDescriptor(void){

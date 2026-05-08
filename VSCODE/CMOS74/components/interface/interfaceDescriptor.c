@@ -14,20 +14,20 @@
 #define TAG "Interface Descriptor"
 
 
-    char *status11 = "TOTO";
+    char status11[50] = "TOTO";
 
 void printDeviceLine(){
 
 
 
-    /*sprintf(status1,"|" );
+    sprintf(status11,"|" );
     char *str1="-";
     for (int i = 0;i < 50 ; i++){
-        strncat (status1,str1,strlen(str1)+1);
+        strncat (status11,str1,strlen(str1)+1);
     }
     str1="|";
-    strncat (status1,str1,strlen(str1)+1);*/
-    ESP_LOGE(TAG,"TITI");
+    strncat (status11,str1,strlen(str1)+1);
+    ESP_LOGE(TAG,"%s",status11);
     uartDataBack(status11);
 
 }
