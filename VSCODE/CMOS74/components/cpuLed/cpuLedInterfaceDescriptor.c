@@ -29,15 +29,8 @@ void cpuLedInterfaceDescriptor(void){
     uartDataBack(status);
 
     
-    sprintf(status,"|" );
-    str1 ="-";
-    for (int i = 0;i < 50 ; i++){
-        strncat (status,str1,strlen(str1)+1);
-    }
-    str1="|";
-    strncat (status,str1,strlen(str1)+1);
-    ESP_LOGE(TAG,"%s",status);
-    uartDataBack(status);
+    printDeviceLine();
+
 
     sprintf(status,"| " );
     str1=INTERFACE_HEADER;
@@ -165,5 +158,5 @@ void cpuLedInterfaceDescriptor(void){
     ESP_LOGE(TAG,"%s",status);
     uartDataBack(status);
             
-printDeviceLine();
+    printDeviceLine();
 }

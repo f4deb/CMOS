@@ -3,7 +3,7 @@
 
 #include "../../charUtils/include/charUtils.h"
 
-#define CPU_LED_INTERFACE_DEBUG 1
+#define CPU_LED_INTERFACE_DEBUG 0
 
 #define CPU_LED_IHEADER_NAME "CPU LED"
 
